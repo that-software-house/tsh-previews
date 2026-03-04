@@ -15,6 +15,7 @@ import {
   Users,
 } from 'lucide-react'
 import { useSEO } from '../hooks/useSEO'
+import FloatingCTA from '../components/FloatingCTA'
 import './DaybreakDentalPreview.css'
 
 const heroImage =
@@ -467,6 +468,7 @@ function DaybreakDentalPreview() {
           {previewData.hero.primaryCta}
         </a>
       </div>
+      <FloatingCTA />
     </main>
   )
 }

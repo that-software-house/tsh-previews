@@ -53,6 +53,9 @@ NAV PATTERNS:
   - sidebar-mobile:      Hamburger menu on mobile, full-screen slide-in drawer.
 ```
 
+**Sample Design and reference files**
+- docs/samples/
+
 **Output schema**:
 ```json
 {

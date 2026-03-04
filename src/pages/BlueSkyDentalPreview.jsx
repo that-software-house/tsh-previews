@@ -14,6 +14,7 @@ import {
   Stethoscope,
 } from 'lucide-react'
 import { useSEO } from '../hooks/useSEO'
+import FloatingCTA from '../components/FloatingCTA'
 import './BlueSkyDentalPreview.css'
 
 const heroImage =
@@ -361,6 +362,7 @@ function BlueSkyDentalPreview() {
           </div>
         </div>
       </footer>
+      <FloatingCTA />
     </main>
   )
 }

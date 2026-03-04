@@ -33,6 +33,7 @@ import {
   Zap,
 } from 'lucide-react'
 import { useSEO } from '../hooks/useSEO'
+import FloatingCTA from '../components/FloatingCTA'
 import './HighPointSmilesPreview.css'
 
 const heroImage =
@@ -743,6 +744,7 @@ function HighPointSmilesPreview() {
           {previewData.heroCta}
         </a>
       </div>
+      <FloatingCTA />
     </main>
   )
 }

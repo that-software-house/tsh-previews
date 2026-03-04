@@ -27,6 +27,7 @@ import {
   Microscope,
 } from 'lucide-react'
 import { useSEO } from '../hooks/useSEO'
+import FloatingCTA from '../components/FloatingCTA'
 import './AustinFamilyDDSPreview.css'
 
 const heroImage =
@@ -729,6 +730,8 @@ function AustinFamilyDDSPreview() {
           </div>
         </footer>
       </div>
+
+      <FloatingCTA />
 
       {/* ── MOBILE BOTTOM RAIL ── */}
       <div className="afd-preview__mobile-rail">

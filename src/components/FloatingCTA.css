@@ -1,0 +1,81 @@
+/* ── Floating CTA ── */
+.floating-cta {
+  position: fixed;
+  bottom: 6.5rem;
+  right: 1.25rem;
+  z-index: 200;
+  background: #fff;
+  border-radius: 1.1rem;
+  padding: 1.1rem 1.25rem 1.1rem;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.14),
+    0 2px 8px rgba(0, 0, 0, 0.06);
+  max-width: 230px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+@media (min-width: 900px) {
+  .floating-cta {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+.floating-cta__dismiss {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.55rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.07);
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 150ms;
+  padding: 0;
+}
+
+.floating-cta__dismiss:hover {
+  background: rgba(0, 0, 0, 0.13);
+}
+
+.floating-cta__eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 0.3rem;
+}
+
+.floating-cta__body {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin: 0 0 0.9rem;
+}
+
+.floating-cta__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #1a1a1a;
+  color: #fff !important;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.55rem 1rem;
+  border-radius: 100px;
+  text-decoration: none !important;
+  transition: background 180ms, transform 150ms;
+  white-space: nowrap;
+}
+
+.floating-cta__link:hover {
+  background: #333;
+  transform: translateY(-1px);
+}

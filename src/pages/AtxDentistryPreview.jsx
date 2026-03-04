@@ -16,6 +16,7 @@ import {
   WalletCards,
 } from 'lucide-react'
 import { useSEO } from '../hooks/useSEO'
+import FloatingCTA from '../components/FloatingCTA'
 import './AtxDentistryPreview.css'
 
 const heroImage =
@@ -572,6 +573,7 @@ function AtxDentistryPreview() {
           {previewData.hero.primaryCta}
         </a>
       </div>
+      <FloatingCTA />
     </main>
   )
 }
