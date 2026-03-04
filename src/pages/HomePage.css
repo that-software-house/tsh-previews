@@ -1,0 +1,214 @@
+.preview-home {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.08), transparent 22%),
+    linear-gradient(180deg, #020304 0%, #050608 42%, #020304 100%);
+  color: #f5f7f8;
+}
+
+.preview-home__backdrop,
+.preview-home__grain,
+.preview-home__orbits {
+  position: absolute;
+  inset: 0;
+}
+
+.preview-home__backdrop {
+  overflow: hidden;
+}
+
+.preview-home__mesh {
+  position: absolute;
+  inset: auto;
+  border-radius: 999px;
+  filter: blur(48px);
+  opacity: 0.78;
+  mix-blend-mode: screen;
+}
+
+.preview-home__mesh--one {
+  top: 8%;
+  left: 12%;
+  width: min(48vw, 34rem);
+  height: min(48vw, 34rem);
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.55), transparent 34%),
+    radial-gradient(circle at 70% 55%, rgba(108, 108, 108, 0.34), transparent 42%),
+    linear-gradient(135deg, rgba(20, 20, 20, 0.96), rgba(66, 66, 66, 0.5));
+}
+
+.preview-home__mesh--two {
+  right: 8%;
+  top: 18%;
+  width: min(36vw, 28rem);
+  height: min(36vw, 28rem);
+  background:
+    radial-gradient(circle at 65% 40%, rgba(255, 255, 255, 0.44), transparent 28%),
+    radial-gradient(circle at 35% 65%, rgba(95, 95, 95, 0.28), transparent 44%),
+    linear-gradient(135deg, rgba(18, 18, 18, 0.92), rgba(42, 42, 42, 0.58));
+}
+
+.preview-home__mesh--three {
+  bottom: 2%;
+  left: 28%;
+  width: min(52vw, 42rem);
+  height: min(30vw, 22rem);
+  background:
+    radial-gradient(circle at 50% 35%, rgba(255, 255, 255, 0.42), transparent 26%),
+    radial-gradient(circle at 30% 70%, rgba(68, 68, 68, 0.34), transparent 38%),
+    linear-gradient(135deg, rgba(10, 10, 10, 0.96), rgba(56, 56, 56, 0.48));
+}
+
+.preview-home__orbits {
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.preview-home__orbit {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  animation: orbit-spin linear infinite;
+}
+
+.preview-home__orbit--one {
+  width: min(76vw, 60rem);
+  height: min(76vw, 60rem);
+  animation-duration: 24s;
+}
+
+.preview-home__orbit--two {
+  width: min(56vw, 42rem);
+  height: min(56vw, 42rem);
+  animation-duration: 18s;
+  animation-direction: reverse;
+}
+
+.preview-home__orbit--three {
+  width: min(34vw, 25rem);
+  height: min(34vw, 25rem);
+  animation-duration: 12s;
+}
+
+.preview-home__orbit::after {
+  content: '';
+  position: absolute;
+  top: -0.4rem;
+  left: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 28px rgba(255, 255, 255, 0.28);
+  transform: translateX(-50%);
+}
+
+.preview-home__grain {
+  pointer-events: none;
+  opacity: 0.16;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 3rem 3rem;
+  mask-image: radial-gradient(circle at center, black 24%, transparent 78%);
+}
+
+.preview-home__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  width: min(100% - 2rem, 54rem);
+  text-align: center;
+}
+
+.preview-home__eyebrow {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.preview-home__content h1 {
+  margin: 0;
+  max-width: 12ch;
+  font-size: clamp(2.8rem, 7vw, 5.8rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.preview-home__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 50px;
+  margin-top: 0.35rem;
+  padding: 0.9rem 1.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-weight: 600;
+  backdrop-filter: blur(14px);
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease;
+}
+
+.preview-home__cta:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes orbit-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 720px) {
+  .preview-home__content {
+    gap: 1rem;
+  }
+
+  .preview-home__content h1 {
+    max-width: 11ch;
+    font-size: clamp(2.6rem, 11vw, 4.2rem);
+  }
+
+  .preview-home__mesh--one {
+    top: 10%;
+    left: -8%;
+    width: 22rem;
+    height: 22rem;
+  }
+
+  .preview-home__mesh--two {
+    top: 18%;
+    right: -12%;
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .preview-home__mesh--three {
+    bottom: 10%;
+    left: 10%;
+    width: 22rem;
+    height: 14rem;
+  }
+}
