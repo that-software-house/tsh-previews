@@ -1,0 +1,656 @@
+.daybreak-preview {
+  --daybreak-bg: #fff7f0;
+  --daybreak-surface: rgba(255, 255, 255, 0.82);
+  --daybreak-card: rgba(255, 255, 255, 0.74);
+  --daybreak-border: rgba(244, 138, 84, 0.16);
+  --daybreak-border-strong: rgba(244, 138, 84, 0.28);
+  --daybreak-text: #173042;
+  --daybreak-text-soft: #5d7484;
+  --daybreak-accent: #f48a54;
+  --daybreak-accent-strong: #e56c2d;
+  --daybreak-sky: #66b8d8;
+  --daybreak-shadow: 0 26px 70px rgba(239, 150, 84, 0.14);
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 5.5rem;
+  background:
+    radial-gradient(circle at top left, rgba(244, 138, 84, 0.18), transparent 26%),
+    radial-gradient(circle at top right, rgba(102, 184, 216, 0.18), transparent 24%),
+    linear-gradient(180deg, #fffaf5 0%, #fff4ea 46%, #fff8f2 100%);
+  color: var(--daybreak-text);
+}
+
+.daybreak-preview,
+.daybreak-preview * {
+  box-sizing: border-box;
+}
+
+.daybreak-preview__shell,
+.daybreak-preview__section,
+.daybreak-preview__footer {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.daybreak-preview__shell {
+  position: relative;
+  z-index: 1;
+  padding-top: 1.2rem;
+}
+
+.daybreak-preview__nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 1rem 1rem 0;
+  background: linear-gradient(180deg, rgba(255, 248, 242, 0.92), rgba(255, 248, 242, 0.55) 72%, transparent 100%);
+  backdrop-filter: blur(12px);
+}
+
+.daybreak-preview__nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 999px;
+  background: rgba(255, 252, 248, 0.8);
+  box-shadow: 0 18px 48px rgba(241, 159, 93, 0.1);
+}
+
+.daybreak-preview__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.daybreak-preview__brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, var(--daybreak-accent), #ffbe72);
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+}
+
+.daybreak-preview__brand strong,
+.daybreak-preview__brand small {
+  display: block;
+}
+
+.daybreak-preview__brand small {
+  color: var(--daybreak-text-soft);
+  font-size: 0.78rem;
+}
+
+.daybreak-preview__nav-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+  color: var(--daybreak-text-soft);
+}
+
+.daybreak-preview__nav-links a,
+.daybreak-preview__contact-list a,
+.daybreak-preview__footer a {
+  transition: color 180ms ease;
+}
+
+.daybreak-preview__nav-links a:hover,
+.daybreak-preview__contact-list a:hover,
+.daybreak-preview__footer a:hover {
+  color: var(--daybreak-accent-strong);
+}
+
+.daybreak-preview__button,
+.daybreak-preview__nav-cta,
+.daybreak-preview__mobile-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.85rem 1.35rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.daybreak-preview__nav-cta,
+.daybreak-preview__button--primary,
+.daybreak-preview__mobile-action--primary {
+  background: linear-gradient(135deg, var(--daybreak-accent), var(--daybreak-accent-strong));
+  color: #ffffff;
+  box-shadow: 0 14px 34px rgba(229, 108, 45, 0.18);
+}
+
+.daybreak-preview__button--ghost,
+.daybreak-preview__mobile-action--ghost {
+  border: 1px solid var(--daybreak-border-strong);
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--daybreak-text);
+}
+
+.daybreak-preview__hero {
+  position: relative;
+  min-height: calc(100vh - 7rem);
+  margin-top: 1.2rem;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: var(--daybreak-shadow);
+}
+
+.daybreak-preview__hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  min-height: calc(100vh - 7rem);
+  padding: 3rem 1rem 3.5rem;
+}
+
+.daybreak-preview__hero-inner > * {
+  grid-row: 1;
+}
+
+.daybreak-preview__eyebrow,
+.daybreak-preview__card-kicker,
+.daybreak-preview__floating-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 38px;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--daybreak-border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.64);
+  color: var(--daybreak-text-soft);
+  font-size: 0.84rem;
+}
+
+.daybreak-preview__hero h1 {
+  margin: 1rem 0 0;
+  max-width: 11ch;
+  font-size: clamp(3rem, 7vw, 5.9rem);
+  line-height: 0.94;
+  letter-spacing: -0.05em;
+}
+
+.daybreak-preview__hero-description,
+.daybreak-preview__section-heading p,
+.daybreak-preview__service-card p,
+.daybreak-preview__doctor-card p,
+.daybreak-preview__review-card p,
+.daybreak-preview__contact-copy p,
+.daybreak-preview__contact-card p {
+  color: var(--daybreak-text-soft);
+  font-size: 1.02rem;
+}
+
+.daybreak-preview__hero-description {
+  max-width: 35rem;
+  margin-top: 1.25rem;
+}
+
+.daybreak-preview__hero-actions,
+.daybreak-preview__hero-meta,
+.daybreak-preview__contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.daybreak-preview__hero-actions,
+.daybreak-preview__hero-meta {
+  margin-top: 1.5rem;
+}
+
+.daybreak-preview__hero-meta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 44px;
+  color: var(--daybreak-text);
+  font-weight: 600;
+}
+
+.daybreak-preview__hero-aside {
+  position: relative;
+  min-height: 34rem;
+}
+
+.daybreak-preview__showcase-image,
+.daybreak-preview__comfort-media {
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: var(--daybreak-shadow);
+}
+
+.daybreak-preview__showcase-image img,
+.daybreak-preview__comfort-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.daybreak-preview__floating-card {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: 1.5rem;
+  background: rgba(255, 252, 248, 0.88);
+  box-shadow: var(--daybreak-shadow);
+  backdrop-filter: blur(14px);
+}
+
+.daybreak-preview__floating-card--offer {
+  left: 0;
+  bottom: 4rem;
+  width: min(18rem, 62%);
+  padding: 1rem;
+}
+
+.daybreak-preview__floating-card--offer strong {
+  display: block;
+  margin: 0.55rem 0 0.35rem;
+  font-size: 1.9rem;
+  color: var(--daybreak-accent-strong);
+}
+
+.daybreak-preview__floating-card--offer p,
+.daybreak-preview__floating-card--stats span,
+.daybreak-preview__hours-card li {
+  color: var(--daybreak-text-soft);
+}
+
+.daybreak-preview__floating-card--stats {
+  right: 0;
+  bottom: 0;
+  display: grid;
+  gap: 0.75rem;
+  width: min(15rem, 54%);
+  padding: 1rem;
+}
+
+.daybreak-preview__floating-card--stats strong {
+  display: block;
+  color: var(--daybreak-sky);
+  font-size: 1.2rem;
+}
+
+.daybreak-preview__section {
+  padding: 3.5rem 0;
+}
+
+.daybreak-preview__section-heading {
+  max-width: 46rem;
+  margin-bottom: 1.8rem;
+}
+
+.daybreak-preview__kicker {
+  margin: 0 0 0.75rem;
+  color: var(--daybreak-accent-strong);
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.daybreak-preview__section h2,
+.daybreak-preview__contact-copy h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.daybreak-preview__trust-grid,
+.daybreak-preview__services-grid,
+.daybreak-preview__reviews-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.daybreak-preview__trust-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.daybreak-preview__services-grid,
+.daybreak-preview__reviews-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.daybreak-preview__trust-card,
+.daybreak-preview__service-card,
+.daybreak-preview__doctor-card,
+.daybreak-preview__review-card,
+.daybreak-preview__hours-card,
+.daybreak-preview__contact-card {
+  border: 1px solid var(--daybreak-border);
+  border-radius: 1.6rem;
+  background: var(--daybreak-card);
+  box-shadow: var(--daybreak-shadow);
+  backdrop-filter: blur(14px);
+}
+
+.daybreak-preview__trust-card,
+.daybreak-preview__service-card,
+.daybreak-preview__review-card,
+.daybreak-preview__hours-card,
+.daybreak-preview__contact-card {
+  padding: 1.35rem;
+}
+
+.daybreak-preview__trust-card {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.daybreak-preview__trust-card svg {
+  color: var(--daybreak-accent-strong);
+}
+
+.daybreak-preview__service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.daybreak-preview__service-card h3,
+.daybreak-preview__doctor-card h3,
+.daybreak-preview__contact-card h3 {
+  margin: 0;
+  font-size: 1.24rem;
+}
+
+.daybreak-preview__service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  background: rgba(244, 138, 84, 0.12);
+  color: var(--daybreak-accent-strong);
+}
+
+.daybreak-preview__showcase,
+.daybreak-preview__comfort,
+.daybreak-preview__support,
+.daybreak-preview__contact {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.35rem;
+  align-items: stretch;
+}
+
+.daybreak-preview__doctor-list {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1.2rem;
+}
+
+.daybreak-preview__doctor-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 1.1rem 1.15rem;
+}
+
+.daybreak-preview__doctor-card svg {
+  color: var(--daybreak-sky);
+  margin-top: 0.2rem;
+}
+
+.daybreak-preview__comfort-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.daybreak-preview__comfort-copy ul,
+.daybreak-preview__hours-card ul {
+  display: grid;
+  gap: 0.8rem;
+  padding: 0;
+  margin: 1.2rem 0 0;
+}
+
+.daybreak-preview__comfort-copy li,
+.daybreak-preview__hours-card li {
+  list-style: none;
+}
+
+.daybreak-preview__comfort-copy li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  color: var(--daybreak-text-soft);
+}
+
+.daybreak-preview__comfort-copy li svg {
+  color: var(--daybreak-accent-strong);
+}
+
+.daybreak-preview__review-card {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.daybreak-preview__review-card span {
+  color: var(--daybreak-accent-strong);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.daybreak-preview__stars {
+  display: inline-flex;
+  gap: 0.15rem;
+  color: #f7a230;
+}
+
+.daybreak-preview__support-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.daybreak-preview__tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+}
+
+.daybreak-preview__tag-row span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--daybreak-border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--daybreak-text-soft);
+}
+
+.daybreak-preview__support-panel,
+.daybreak-preview__contact-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.daybreak-preview__hours-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--daybreak-accent-strong);
+  font-weight: 700;
+}
+
+.daybreak-preview__contact-list {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+}
+
+.daybreak-preview__contact-list a,
+.daybreak-preview__contact-list div {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--daybreak-border);
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.daybreak-preview__contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.daybreak-preview__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.4rem 0 3rem;
+  color: var(--daybreak-text-soft);
+  font-size: 0.94rem;
+}
+
+.daybreak-preview__footer strong {
+  color: var(--daybreak-text);
+}
+
+.daybreak-preview__mobile-rail {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 20;
+  display: none;
+  gap: 0.75rem;
+  padding: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: 1.25rem;
+  background: rgba(255, 252, 248, 0.92);
+  box-shadow: 0 20px 48px rgba(241, 159, 93, 0.16);
+  backdrop-filter: blur(16px);
+}
+
+.daybreak-preview__mobile-action {
+  flex: 1;
+}
+
+@media (max-width: 1100px) {
+  .daybreak-preview__trust-grid,
+  .daybreak-preview__services-grid,
+  .daybreak-preview__reviews-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .daybreak-preview__hero {
+    min-height: auto;
+  }
+
+  .daybreak-preview__hero-inner {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .daybreak-preview__nav {
+    padding-top: 0.75rem;
+  }
+
+  .daybreak-preview__nav-inner {
+    border-radius: 1.5rem;
+  }
+
+  .daybreak-preview__nav-links,
+  .daybreak-preview__nav-cta {
+    display: none;
+  }
+
+  .daybreak-preview__showcase,
+  .daybreak-preview__comfort,
+  .daybreak-preview__support,
+  .daybreak-preview__contact {
+    grid-template-columns: 1fr;
+  }
+
+  .daybreak-preview__floating-card--offer,
+  .daybreak-preview__floating-card--stats {
+    position: static;
+    width: auto;
+    margin-top: 1rem;
+  }
+
+  .daybreak-preview__hero-aside {
+    min-height: auto;
+  }
+
+  .daybreak-preview__footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 6rem;
+  }
+
+  .daybreak-preview__mobile-rail {
+    display: flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .daybreak-preview {
+    padding-bottom: 6.4rem;
+  }
+
+  .daybreak-preview__shell,
+  .daybreak-preview__section,
+  .daybreak-preview__footer {
+    width: min(100% - 1.25rem, 1180px);
+  }
+
+  .daybreak-preview__hero h1 {
+    font-size: clamp(2.7rem, 13vw, 4.4rem);
+  }
+
+  .daybreak-preview__trust-grid,
+  .daybreak-preview__services-grid,
+  .daybreak-preview__reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .daybreak-preview__hero-actions,
+  .daybreak-preview__contact-actions {
+    flex-direction: column;
+  }
+
+  .daybreak-preview__button,
+  .daybreak-preview__mobile-action {
+    width: 100%;
+  }
+}
