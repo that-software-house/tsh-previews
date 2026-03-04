@@ -1,0 +1,302 @@
+{
+  "businessName": "High Point Dentistry",
+  "tagline": "Changing the Way You Feel About Dentistry",
+  "phone": "512-394-6255",
+  "email": null,
+  "address": "5290 N. AW Grimes, Unit 400, Round Rock, TX 78665",
+  "locations": [
+    {
+      "name": "Round Rock",
+      "address": "5290 N. AW Grimes, Unit 400, Round Rock, TX 78665",
+      "phone": "512-620-8355",
+      "hours": "Mon-Thu 8am-5pm, Fri 9am-3pm",
+      "googleMapsUrl": "https://goo.gl/maps/KAEwCLe2h7JLgEGR8",
+      "doctors": ["Dr. Victoria DeLeon", "Dr. Josh Sok"]
+    },
+    {
+      "name": "East Austin",
+      "address": "2719 E. 7th St., Austin, TX 78702",
+      "phone": "737-473-0200",
+      "fax": "512-352-9089",
+      "hours": "Mon-Thu 8am-5pm, Fri 8am-2pm",
+      "googleMapsUrl": "https://goo.gl/maps/QLBomDovSFgG33pcA",
+      "doctors": ["Dr. Jerry Chiu", "Dr. Reema Dhanani", "Dr. Kim Kaiser", "Dr. Aanchal Chandra"]
+    },
+    {
+      "name": "South Congress",
+      "address": "515 S Congress Ave. Suite 107, Austin, TX 78704",
+      "phone": "737-227-3812",
+      "hours": "Mon 8am-5pm, Tue-Fri 7am-3pm",
+      "googleMapsUrl": "https://maps.app.goo.gl/gH9zTuY45SybXDuJ6",
+      "doctors": ["Dr. Aanchal Chandra"]
+    },
+    {
+      "name": "South Austin",
+      "address": "6700 West Gate Blvd #101, Austin, TX 78745",
+      "phone": "512-447-0808",
+      "hours": "Mon 8am-5pm, Tue-Thu 7am-3pm",
+      "googleMapsUrl": null,
+      "doctors": ["Dr. Steven L. Yarbrough", "Dr. Jeffrey Lau"]
+    },
+    {
+      "name": "Kids & Braces",
+      "address": "8901 Vertex Blvd, Suite 130, Austin, TX 78747",
+      "phone": "512-677-7443",
+      "hours": "Mon-Thu 8am-5pm, Fri 8am-3pm",
+      "googleMapsUrl": null,
+      "doctors": ["Dr. Massiel Parra", "Dr. Jessica Ferreira", "Dr. Ashweti Joshi"]
+    }
+  ],
+  "googleMapsUrl": "https://goo.gl/maps/KAEwCLe2h7JLgEGR8",
+  "services": [
+    "Routine Cleanings & Exams",
+    "Dental Sealants",
+    "Fluoride Treatments",
+    "Oral Cancer Screenings",
+    "Athletic Mouthguards",
+    "Nightguards for Bruxism",
+    "Sleep Apnea Appliances",
+    "TMJ/TMD Therapy",
+    "Tooth-Colored Dental Fillings",
+    "Dental Crowns & Bridges",
+    "Root Canal Therapy",
+    "Full & Partial Dentures",
+    "Dental Extractions",
+    "Dental Implants",
+    "Oral Surgery",
+    "Opalescence Boost Teeth Whitening",
+    "Traditional Porcelain Veneers",
+    "Invisalign Clear Aligners",
+    "Orthodontics",
+    "Sedation Dentistry",
+    "Pediatric Dentistry",
+    "Emergency Dentistry"
+  ],
+  "serviceDetails": [
+    {
+      "title": "Routine Cleanings & Exams",
+      "description": "Comprehensive routine dental exams, professional teeth cleanings, and X-rays to maintain optimal oral health."
+    },
+    {
+      "title": "Dental Sealants",
+      "description": "Protective coatings applied to teeth to prevent tooth decay."
+    },
+    {
+      "title": "Fluoride Treatments",
+      "description": "Applied to strengthen tooth enamel and help prevent cavities."
+    },
+    {
+      "title": "Oral Cancer Screenings",
+      "description": "Early detection examinations to identify signs of oral cancer."
+    },
+    {
+      "title": "Athletic Mouthguards",
+      "description": "Custom protective devices for sports and physical activity."
+    },
+    {
+      "title": "Nightguards for Bruxism",
+      "description": "Guards designed to protect against teeth grinding during sleep."
+    },
+    {
+      "title": "Sleep Apnea Appliances",
+      "description": "Treatment devices for sleep disorders including obstructive sleep apnea."
+    },
+    {
+      "title": "TMJ/TMD Therapy",
+      "description": "Treatment for temporomandibular jaw joint disorders and related pain."
+    },
+    {
+      "title": "Tooth-Colored Dental Fillings",
+      "description": "Modern, natural-looking cavity treatments using composite resin materials."
+    },
+    {
+      "title": "Dental Crowns & Bridges",
+      "description": "Restorative tooth replacement solutions for damaged or missing teeth."
+    },
+    {
+      "title": "Root Canal Therapy",
+      "description": "Treatment for infected tooth pulp to save the natural tooth."
+    },
+    {
+      "title": "Full & Partial Dentures",
+      "description": "Complete or partial removable tooth replacements for missing teeth."
+    },
+    {
+      "title": "Dental Extractions",
+      "description": "Professional tooth removal procedures when a tooth cannot be saved."
+    },
+    {
+      "title": "Dental Implants",
+      "description": "Permanent tooth replacement option using titanium posts surgically placed in the jawbone."
+    },
+    {
+      "title": "Oral Surgery",
+      "description": "A range of surgical procedures, from tooth extractions to dental implant placements."
+    },
+    {
+      "title": "Opalescence Boost Teeth Whitening",
+      "description": "Professional in-office bleaching treatment for a brighter, whiter smile."
+    },
+    {
+      "title": "Traditional Porcelain Veneers",
+      "description": "Custom-made porcelain shells bonded to the front of teeth to enhance appearance."
+    },
+    {
+      "title": "Invisalign Clear Aligners",
+      "description": "Thin, comfortable aligners that are virtually invisible for straightening teeth without traditional braces."
+    },
+    {
+      "title": "Orthodontics",
+      "description": "Comprehensive teeth straightening solutions including traditional braces and clear aligners."
+    },
+    {
+      "title": "Sedation Dentistry",
+      "description": "Anxiety-reducing options including nitrous oxide and oral conscious sedation for comfortable dental visits."
+    },
+    {
+      "title": "Pediatric Dentistry",
+      "description": "Specialized dental care for children in a fun, friendly environment with dedicated play areas and a cavity-free club."
+    },
+    {
+      "title": "Emergency Dentistry",
+      "description": "Urgent dental care for unexpected dental emergencies including toothaches, broken teeth, and trauma."
+    }
+  ],
+  "teamMembers": [
+    {
+      "name": "Dr. Vu Kong",
+      "title": "Founder, DDS",
+      "bio": "Third-generation dentist. BS in Mechanical Engineering from Michigan State University; DDS from University of Detroit Mercy. Member of American Dental Association and Academy of General Dentistry. Fluent in Cantonese. Specializes in Invisalign and Six Month Smiles. Founded High Point Dentistry in 2009. Family fled Cambodia during wartime, spent time in a Thai refugee camp, and immigrated to the U.S. with sponsorship from a Catholic church.",
+      "location": "Founder - Multiple Locations"
+    },
+    {
+      "name": "Dr. Victoria DeLeon",
+      "title": "Dentist, DDS",
+      "bio": "Born and raised in Round Rock. BS in Biology from Southwestern University; DDS from Texas A&M University College of Dentistry. Believes in treatment with compassion and respect. Member of Spear Education.",
+      "location": "Round Rock"
+    },
+    {
+      "name": "Dr. Josh Sok",
+      "title": "Dentist, DDS",
+      "bio": "Native Texan. Undergraduate from UT Austin; DDS from Texas A&M University College of Dentistry; General Practice Residency at St. Charles Hospital, New York. Known for gentle approach, treating patients with honesty, compassion, and respect. Pursuing Fellowship with Academy of General Dentistry.",
+      "location": "Round Rock"
+    },
+    {
+      "name": "Dr. Jerry Chiu",
+      "title": "Oral & Maxillofacial Surgeon, DDS",
+      "bio": "DDS from Columbia University; Residency in Oral and Maxillofacial Surgery at Medstar Washington Hospital Center (DC), where he served as Chief Resident. Highly skilled oral and maxillofacial surgeon with international mission work in Cambodia. Has traveled to 30+ countries.",
+      "location": "East Austin"
+    },
+    {
+      "name": "Dr. Reema Dhanani",
+      "title": "Dentist, DDS",
+      "bio": "Undergraduate in Biology from University of Washington; DDS from Midwestern University School of Dentistry, Arizona. Focuses on thoughtful, comprehensive, and high-quality dental care. Committed to treating patients as if they were family.",
+      "location": "East Austin"
+    },
+    {
+      "name": "Dr. Kimberly Kaiser",
+      "title": "Dentist, DDS",
+      "bio": "DDS from Marquette University School of Dentistry, Milwaukee, WI. Her passion for providing excellent care grew even stronger when she worked as a dental assistant, where she saw firsthand how much of a difference a caring and compassionate dentist can make in a patient's life.",
+      "location": "East Austin"
+    },
+    {
+      "name": "Dr. Aanchal Chandra",
+      "title": "Dentist, DDS",
+      "bio": "DDS from UT Health San Antonio (2013). Former practice owner in Austin. Combines compassion with advanced dentistry. Fellow of the American Academy of Clear Aligners (AACA). Specializes in Invisalign and clear aligners with a holistic patient-centered approach.",
+      "location": "South Congress & East Austin"
+    },
+    {
+      "name": "Dr. Steven L. Yarbrough",
+      "title": "Dentist, DDS",
+      "bio": "Magna cum laude degree from St. Mary's University (Biology/Chemistry); DDS from University of Texas at San Antonio, graduating in the top 10% of his class. U.S. Air Force service; completed General Practice Residency at David Grand Hospital. Fellow of the Academy of General Dentistry.",
+      "location": "South Austin"
+    },
+    {
+      "name": "Dr. Jeffrey Lau",
+      "title": "Dentist, DDS",
+      "bio": "BS in Molecular Cell Biology from UCLA; DDS from University of Detroit Mercy. Creates a welcoming and comfortable environment with a calm and easy going demeanor. Believes in treating patients like family. Marathon runner and outdoor enthusiast.",
+      "location": "South Austin"
+    },
+    {
+      "name": "Dr. Massiel Parra",
+      "title": "Pediatric Dentist, DDS",
+      "bio": "Doctorate from Rutgers School of Dental Medicine; General Practice Residency at Wyckoff Heights Medical Center, Brooklyn; Pediatric Dentistry Residency at Icahn School of Medicine at Mount Sinai Hospital, NYC. Thoroughly enjoys working with kids. Fluent in Spanish.",
+      "location": "Kids & Braces"
+    },
+    {
+      "name": "Dr. Jessica Ferreira",
+      "title": "Dentist, DDS",
+      "bio": "Bachelor's in General Dentistry (2015) from Federal University of Espirito Santo, Brazil; DDS from Virginia Commonwealth University. Active member of Capital Area Dental Society. Dedicated to community service through TDA Smiles Foundation and Texas Mission of Mercy.",
+      "location": "Kids & Braces"
+    },
+    {
+      "name": "Dr. Ashweti Joshi",
+      "title": "Orthodontist",
+      "bio": "Winner of the prestigious Milo Hellman Research Award from the American Association of Orthodontics. Inducted into the Omicron Kappa Upsilon (OKU) Dental Honor Society upon graduation. Practiced in Chicago for 10.5 years. Certified in Invisalign and clear braces.",
+      "location": "Kids & Braces"
+    },
+    {
+      "name": "Dr. Calvin Tran",
+      "title": "Dentist, DDS",
+      "bio": "DDS from Western University of Health Sciences, Pomona, California. Proud native Texan committed to compassionate, patient-centered care with emphasis on the connection between dental and overall health.",
+      "location": null
+    },
+    {
+      "name": "Nicholas",
+      "title": "Registered Dental Hygienist",
+      "bio": "2025 graduate of Cape Fear Community College, North Carolina. Laid-back, judgment-free approach to patient care. Originally from West Virginia. Prioritizes prevention and patient education.",
+      "location": "South Congress & East Austin"
+    },
+    {
+      "name": "Hollie",
+      "title": "Office Manager",
+      "bio": "Bachelor's in Marketing from University of Southern Mississippi. 12 years in visual merchandising before transitioning to dentistry. Passionate about building genuine connections with patients, ensuring they feel comfortable, informed, and confident in their care.",
+      "location": "East Austin"
+    },
+    {
+      "name": "Lisette",
+      "title": "Registered Dental Hygienist",
+      "bio": "Associate's in Applied Science in Dental Hygiene from Harper College (2023). From Northern Illinois. Provides patient education in both English and Spanish. Committed to providing the highest quality of care.",
+      "location": "East Austin"
+    },
+    {
+      "name": "Bianca",
+      "title": "Registered Dental Hygienist",
+      "bio": "Born and raised in Austin. Graduated from Coastal Bend College (2023). Specializes in creating comfortable patient experiences with a gentle touch and clear communication to ease dental anxiety.",
+      "location": "East Austin"
+    }
+  ],
+  "testimonials": [],
+  "logoUrl": "https://highpointsmilestx.com/wp-content/uploads/2024/07/logo.png",
+  "primaryColor": "#36c5c2",
+  "accentColor": "#3d85ce",
+  "hours": [
+    "Round Rock: Mon-Thu 8am-5pm, Fri 9am-3pm",
+    "East Austin: Mon-Thu 8am-5pm, Fri 8am-2pm",
+    "South Congress: Mon 8am-5pm, Tue-Fri 7am-3pm",
+    "South Austin: Mon 8am-5pm, Tue-Thu 7am-3pm",
+    "Kids & Braces: Mon-Thu 8am-5pm, Fri 8am-3pm"
+  ],
+  "socialLinks": {
+    "facebook": "https://facebook.com/highpointsmiles",
+    "instagram": "https://instagram.com/highpointdentistry/",
+    "youtube": "https://youtube.com/@highpointdentistry791"
+  },
+  "uniqueSellingPoints": [
+    "Founded in 2009 by Dr. Vu Kong, a third-generation dentist with an inspiring immigrant family story",
+    "5 convenient Central Texas locations covering Round Rock, East Austin, South Congress, South Austin, and Kids & Braces",
+    "Over 2,500 five-star Google reviews",
+    "Locally owned private practice, not a corporate chain",
+    "Warm, home-like environment with amenities: aromatherapy, complimentary beverages, Netflix/Hulu access, heated towels",
+    "Multilingual staff (Spanish, Chinese, Hindi, Cantonese)",
+    "Dedicated pediatric location with play areas and cavity-free club",
+    "Flexible financing through in-house membership plans for uninsured patients",
+    "Emergency dentistry availability",
+    "Core values: Honesty, Integrity, Transparency, Growth, and Alignment",
+    "Family-focused patient experience — treating patients like family"
+  ],
+  "coreValues": ["Honesty", "Integrity", "Transparency", "Growth", "Alignment"],
+  "foundedYear": 2009,
+  "founder": "Dr. Vu Kong",
+  "rawPageText": "Changing the Way You Feel About Dentistry. At High Point Dentistry, we consider them to be a part of the High Point Dentistry family. We are committed to providing a higher level of dental care. Our practice offers high-quality dentistry in a calm and comfortable environment rather than a clinical setting. We provide a warm, home-like environment with amenities including aromatherapy, complimentary beverages, Netflix/Hulu access, and heated towels. Our multilingual staff speaks Spanish, Chinese, Hindi, and Cantonese. We believe in treating patients with honesty, compassion, and respect. Our core values are Honesty, Integrity, Transparency, Growth, and Alignment. We offer flexible financing through in-house membership plans for uninsured patients. Dr. Vu Kong founded High Point Dentistry in 2009. A third-generation dentist, Dr. Kong's family fled Cambodia during wartime, spent time in a Thai refugee camp, and immigrated to the United States with sponsorship from a Catholic church. The practice has grown to five Texas locations with over 2,500 five-star Google reviews."
+}

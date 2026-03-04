@@ -1,0 +1,47 @@
+{
+  "brandPersonality": "bold-contemporary",
+  "palette": {
+    "primary": "#0B7B79",
+    "primaryLight": "#E6F5F5",
+    "accent": "#C4563A",
+    "accentLight": "#FBEEE9",
+    "background": "#FAFCFC",
+    "surface": "#FFFFFF",
+    "text": "#112B2A",
+    "textMuted": "#4A6968"
+  },
+  "fonts": {
+    "heading": "DM Serif Display",
+    "body": "Inter"
+  },
+  "copy": {
+    "heroHeadline": "Changing the Way You Feel About Dentistry",
+    "heroSubheadline": "5 Austin-area locations. One family-driven standard of care.",
+    "heroDescription": "Founded by Dr. Vu Kong in 2009, High Point Dentistry brings warmth, honesty, and world-class comfort to every visit. From aromatherapy and heated towels to a team that speaks your language, this is dentistry built around you.",
+    "heroCta": "Book Your Visit",
+    "secondaryCta": "Take a Virtual Tour",
+    "aboutSnippet": "Dr. Vu Kong's family fled Cambodia during wartime, found refuge in a Thai refugee camp, and built a new life in the United States. That journey shaped everything about High Point Dentistry: the belief that every person deserves to be treated like family, the drive to create spaces that feel like home, and the commitment to a higher standard of care. What started as one practice in 2009 has grown to five Central Texas locations and more than 2,500 five-star reviews from patients who felt the difference.",
+    "servicesHeadline": "Comprehensive Care Under One Roof",
+    "doctorsHeadline": "Meet the Doctors Behind Your Smile",
+    "locationsHeadline": "Five Locations Across Central Texas",
+    "comfortHeadline": "A Dental Experience You Won't Believe",
+    "reviewsHeadline": "Over 2,500 Five-Star Smiles",
+    "trustPoints": [
+      "Locally owned since 2009 — never corporate",
+      "13+ doctors across five Central Texas locations",
+      "Multilingual team: Spanish, Cantonese, Hindi & more",
+      "In-house membership plans for patients without insurance"
+    ],
+    "comfortPoints": [
+      "Aromatherapy and heated towels at every visit",
+      "Complimentary beverages in a home-like lounge",
+      "Stream Netflix or Hulu from the chair",
+      "Sedation options for complete comfort"
+    ],
+    "reviewThemes": [
+      "Patients consistently praise the warm, family-like atmosphere that makes even anxious visitors feel at ease",
+      "The team's honesty and transparency about treatment options builds deep, lasting trust",
+      "From kids to adults, patients highlight the gentle touch and genuine compassion of every doctor on staff"
+    ]
+  }
+}

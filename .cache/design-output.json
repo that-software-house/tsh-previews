@@ -1,0 +1,27 @@
+{
+  "sections": [
+    "nav",
+    "hero",
+    "stats-bar",
+    "comfort-amenities",
+    "locations-map",
+    "services",
+    "doctors",
+    "testimonials",
+    "founders-story",
+    "insurance-financing",
+    "contact",
+    "footer"
+  ],
+  "heroType": "full-bleed",
+  "servicesStyle": "tab-cards",
+  "testimonialsStyle": "single-quote",
+  "ctaStyle": "floating-banner",
+  "navStyle": "minimal-transparent",
+  "animationLevel": "stagger-cascade",
+  "mobileSticky": true,
+  "cardStyle": "glass-morphism",
+  "locationsStyle": "interactive-cards-with-map",
+  "doctorsStyle": "horizontal-scroll-carousel",
+  "uniqueLayoutNotes": "This layout is structurally distinct from all three existing previews in the following ways: (1) HERO: Uses full-bleed hero with centered text over a gradient-darkened image — all other previews use left-aligned split-image heroes with text on the left and visuals on the right. The centered approach with the strong tagline 'Changing the Way You Feel About Dentistry' creates an immediate emotional anchor. (2) NAV: Uses minimal-transparent nav that solidifies on scroll — Daybreak uses pill-float, BlueSky uses split-nav with dual CTAs, ATX uses a standard fixed nav. (3) STATS BAR: Immediately after the hero, a horizontal trust bar shows '2,500+ Reviews | 5 Locations | 13+ Doctors | Since 2009' — no other preview leads with a stats-focused trust bar this prominently. (4) COMFORT AMENITIES: A unique section not seen in other previews — uses glass-morphism cards with subtle backdrop-blur to showcase aromatherapy, heated towels, Netflix/Hulu, and complimentary beverages. This section uses a horizontal layout with icon+label+description, not the vertical card grids used elsewhere. (5) LOCATIONS: An interactive card grid (not seen in any preview) where each of the 5 locations is a clickable card showing name, address, hours, and assigned doctors. Cards use a subtle hover-lift with the location name as a large watermark. No other preview has a multi-location section at all. (6) SERVICES: Uses tab-cards — grouped into 'Preventive', 'Restorative', 'Cosmetic', and 'Specialty' tabs. All other previews use flat grids or lists. The tabbed approach manages High Point's 22 services without overwhelming the page. (7) DOCTORS: A horizontal-scroll carousel showing 6 curated doctors (the founder + 5 selected) with photo placeholder, name, title, location badge, and a one-line bio. No other preview uses horizontal scroll for doctors. (8) TESTIMONIALS: Uses a single large pull-quote style rotating between themes, centered on the page with oversized quotation marks — contrasts with the grid-cards and marquee approaches in other previews. (9) FOUNDER STORY: A dedicated narrative section for Dr. Vu Kong's immigration story, presented as a full-width editorial band with a warm background tint. No other preview has a founder-story section. (10) ANIMATION: Uses stagger-cascade (children animate in sequence with increasing delays) rather than the uniform fadeUp used in all three existing previews. Cards and list items ripple in from left-to-right or top-to-bottom. (11) CARD STYLE: Glass-morphism cards with subtle transparency and backdrop blur on a soft teal-tinted background, versus the flat white/shadow cards used in other previews. (12) COLOR STRATEGY: Leverages the teal (#36c5c2) as a calming primary with blue (#3d85ce) accents — the palette naturally supports the anxiety-reducing design goal."
+}

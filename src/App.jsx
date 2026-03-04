@@ -3,6 +3,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import AtxDentistryPreview from './pages/AtxDentistryPreview'
 import BlueSkyDentalPreview from './pages/BlueSkyDentalPreview'
 import DaybreakDentalPreview from './pages/DaybreakDentalPreview'
+import HighPointSmilesPreview from './pages/HighPointSmilesPreview'
 import HomePage from './pages/HomePage'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Route path="/atx-dentistry" element={<AtxDentistryPreview />} />
       <Route path="/blue-sky-dental" element={<BlueSkyDentalPreview />} />
       <Route path="/daybreak-dental" element={<DaybreakDentalPreview />} />
+      <Route path="/high-point-smiles" element={<HighPointSmilesPreview />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )
