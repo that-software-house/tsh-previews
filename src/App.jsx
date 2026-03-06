@@ -6,6 +6,7 @@ import AustinFamilyDDSPreview from './pages/AustinFamilyDDSPreview'
 import BlueSkyDentalPreview from './pages/BlueSkyDentalPreview'
 import DaybreakDentalPreview from './pages/DaybreakDentalPreview'
 import HighPointSmilesPreview from './pages/HighPointSmilesPreview'
+import CoolCreekFamilyDentalPreview from './pages/CoolCreekFamilyDentalPreview'
 import HomePage from './pages/HomePage'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path="/austin-dental-co" element={<AustinDentalCoPreview />} />
       <Route path="/austin-family-dds" element={<AustinFamilyDDSPreview />} />
       <Route path="/blue-sky-dental" element={<BlueSkyDentalPreview />} />
+      <Route path="/cool-creek-family-dental" element={<CoolCreekFamilyDentalPreview />} />
       <Route path="/daybreak-dental" element={<DaybreakDentalPreview />} />
       <Route path="/high-point-smiles" element={<HighPointSmilesPreview />} />
       <Route path="*" element={<Navigate to="/" replace />} />
