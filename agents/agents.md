@@ -6,6 +6,24 @@ This is the technical backbone of the **"See Before You Buy"** outreach strategy
 
 ---
 
+## Claude Code Behavior — REQUIRED
+
+> **Whenever a new client URL is provided for a preview, Claude Code MUST use the agent pipeline defined in this file. Do not manually write preview JSX/CSS by hand.**
+
+### Trigger
+Any message that contains a URL and implies creating a preview (e.g., "new client: https://...", "build a preview for...", "add this client: ...").
+
+### Required workflow
+1. **Always** run the full agent sequence: Scraper → Brand + Design (parallel) → Codegen → Deploy.
+2. The **DesignAgent must run before CodegenAgent** and pass its design spec as input.
+3. The DesignAgent **must read `docs/samples/`** to inform layout decisions (see DesignAgent definition below).
+4. Do not skip agents or shortcut to writing code directly — even for simple sites.
+
+### Why
+Manual preview creation is inconsistent and doesn't scale. The agent pipeline ensures every preview follows the same quality bar, uses visual references from `docs/samples/`, and produces output the DeployAgent can handle automatically.
+
+---
+
 ## Overview
 
 ```
@@ -51,14 +69,19 @@ No new `npm install` required.
 
 ## Agent Definitions
 
+Full definitions live in individual files — read the relevant file before executing each step:
 
-
+| Agent | File | Role |
+|---|---|---|
+| ScraperAgent | [scraper.md](./scraper.md) | Extract structured data from the prospect's website |
+| BrandAgent | [brand-builder.md](./brand-builder.md) | Derive palette, fonts, and copy from scraped data |
+| DesignAgent | [design.md](./design.md) | Review `docs/samples/`, produce layout spec JSON for CodegenAgent |
+| CodegenAgent | [coder.md](./coder.md) | Generate JSX + CSS files from the design spec |
+| DeployAgent | See below | Save files and return the shareable preview URL |
 
 ---
 
-
-
-### 5. `DeployAgent`
+### `DeployAgent`
 
 **Role**: Save the generated preview site and return a shareable URL.
 

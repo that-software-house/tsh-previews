@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import AtxDentistryPreview from './pages/AtxDentistryPreview'
+import AustinDentalCoPreview from './pages/AustinDentalCoPreview'
 import AustinFamilyDDSPreview from './pages/AustinFamilyDDSPreview'
 import BlueSkyDentalPreview from './pages/BlueSkyDentalPreview'
 import DaybreakDentalPreview from './pages/DaybreakDentalPreview'
@@ -12,6 +13,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/atx-dentistry" element={<AtxDentistryPreview />} />
+      <Route path="/austin-dental-co" element={<AustinDentalCoPreview />} />
       <Route path="/austin-family-dds" element={<AustinFamilyDDSPreview />} />
       <Route path="/blue-sky-dental" element={<BlueSkyDentalPreview />} />
       <Route path="/daybreak-dental" element={<DaybreakDentalPreview />} />
