@@ -24,7 +24,7 @@ const heroImage =
 const careImage =
   'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=80'
 const dentistImage =
-  'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80'
+  'assets/doctors/female1.png'
 
 const previewData = {
   businessName: 'Austin Dental Specialty Group',
@@ -523,7 +523,7 @@ function AtxDentistryPreview() {
             </a>
             <div>
               <Clock3 size={18} />
-              <span>Dummy booking links only in this preview</span>
+              <span>Sample booking links only in this preview</span>
             </div>
           </div>
         </div>

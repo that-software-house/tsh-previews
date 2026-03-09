@@ -423,7 +423,7 @@ function DaybreakDentalPreview() {
               </a>
               <div>
                 <CalendarDays size={18} />
-                <span>Dummy scheduling links only in this preview</span>
+                <span>Sample scheduling links only in this preview</span>
               </div>
             </div>
           </div>
