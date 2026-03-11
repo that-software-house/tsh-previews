@@ -1,24 +1,58 @@
-## What We're Building
-A preview of websites for dental clients by reviewing their current website and building a more modern, scalable, and user-friendly version.
-Target user: Dental Offices in Austin, Texas. Core problem: Modernize outdated websites and improve user experience.
+# TSH Previews — Claude Code Instructions
 
-## Tech Stack
-- Frontend: Vite, TypeScript, Tailwind, framer, lucide icons
-- Hosting: Netlify
+This project generates polished website previews for dental/SMB outreach. Each preview is a standalone React + CSS page hosted at `preview.thatsoftwarehouse.com/{slug}`.
 
-## Coding Conventions
-- TypeScript strict mode. No `any` types.
-- Functional components only. No class components.
-- Error handling: always use try/catch, log to console.error, return structured error
+---
 
-## What NOT to Do
-- Do not install new packages without checking package.json first
-- Do not modify .env files directly - update .env.example and note what's needed
-- Do not delete files - comment out or archive instead
-- Do not make git commits without listing what changed and why
+## New Preview Rule — REQUIRED
 
-## Rules
-- When a new client is given, always use the sub-agents to building the preview
-- Do not make a duplicate of an existing client's website.
-- Always try to search for modern web templates and mix and match components to create a new website.
-- Do not hallucinate of make up data of the client. Try to thoroughly scrape data from existing website and use that for the preview website.
+**When a client URL is given (e.g. "new client: https://..."), always use the agent pipeline. Never write preview JSX/CSS manually.**
+
+### Agent pipeline order
+```
+ScraperAgent → BrandAgent + DesignAgent (parallel) → CodegenAgent → DeployAgent
+```
+
+DesignAgent output (design spec JSON) must be passed as input to CodegenAgent before any code is written.
+
+### Agent definitions
+| Agent | File |
+|---|---|
+| ScraperAgent | [agents/scraper.md](./agents/scraper.md) |
+| BrandAgent | [agents/brand-builder.md](./agents/brand-builder.md) |
+| DesignAgent | [agents/design.md](./agents/design.md) |
+| CodegenAgent | [agents/coder.md](./agents/coder.md) |
+| Orchestrator + DeployAgent | [agents/agents.md](./agents/agents.md) |
+
+Read the relevant agent file before executing that step.
+
+---
+
+## Project Structure
+
+```
+src/
+├── pages/          ← One {Name}Preview.jsx + {Name}Preview.css per client
+├── components/
+│   └── FloatingCTA.jsx   ← Import in every preview
+├── hooks/
+│   └── useSEO.js         ← Import in every preview
+└── App.jsx               ← Add route for every new preview
+
+agents/             ← Agent definitions
+docs/samples/       ← Visual reference files — DesignAgent reads these
+```
+
+---
+
+## Code Conventions
+
+- **CSS prefix**: derived from client initials + `-preview` (e.g. `adc-preview`). All class names scoped to it — no global styles.
+- **Content**: all copy in a `previewData` object at the top of the JSX file. No hardcoded strings in JSX.
+- **Images**: Unsplash CDN only. Never hotlink from the client's existing site.
+- **Animations**: Framer Motion only. Reuse `staggerContainer` / `staggerChild` / `fadeIn` variants.
+- **Fonts**: Google Fonts — BrandAgent selects the pairing. Import in the CSS file, not JSX.
+- **Mobile rail**: always include, hidden at `min-width: 900px`.
+- **FloatingCTA**: always import and render at the bottom of every preview.
+- **Route**: add to `src/App.jsx` using the slug from DesignAgent output.
+- **SEO**: call `useSEO()` with canonical URL `https://preview.thatsoftwarehouse.com/{slug}`.

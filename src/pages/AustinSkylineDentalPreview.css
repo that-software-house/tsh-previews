@@ -1,0 +1,952 @@
+.skyline-preview {
+  --skyline-primary: #23384f;
+  --skyline-primary-strong: #142332;
+  --skyline-accent: #bb8a5f;
+  --skyline-accent-soft: #e8d8c8;
+  --skyline-ink: #13202d;
+  --skyline-text: #334556;
+  --skyline-muted: #64778a;
+  --skyline-bg: #f5f0ea;
+  --skyline-surface: rgba(255, 252, 248, 0.82);
+  --skyline-card: rgba(255, 255, 255, 0.72);
+  --skyline-card-strong: rgba(255, 255, 255, 0.9);
+  --skyline-border: rgba(35, 56, 79, 0.12);
+  --skyline-border-strong: rgba(35, 56, 79, 0.18);
+  --skyline-shadow: 0 28px 70px rgba(20, 35, 50, 0.12);
+  --skyline-shadow-lg: 0 40px 100px rgba(20, 35, 50, 0.16);
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(187, 138, 95, 0.14), transparent 28%),
+    radial-gradient(circle at 85% 12%, rgba(35, 56, 79, 0.14), transparent 26%),
+    linear-gradient(180deg, #f8f3ee 0%, #f3eee7 46%, #f8f4ef 100%);
+  color: var(--skyline-ink);
+}
+
+.skyline-preview,
+.skyline-preview * {
+  box-sizing: border-box;
+}
+
+.skyline-preview__shell {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.skyline-preview__nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(16px);
+  background: rgba(248, 243, 238, 0.74);
+  border-bottom: 1px solid rgba(35, 56, 79, 0.08);
+}
+
+.skyline-preview__nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 5.5rem;
+}
+
+.skyline-preview__brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.skyline-preview__brand-logo {
+  width: 13rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.skyline-preview__nav-links,
+.skyline-preview__nav-actions,
+.skyline-preview__hero-actions,
+.skyline-preview__contact-actions,
+.skyline-preview__footer-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.skyline-preview__nav-links {
+  color: var(--skyline-muted);
+  font-size: 0.94rem;
+}
+
+.skyline-preview__nav-links a,
+.skyline-preview__footer-meta a {
+  transition: color 180ms ease;
+}
+
+.skyline-preview__nav-links a:hover,
+.skyline-preview__footer-meta a:hover {
+  color: var(--skyline-primary);
+}
+
+.skyline-preview__button,
+.skyline-preview__rail-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 50px;
+  padding: 0.9rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-weight: 700;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.skyline-preview__button:hover,
+.skyline-preview__rail-button:hover {
+  transform: translateY(-1px);
+}
+
+.skyline-preview__button--primary,
+.skyline-preview__rail-button--primary {
+  background: linear-gradient(135deg, var(--skyline-primary), var(--skyline-primary-strong));
+  color: #fff;
+  box-shadow: 0 18px 40px rgba(20, 35, 50, 0.16);
+}
+
+.skyline-preview__button--secondary {
+  background: rgba(255, 255, 255, 0.58);
+  border-color: rgba(35, 56, 79, 0.18);
+  color: var(--skyline-primary);
+  backdrop-filter: blur(14px);
+}
+
+.skyline-preview__button--ghost,
+.skyline-preview__rail-button--ghost {
+  background: rgba(255, 255, 255, 0.55);
+  border-color: rgba(35, 56, 79, 0.12);
+  color: var(--skyline-primary);
+  backdrop-filter: blur(14px);
+}
+
+.skyline-preview__hero {
+  position: relative;
+  overflow: hidden;
+  padding: 3.5rem 0 4rem;
+}
+
+.skyline-preview__hero-orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(8px);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.skyline-preview__hero-orb--one {
+  top: 4rem;
+  right: -4rem;
+  width: 20rem;
+  height: 20rem;
+  background: radial-gradient(circle, rgba(187, 138, 95, 0.24), transparent 65%);
+}
+
+.skyline-preview__hero-orb--two {
+  bottom: 0;
+  left: -3rem;
+  width: 18rem;
+  height: 18rem;
+  background: radial-gradient(circle, rgba(35, 56, 79, 0.18), transparent 65%);
+}
+
+.skyline-preview__hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(22rem, 0.95fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.skyline-preview__eyebrow,
+.skyline-preview__kicker,
+.skyline-preview__mini-kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+.skyline-preview__eyebrow,
+.skyline-preview__kicker {
+  color: var(--skyline-accent);
+  font-size: 0.82rem;
+}
+
+.skyline-preview__mini-kicker {
+  color: var(--skyline-muted);
+  font-size: 0.75rem;
+}
+
+.skyline-preview__kicker--light {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.skyline-preview__hero-copy h1,
+.skyline-preview__section-heading h2,
+.skyline-preview__section-copy h2,
+.skyline-preview__experience-copy h2,
+.skyline-preview__contact-copy h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+}
+
+.skyline-preview__hero-copy h1 {
+  margin-top: 1rem;
+  max-width: 11ch;
+  font-size: clamp(3.2rem, 7vw, 6rem);
+}
+
+.skyline-preview__hero-description,
+.skyline-preview__section-heading p,
+.skyline-preview__section-copy p,
+.skyline-preview__experience-copy p,
+.skyline-preview__contact-copy p,
+.skyline-preview__doctor-copy p,
+.skyline-preview__service-card p,
+.skyline-preview__fundamental-card p,
+.skyline-preview__review-card p,
+.skyline-preview__info-card p,
+.skyline-preview__contact-item span,
+.skyline-preview__hero-proof p,
+.skyline-preview__consultation-card p,
+.skyline-preview__contact-card p,
+.skyline-preview__footer-brand p,
+.skyline-preview__map-card p {
+  color: var(--skyline-text);
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.skyline-preview__hero-description {
+  max-width: 37rem;
+  margin: 1.25rem 0 0;
+}
+
+.skyline-preview__hero-actions {
+  flex-wrap: wrap;
+  margin-top: 1.7rem;
+}
+
+.skyline-preview__hero-proof {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.7rem;
+  padding: 1.35rem 1.45rem;
+  border: 1px solid rgba(35, 56, 79, 0.12);
+  border-radius: 1.6rem;
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: var(--skyline-shadow);
+  backdrop-filter: blur(16px);
+}
+
+.skyline-preview__hero-proof p {
+  margin: 0.55rem 0 0;
+}
+
+.skyline-preview__hero-proof-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.skyline-preview__hero-proof-meta span {
+  padding: 0.55rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(35, 56, 79, 0.06);
+  color: var(--skyline-primary);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.skyline-preview__stars {
+  display: inline-flex;
+  gap: 0.25rem;
+  color: var(--skyline-accent);
+}
+
+.skyline-preview__hero-visual {
+  display: grid;
+  gap: 1rem;
+}
+
+.skyline-preview__hero-card,
+.skyline-preview__about-panel,
+.skyline-preview__service-card,
+.skyline-preview__doctor-card,
+.skyline-preview__review-card,
+.skyline-preview__contact-card,
+.skyline-preview__fundamental-card,
+.skyline-preview__info-card,
+.skyline-preview__consultation-card {
+  border: 1px solid var(--skyline-border);
+  background: var(--skyline-surface);
+  box-shadow: var(--skyline-shadow);
+  backdrop-filter: blur(18px);
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    border-color 200ms ease;
+}
+
+.skyline-preview__hero-card {
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.skyline-preview__hero-card--portrait {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(13rem, 0.95fr);
+  min-height: 25rem;
+}
+
+.skyline-preview__hero-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skyline-preview__hero-card-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.55rem;
+  padding: 1.75rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.88)),
+    linear-gradient(135deg, rgba(187, 138, 95, 0.15), rgba(35, 56, 79, 0.04));
+}
+
+.skyline-preview__hero-card-copy span {
+  color: var(--skyline-muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.skyline-preview__hero-card-copy strong {
+  font-size: 1.35rem;
+  font-family: var(--font-display);
+  letter-spacing: -0.03em;
+}
+
+.skyline-preview__hero-card-copy p,
+.skyline-preview__hero-card--detail p,
+.skyline-preview__hero-card--detail li {
+  margin: 0;
+  color: var(--skyline-text);
+  line-height: 1.65;
+}
+
+.skyline-preview__hero-card--detail {
+  padding: 1.55rem;
+  background:
+    radial-gradient(circle at top right, rgba(187, 138, 95, 0.14), transparent 24%),
+    rgba(255, 252, 248, 0.82);
+}
+
+.skyline-preview__hero-card--detail h2 {
+  margin: 0.7rem 0 0;
+  font-size: clamp(1.8rem, 3vw, 2.45rem);
+  font-family: var(--font-display);
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+.skyline-preview__hero-card--detail ul {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.skyline-preview__hero-card--detail li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.skyline-preview__hero-card--detail li::before {
+  content: '';
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--skyline-accent);
+  flex: 0 0 auto;
+}
+
+.skyline-preview__stats-bar {
+  padding-bottom: 1rem;
+}
+
+.skyline-preview__stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.skyline-preview__stat {
+  padding: 1.35rem 1.4rem;
+  border-radius: 1.4rem;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(35, 56, 79, 0.09);
+}
+
+.skyline-preview__stat strong {
+  display: block;
+  color: var(--skyline-primary);
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  letter-spacing: -0.04em;
+}
+
+.skyline-preview__stat span {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--skyline-muted);
+  line-height: 1.5;
+}
+
+.skyline-preview__section {
+  padding: 2rem 0 4.5rem;
+}
+
+.skyline-preview__about-grid,
+.skyline-preview__services-grid,
+.skyline-preview__contact-grid,
+.skyline-preview__experience-panel {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.skyline-preview__about-grid,
+.skyline-preview__contact-grid {
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  align-items: start;
+}
+
+.skyline-preview__services-grid {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: start;
+}
+
+.skyline-preview__section-heading,
+.skyline-preview__section-copy {
+  max-width: 44rem;
+}
+
+.skyline-preview__section-heading h2,
+.skyline-preview__section-copy h2,
+.skyline-preview__experience-copy h2,
+.skyline-preview__contact-copy h2 {
+  font-size: clamp(2rem, 4vw, 3.35rem);
+}
+
+.skyline-preview__section-heading p,
+.skyline-preview__section-copy p {
+  margin: 1rem 0 0;
+}
+
+.skyline-preview__section-heading--center {
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.skyline-preview__about-panel {
+  padding: 1rem;
+  border-radius: 2rem;
+  background: var(--skyline-card-strong);
+}
+
+.skyline-preview__about-image {
+  overflow: hidden;
+  border-radius: 1.5rem;
+  min-height: 16rem;
+}
+
+.skyline-preview__about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skyline-preview__about-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skyline-preview__info-card,
+.skyline-preview__fundamental-card,
+.skyline-preview__review-card {
+  border-radius: 1.5rem;
+  padding: 1.35rem;
+}
+
+.skyline-preview__review-card {
+  position: relative;
+  background: var(--skyline-card-strong);
+}
+
+.skyline-preview__review-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 1.35rem;
+  right: 1.35rem;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(187, 138, 95, 0), rgba(187, 138, 95, 0.9), rgba(187, 138, 95, 0));
+}
+
+.skyline-preview__info-card svg,
+.skyline-preview__experience-item svg,
+.skyline-preview__service-icon {
+  color: var(--skyline-accent);
+}
+
+.skyline-preview__info-card h3,
+.skyline-preview__service-card h3,
+.skyline-preview__fundamental-card h3,
+.skyline-preview__doctor-copy h3,
+.skyline-preview__review-card strong,
+.skyline-preview__contact-card h3,
+.skyline-preview__experience-item h3 {
+  margin: 0.75rem 0 0;
+  font-size: 1.15rem;
+  letter-spacing: -0.03em;
+}
+
+.skyline-preview__info-card p,
+.skyline-preview__service-card p,
+.skyline-preview__fundamental-card p {
+  margin: 0.55rem 0 0;
+}
+
+.skyline-preview__fundamentals-grid,
+.skyline-preview__review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.skyline-preview__fundamental-card {
+  position: relative;
+  padding-top: 3.25rem;
+}
+
+.skyline-preview__fundamental-index {
+  position: absolute;
+  top: 1rem;
+  left: 1.15rem;
+  color: rgba(35, 56, 79, 0.24);
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  letter-spacing: -0.04em;
+}
+
+.skyline-preview__consultation-card {
+  overflow: hidden;
+  display: grid;
+  gap: 0;
+  border-radius: 1.8rem;
+  margin-top: 1.4rem;
+}
+
+.skyline-preview__consultation-card img {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+}
+
+.skyline-preview__consultation-card div {
+  padding: 1.2rem 1.3rem 1.35rem;
+}
+
+.skyline-preview__consultation-card p {
+  margin: 0.55rem 0 0;
+}
+
+.skyline-preview__services-list,
+.skyline-preview__experience-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.skyline-preview__service-card,
+.skyline-preview__doctor-card,
+.skyline-preview__contact-card {
+  border-radius: 1.8rem;
+}
+
+.skyline-preview__doctor-card,
+.skyline-preview__contact-card {
+  background: var(--skyline-card-strong);
+}
+
+.skyline-preview__service-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  padding: 1.35rem;
+}
+
+.skyline-preview__service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  background: rgba(187, 138, 95, 0.14);
+}
+
+.skyline-preview__doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.skyline-preview__doctor-card {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(11rem, 15rem) minmax(0, 1fr);
+}
+
+.skyline-preview__doctor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skyline-preview__doctor-copy {
+  padding: 1.5rem;
+}
+
+.skyline-preview__doctor-role {
+  margin: 0;
+  color: var(--skyline-accent);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.skyline-preview__doctor-copy p {
+  margin: 0.75rem 0 0;
+}
+
+.skyline-preview__section--experience {
+  padding-top: 0;
+}
+
+.skyline-preview__experience-panel {
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  padding: 2rem;
+  border-radius: 2rem;
+  background: linear-gradient(135deg, var(--skyline-primary-strong), var(--skyline-primary));
+  box-shadow: var(--skyline-shadow-lg);
+}
+
+.skyline-preview__experience-copy p,
+.skyline-preview__experience-item p,
+.skyline-preview__experience-item h3 {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.skyline-preview__experience-item {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.9rem;
+  padding: 1.15rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.skyline-preview__experience-item:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.skyline-preview__experience-item:last-child {
+  padding-bottom: 0;
+}
+
+.skyline-preview__review-card p {
+  margin: 0.85rem 0 1rem;
+}
+
+.skyline-preview__review-card strong {
+  display: block;
+  color: var(--skyline-primary);
+}
+
+.skyline-preview__contact-copy,
+.skyline-preview__contact-card {
+  min-height: 100%;
+}
+
+.skyline-preview__contact-items {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.skyline-preview__contact-item {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: start;
+  padding: 1rem 1.1rem;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.44);
+  border: 1px solid rgba(35, 56, 79, 0.08);
+}
+
+.skyline-preview__contact-item svg {
+  color: var(--skyline-accent);
+}
+
+.skyline-preview__contact-item strong,
+.skyline-preview__map-card strong {
+  display: block;
+  color: var(--skyline-primary);
+}
+
+.skyline-preview__contact-item a {
+  color: var(--skyline-primary);
+  font-weight: 700;
+}
+
+.skyline-preview__contact-item span,
+.skyline-preview__contact-item a {
+  display: block;
+  margin-top: 0.22rem;
+}
+
+.skyline-preview__contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.7rem;
+}
+
+.skyline-preview__contact-card h3 {
+  margin-top: 0.2rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 0.98;
+}
+
+.skyline-preview__contact-card p {
+  margin: 0;
+}
+
+.skyline-preview__contact-actions {
+  flex-wrap: wrap;
+}
+
+.skyline-preview__map-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: center;
+  margin-top: auto;
+  padding: 1rem 1.05rem;
+  border-radius: 1.2rem;
+  background: rgba(35, 56, 79, 0.06);
+}
+
+.skyline-preview__map-card p {
+  margin: 0.2rem 0 0;
+}
+
+@media (hover: hover) {
+  .skyline-preview__service-card:hover,
+  .skyline-preview__doctor-card:hover,
+  .skyline-preview__review-card:hover,
+  .skyline-preview__info-card:hover,
+  .skyline-preview__fundamental-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 30px 78px rgba(20, 35, 50, 0.15);
+    border-color: var(--skyline-border-strong);
+  }
+}
+
+.skyline-preview__footer {
+  padding: 0 0 7rem;
+}
+
+.skyline-preview__footer-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.2rem;
+  padding: 1.8rem 0 0;
+  border-top: 1px solid rgba(35, 56, 79, 0.12);
+}
+
+.skyline-preview__footer-brand {
+  max-width: 36rem;
+}
+
+.skyline-preview__footer-logo {
+  width: 12rem;
+  margin-bottom: 0.85rem;
+}
+
+.skyline-preview__footer-brand p {
+  margin: 0;
+}
+
+.skyline-preview__mobile-rail {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 45;
+  display: none;
+  gap: 0.7rem;
+}
+
+.skyline-preview__rail-button {
+  flex: 1 1 0;
+}
+
+@media (max-width: 1120px) {
+  .skyline-preview__nav-links,
+  .skyline-preview__nav-actions {
+    display: none;
+  }
+
+  .skyline-preview__hero-grid,
+  .skyline-preview__about-grid,
+  .skyline-preview__services-grid,
+  .skyline-preview__contact-grid,
+  .skyline-preview__experience-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .skyline-preview__hero-copy h1 {
+    max-width: 12ch;
+  }
+
+  .skyline-preview__about-panel-grid,
+  .skyline-preview__fundamentals-grid,
+  .skyline-preview__review-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .skyline-preview__hero {
+    padding-top: 2rem;
+  }
+
+  .skyline-preview__hero-card--portrait,
+  .skyline-preview__doctor-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .skyline-preview__hero-card-image {
+    min-height: 22rem;
+  }
+
+  .skyline-preview__stats-grid,
+  .skyline-preview__doctor-grid,
+  .skyline-preview__about-panel-grid,
+  .skyline-preview__fundamentals-grid,
+  .skyline-preview__review-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .skyline-preview__footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skyline-preview__footer-meta {
+    flex-wrap: wrap;
+  }
+
+  .floating-cta {
+    display: none;
+  }
+
+  .skyline-preview__mobile-rail {
+    display: flex;
+  }
+
+  .skyline-preview__footer {
+    padding-bottom: 7.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .skyline-preview__shell {
+    width: min(100% - 1.25rem, 1180px);
+  }
+
+  .skyline-preview__brand-logo {
+    width: 10.5rem;
+  }
+
+  .skyline-preview__hero-copy h1 {
+    font-size: clamp(2.6rem, 15vw, 4.2rem);
+  }
+
+  .skyline-preview__section-heading h2,
+  .skyline-preview__section-copy h2,
+  .skyline-preview__experience-copy h2,
+  .skyline-preview__contact-copy h2,
+  .skyline-preview__contact-card h3 {
+    font-size: clamp(1.85rem, 9vw, 2.7rem);
+  }
+
+  .skyline-preview__section {
+    padding-bottom: 3.5rem;
+  }
+
+  .skyline-preview__hero-card-copy,
+  .skyline-preview__hero-card--detail,
+  .skyline-preview__contact-card,
+  .skyline-preview__experience-panel {
+    padding: 1.2rem;
+  }
+
+  .skyline-preview__stat,
+  .skyline-preview__service-card,
+  .skyline-preview__review-card,
+  .skyline-preview__fundamental-card,
+  .skyline-preview__info-card {
+    padding: 1.1rem;
+  }
+
+  .skyline-preview__mobile-rail {
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: 0.75rem;
+  }
+
+  .skyline-preview__rail-button {
+    min-height: 46px;
+    padding-inline: 0.9rem;
+    font-size: 0.92rem;
+  }
+}

@@ -12,6 +12,7 @@ Given raw data from an existing dental practice website, create a refined brand 
 Preserve the practice's authentic identity and genuine warmth — do not genericize them.
 Choose font pairings from Google Fonts that convey trust, modernity, and approachability.
 Write copy that speaks to a local patient, not a corporate audience.
+Review reference design documents from docs/samples/*.png and docs/samples/*.webp for inspiration.
 Return valid JSON matching the provided schema exactly.
 
 Input: ScraperAgent output

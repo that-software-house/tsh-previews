@@ -50,6 +50,7 @@
   text-transform: uppercase;
   color: #888;
   margin: 0 0 0.3rem;
+  padding-right: 1.75rem;
 }
 
 .floating-cta__body {
@@ -58,6 +59,7 @@
   color: #1a1a1a;
   line-height: 1.4;
   margin: 0 0 0.9rem;
+  padding-right: 1.75rem;
 }
 
 .floating-cta__link {
