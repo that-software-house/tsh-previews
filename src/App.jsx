@@ -10,6 +10,8 @@ import CoolCreekFamilyDentalPreview from './pages/CoolCreekFamilyDentalPreview'
 import ENTSAustinPreview from './pages/ENTSAustinPreview'
 import WowDentalPreview from './pages/WowDentalPreview'
 import YouFirstDentalPreview from './pages/YouFirstDentalPreview'
+import BearCreekFamilyDentistryPreview from './pages/BearCreekFamilyDentistryPreview'
+import MidtownFamilyDentistryPreview from './pages/MidtownFamilyDentistryPreview'
 import HomePage from './pages/HomePage'
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
       <Route path="/daybreak-dental" element={<DaybreakDentalPreview />} />
       <Route path="/high-point-smiles" element={<HighPointSmilesPreview />} />
       <Route path="/you-first-dental" element={<YouFirstDentalPreview />} />
+      <Route path="/bear-creek-family-dentistry" element={<BearCreekFamilyDentistryPreview />} />
+      <Route path="/midtown-family-dentistry-dallas" element={<MidtownFamilyDentistryPreview />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )

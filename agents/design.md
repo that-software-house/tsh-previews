@@ -18,7 +18,7 @@ Return valid JSON matching the provided schema exactly.
 
 ---
 
-## Step 1 — Review `docs/samples/`
+## Step 1 — Review `docs/samples/` and `docs/layout-*.md`
 
 Read and analyze all files in `docs/samples/` before making any layout decisions. Extract conventions by file type:
 
@@ -30,6 +30,12 @@ Read and analyze all files in `docs/samples/` before making any layout decisions
 | `reviews*.png` | Testimonials: quote block style, star display, rotation dots, author attribution |
 | `footer*.png` | Footer: brand block, social icons, attribution |
 | `full-page*.webp` | Full-page rhythm: section ordering, spacing, how sections alternate background treatments |
+
+Also read all `docs/layout-*.md` files — each captures a complete real-world dental site design system with exact colors, fonts, motion specs, and section-by-section layout details. When a client's brand personality matches one of these documented systems, use it as the implementation blueprint instead of inventing from scratch.
+
+| Layout file | Design system | Best for |
+|---|---|---|
+| `docs/layout-6corners.md` | 6 Corners Dental Studio — clean-editorial, steel-blue + near-black, Fraunces serif, hexagon motifs, cinematic dark/light alternating sections | Boutique urban practices, premium/editorial feel, clients who want "not a template" |
 
 Synthesize these into the layout conventions all previews share, then select the patterns that best fit this specific client's brand personality.
 
@@ -68,7 +74,15 @@ BOOKING CTA PATTERNS:
 
 NAV PATTERNS:
   - minimal-transparent: Logo left, links center, CTA right. Transparent on hero, frosted glass on scroll.
+  - three-col-transparent: Links left, logo center, CTAs right. Transparent default → dark overlay slides
+                           behind nav on scroll (separate z-indexed div). See docs/layout-6corners.md.
   - sidebar-mobile:      Hamburger on mobile, full-screen slide-in drawer.
+
+FULL LAYOUT SYSTEMS (use when brand personality matches):
+  - 6corners-editorial:  Full design system from docs/layout-6corners.md.
+                         Use for: clean-editorial, premium boutique, urban professional.
+                         Hallmarks: Fraunces + Hanken Grotesk, #327ba5 steel-blue, square buttons,
+                         alternating dark/light sections, hexagon SVG decorations, cinematic scroll reveals.
 ```
 
 ---
@@ -136,9 +150,13 @@ Return this JSON — it is passed directly as input to CodegenAgent:
     "mobileRail": true,
     "floatingCTA": true,
     "animationLibrary": "framer-motion",
-    "animationLevel": "subtle"
+    "animationLevel": "subtle",
+    "layoutSystem": "6corners-editorial
   }
 }
+```
+
+If using a full layout system from `docs/layout-*.md`, set `"layoutSystem": "6corners-editorial"` (or the relevant key) and instruct CodegenAgent to read the corresponding file for exact implementation details — colors, motion variants, button styles, hex decorations, etc.
 ```
 
 ---

@@ -14,6 +14,8 @@ Follow the DesignAgent spec exactly — implement every section in the order lis
 
 **Input**: ScraperAgent output + BrandAgent output + DesignAgent spec JSON
 
+**Layout system**: If `spec.globalPatterns.layoutSystem` is set (e.g. `"6corners-editorial"`), read the corresponding `docs/layout-{key}.md` file before writing any code. That file contains the exact color tokens, font imports, motion variants, button styles, section specs, and component patterns to implement. Override your defaults with what's in that file — it is the source of truth for that design system.
+
 ---
 
 ## Output
