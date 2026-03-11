@@ -33,7 +33,7 @@ import FloatingCTA from '../components/FloatingCTA'
 import './MidtownFamilyDentistryPreview.css'
 
 const heroImage =
-  'https://images.unsplash.com/photo-1588776814546-1ffb4d000d22?auto=format&fit=crop&w=1400&q=80'
+  'assets/hero/hero1.png'
 const aboutImage =
   'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80'
 const diffImage =
@@ -147,35 +147,35 @@ const previewData = {
       title: 'Co-Founder & General Dentist',
       tag: 'Co-Founder',
       bio: "Dr. Kingsberg co-founded Midtown Family Dentistry with a mission to bring honest, expert dental care to Dallas families. His approachable style and commitment to transparency make patients feel genuinely at ease.",
-      image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80',
+      image: 'assets/doctors/male1.png',
     },
     {
       name: 'Dr. Sara Fallahi',
       title: 'Co-Founder & General Dentist',
       tag: 'Co-Founder',
       bio: "Dr. Fallahi brings warmth and precision to every appointment. She co-founded the practice believing that a welcoming environment is just as important as clinical excellence.",
-      image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=400&q=80',
+      image: 'assets/doctors/female1.png',
     },
     {
       name: 'Dr. Jay Patel',
       title: 'Orthodontist',
       tag: 'Orthodontist',
       bio: "Dr. Patel is a specialist in braces and Invisalign for patients of all ages. His precision orthodontic work transforms smiles and builds lasting confidence.",
-      image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80',
+      image: 'assets/doctors/male2.png',
     },
     {
       name: 'Dr. Layth',
       title: 'General Dentist',
       tag: 'General Dentist',
       bio: "Dr. Layth is known for his gentle touch and thorough explanations. He excels in restorative and emergency dentistry, making complex procedures feel manageable.",
-      image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80',
+      image: 'assets/doctors/male1.png',
     },
     {
       name: 'Dr. Joon',
       title: 'General Dentist',
       tag: 'General Dentist',
       bio: "Dr. Joon is passionate about preventive care and patient education. He helps families build lasting oral health habits with patience and genuine care.",
-      image: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&w=400&q=80',
+      image: 'assets/doctors/male1.png',
     },
   ],
   testimonialsHeading: 'Loved by Dallas Families',
