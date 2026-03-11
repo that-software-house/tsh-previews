@@ -51,9 +51,9 @@ const previewData = {
     'Financing support for larger cases',
   ],
   metrics: [
-    { value: 'South Austin', label: 'Conveniently located off Davis Lane' },
-    { value: '2 doctors', label: 'Specialty-led care under one roof' },
-    { value: 'Comfort-first', label: 'Messaging centered on anxiety-free visits' },
+    { value: '4.9★', label: '220+ Google Reviews' },
+    { value: '4 doctors', label: 'Specialty-led care under one roof' },
+    { value: 'South Austin', label: 'Davis Lane, off MoPac / 290' },
   ],
   services: [
     {
@@ -96,17 +96,17 @@ const previewData = {
   doctors: [
     {
       name: 'Dr. Sarah Behmanesh',
-      role: 'Implant and specialty-focused dentist',
+      role: 'Lead Dentist, DDS',
       bio:
-        'Dr. Behmanesh is positioned on the live practice site as a lead voice for advanced treatment, combining restorative planning with a patient experience designed to feel clear and reassuring.',
-      focus: ['Implant cases', 'Cosmetic planning', 'Complex restorative care'],
+        'A New York University College of Dentistry graduate, Dr. Behmanesh completed her General Practice Residency at UCLA. She brings a meticulous, patient-first approach to implants, cosmetic planning, and complex restorative care.',
+      focus: ['Dental Implants', 'Cosmetic Planning', 'Complex Restorative'],
     },
     {
       name: 'Dr. Chelsea Brossart',
-      role: 'Family and patient-comfort focused dentist',
+      role: 'Associate Dentist, DDS',
       bio:
-        'Dr. Brossart is presented as part of the practice team delivering approachable, relationship-driven care with an emphasis on helping patients feel understood and supported during visits.',
-      focus: ['Preventive visits', 'Family dentistry', 'Anxiety-aware care'],
+        'An active member of the American Dental Association and Texas Dental Association, Dr. Brossart is dedicated to delivering the highest level of care in a warm, pressure-free environment for the whole family.',
+      focus: ['Preventive Care', 'Family Dentistry', 'Anxiety-Free Visits'],
     },
   ],
   comfortPoints: [
