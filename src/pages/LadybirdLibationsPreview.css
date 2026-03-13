@@ -585,13 +585,17 @@
 
   .ll-preview__section--editorial {
     grid-template-columns: 1fr;
-    grid-template-rows: 55% 45%;
+    grid-template-rows: auto auto;
+  }
+  .ll-preview__ed-left {
+    overflow: visible;
   }
   .ll-preview__ed-h2 {
     font-size: clamp(2.25rem, 8.5vw, 4.5rem);
   }
   .ll-preview__ed-right {
     border-top: 1px solid var(--ll-border);
+    min-height: 280px;
   }
 }
 
