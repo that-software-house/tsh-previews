@@ -61,6 +61,21 @@ const data = {
     ],
   },
 
+  editorial: {
+    headLines: [
+      { text: 'Bringing' },
+      { normal: 'Good ', italic: 'Times' },
+      { text: 'From A' },
+      { text: 'Good Place' },
+    ],
+    body: 'Every menu is curated from scratch — locally sourced ingredients, zero-proof perfection, and a bar experience built around your moment. We don\'t just serve drinks. We set the tone.',
+    meta: [
+      { label: 'About The Mixologist', value: 'Rezzy Davis\nFounder & Bartender' },
+      { label: 'Based In', value: 'Austin, TX' },
+    ],
+    img: 'https://images.unsplash.com/photo-1560508180-03f285f67ded?auto=format&fit=crop&w=900&q=80',
+  },
+
   sections: [
     {
       id: 'craft',
@@ -317,6 +332,77 @@ function StdSection({ sec }) {
   )
 }
 
+// ── Editorial Section ─────────────────────────────────────────────────────────
+function EditorialSection() {
+  const ed = data.editorial
+  return (
+    <section className="ll-preview__section ll-preview__section--editorial" id="editorial">
+      {/* LEFT */}
+      <Motion.div
+        className="ll-preview__ed-left"
+        variants={stagger}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+      >
+        <div className="ll-preview__ed-back" aria-hidden="true">
+          <ArrowLeft size={13} strokeWidth={1.5} />
+        </div>
+
+        <Motion.h2 className="ll-preview__ed-h2" variants={slideUp}>
+          {ed.headLines.map((line, i) =>
+            line.normal != null ? (
+              <span key={i} className="ll-preview__ed-line">
+                {line.normal}
+                <em className="ll-preview__ed-em">{line.italic}</em>
+              </span>
+            ) : (
+              <span key={i} className="ll-preview__ed-line">{line.text}</span>
+            )
+          )}
+        </Motion.h2>
+
+        <Motion.p className="ll-preview__ed-body" variants={slideUp}>
+          {ed.body}
+        </Motion.p>
+
+        <Motion.div className="ll-preview__ed-foot" variants={slideUp}>
+          {ed.meta.map((m, i) => (
+            <div key={i} className="ll-preview__ed-meta-col">
+              <span className="ll-preview__ed-meta-label">{m.label}</span>
+              <span className="ll-preview__ed-meta-value">{m.value}</span>
+            </div>
+          ))}
+        </Motion.div>
+      </Motion.div>
+
+      {/* RIGHT */}
+      <Motion.div
+        className="ll-preview__ed-right"
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ delay: 0.3 }}
+      >
+        <img
+          src={ed.img}
+          alt="Ladybird Libations signature cocktail"
+          className="ll-preview__ed-img"
+        />
+        <a
+          href={data.bookingUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="ll-preview__ed-view"
+        >
+          View
+        </a>
+      </Motion.div>
+    </section>
+  )
+}
+
 // ── Contact Section ───────────────────────────────────────────────────────────
 function ContactSection() {
   return (
@@ -393,6 +479,7 @@ export default function LadybirdLibationsPreview() {
         {data.sections.map((sec) => (
           <StdSection key={sec.id} sec={sec} />
         ))}
+        <EditorialSection />
         <ContactSection />
       </main>
 
