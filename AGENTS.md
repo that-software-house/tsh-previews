@@ -18,11 +18,11 @@ DesignAgent output (design spec JSON) must be passed as input to CodegenAgent be
 ### Agent definitions
 | Agent | File |
 |---|---|
-| ScraperAgent | [agents/scraper.md](./agents/scraper.md) |
-| BrandAgent | [agents/brand-builder.md](./agents/brand-builder.md) |
-| DesignAgent | [agents/design.md](./agents/design.md) |
-| CodegenAgent | [agents/coder.md](./agents/coder.md) |
-| Orchestrator + DeployAgent | [agents/agents.md](./agents/agents.md) |
+| ScraperAgent | [agents/scraper.md](./agents/scraper/SCRAPER.md) |
+| BrandAgent | [agents/brand/BRAND.md](./agents/brand/BRAND.md) |
+| DesignAgent | [agents/design.md](./agents/design/DESIGN.md) |
+| CodegenAgent | [agents/coder.md](./agents/coder/CODER.md) |
+| Orchestrator + DeployAgent | [agents/agents.md](./agents/AGENTS.md) |
 
 Read the relevant agent file before executing that step.
 

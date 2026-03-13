@@ -43,47 +43,7 @@ Synthesize these into the layout conventions all previews share, then select the
 
 ## Step 2 — Select Patterns
 
-Choose from the approved pattern library:
-
-```
-HERO PATTERNS:
-  - split-image:     Left: headline + CTA + phone. Right: warm photo of dentist/patient.
-  - full-bleed:      Full-width image with gradient overlay + centered headline + dual CTA.
-  - centered-text:   Centered headline, subtext, primary CTA, soft background pattern.
-
-HERO LAYOUT RULE:
-  - Hero sections must span the full viewport width by default. Do not box the hero inside a container.
-
-SECTION LAYOUT RULE:
-  - All sections span full viewport width by default. Content aligns to an inner max-width container only for readability — the section background always bleeds edge to edge.
-
-SERVICES PATTERNS:
-  - icon-grid:       2×3 grid, lucide icon + service name + 1-line description. Hover: lift shadow.
-  - tabbed-cards:    Category tabs (Preventive / Restorative / Cosmetic / Specialty) with animated card grid below.
-  - horizontal-list: Alternating left/right image+text rows. Good for 3–5 services.
-
-SOCIAL PROOF PATTERNS:
-  - review-strip:    Star ratings + short quotes, horizontal scroll on mobile.
-  - single-quote:    Large pull quote with auto-rotate, patient name, tinted panel background.
-  - grid-cards:      2×2 review cards with avatar, name, stars, truncated text.
-
-BOOKING CTA PATTERNS:
-  - sticky-rail:     Fixed bottom bar on mobile with phone + "Book Now" button.
-  - section-cta:     Full-width tinted section, headline + two buttons.
-  - inline-form:     Simple embedded form (name, phone, preferred time).
-
-NAV PATTERNS:
-  - minimal-transparent: Logo left, links center, CTA right. Transparent on hero, frosted glass on scroll.
-  - three-col-transparent: Links left, logo center, CTAs right. Transparent default → dark overlay slides
-                           behind nav on scroll (separate z-indexed div). See docs/layout-6corners.md.
-  - sidebar-mobile:      Hamburger on mobile, full-screen slide-in drawer.
-
-FULL LAYOUT SYSTEMS (use when brand personality matches):
-  - 6corners-editorial:  Full design system from docs/layout-6corners.md.
-                         Use for: clean-editorial, premium boutique, urban professional.
-                         Hallmarks: Fraunces + Hanken Grotesk, #327ba5 steel-blue, square buttons,
-                         alternating dark/light sections, hexagon SVG decorations, cinematic scroll reveals.
-```
+Choose from one the approved reference files from `docs/samples/full-page*.webp`. You can pick any one of them as desired. Use this as a starting point for the design spec.
 
 ---
 
