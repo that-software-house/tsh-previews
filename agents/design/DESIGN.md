@@ -31,14 +31,6 @@ Read and analyze all files in `docs/samples/` before making any layout decisions
 | `footer*.png` | Footer: brand block, social icons, attribution |
 | `full-page*.webp` | Full-page rhythm: section ordering, spacing, how sections alternate background treatments |
 
-Also read all `docs/layout-*.md` files — each captures a complete real-world dental site design system with exact colors, fonts, motion specs, and section-by-section layout details. When a client's brand personality matches one of these documented systems, use it as the implementation blueprint instead of inventing from scratch.
-
-| Layout file | Design system | Best for |
-|---|---|---|
-| `docs/layout-6corners.md` | 6 Corners Dental Studio — clean-editorial, steel-blue + near-black, Fraunces serif, hexagon motifs, cinematic dark/light alternating sections | Boutique urban practices, premium/editorial feel, clients who want "not a template" |
-
-Synthesize these into the layout conventions all previews share, then select the patterns that best fit this specific client's brand personality.
-
 ---
 
 ## Step 2 — Select Patterns
