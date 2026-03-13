@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* ──────────────────────────────────────────────────────────────────────────── *
+ *  LL PREVIEW — Ladybird Libations                                             *
+ *  CSS prefix: ll-preview                                                      *
+ *  Palette: Cream #F8F5F0, Near-black #0F0E0B, Muted #7A746A                  *
+ *  Fonts: Cormorant Garamond (display) + DM Sans (body)                        *
+ * ──────────────────────────────────────────────────────────────────────────── */
+
+.ll-preview {
+  --ll-bg:           #F8F5F0;
+  --ll-text:         #0F0E0B;
+  --ll-muted:        #7A746A;
+  --ll-border:       #E0D8CE;
+  --ll-dark-bg:      #141210;
+  --ll-font-display: 'Cormorant Garamond', Georgia, serif;
+  --ll-font-body:    'DM Sans', Arial, sans-serif;
+  --ll-nav-h:        4.5rem;
+
+  /* Fixed viewport container — body stays static */
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: var(--ll-bg);
+  font-family: var(--ll-font-body);
+  color: var(--ll-text);
+}
+.ll-preview a    { text-decoration: none; color: inherit; }
+.ll-preview img  { display: block; max-width: 100%; }
+.ll-preview ul   { list-style: none; }
+.ll-preview button { cursor: pointer; border: none; background: none; font: inherit; }
+
+/* ── NAV ──────────────────────────────────────────────────────────────────── */
+.ll-preview__nav {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  height: var(--ll-nav-h);
+  background: var(--ll-bg);
+  border-bottom: 1px solid var(--ll-border);
+  display: flex;
+  align-items: center;
+  padding: 0 clamp(1.5rem, 4vw, 3.5rem);
+  gap: 2rem;
+}
+.ll-preview__nav-logo {
+  font-family: var(--ll-font-display);
+  font-size: 1.1875rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ll-text);
+  white-space: nowrap;
+}
+.ll-preview__nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-left: auto;
+}
+.ll-preview__nav-links a {
+  font-family: var(--ll-font-body);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--ll-muted);
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+.ll-preview__nav-links a:hover { color: var(--ll-text); }
+.ll-preview__nav-cta {
+  margin-left: 1rem;
+  border: 1px solid var(--ll-text);
+  padding: 0.4375rem 1.25rem;
+  font-family: var(--ll-font-body);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--ll-text);
+  letter-spacing: 0.02em;
+  transition: background 0.2s, color 0.2s;
+}
+.ll-preview__nav-cta:hover {
+  background: var(--ll-text);
+  color: var(--ll-bg);
+}
+
+/* ── MAIN (scroll-snap container) ─────────────────────────────────────────── */
+.ll-preview__main {
+  position: absolute;
+  inset: 0;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  /* Custom scrollbar — hide but keep scrollable */
+  scrollbar-width: none;
+}
+.ll-preview__main::-webkit-scrollbar { display: none; }
+
+/* ── SECTION base ─────────────────────────────────────────────────────────── */
+.ll-preview__section {
+  height: 100svh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  padding: var(--ll-nav-h) clamp(1.5rem, 4vw, 3.5rem) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── HERO ─────────────────────────────────────────────────────────────────── */
+.ll-preview__section--hero {
+  background: var(--ll-bg);
+  padding-top: calc(var(--ll-nav-h) + clamp(1.5rem, 3vh, 3rem));
+  padding-bottom: 0;
+}
+.ll-preview__hero-head {
+  flex: 0 0 auto;
+  padding-bottom: 1.25rem;
+}
+.ll-preview__hero-h1 {
+  font-family: var(--ll-font-display);
+  font-size: clamp(2.25rem, 5vw, 5.5rem);
+  font-weight: 300;
+  line-height: 1.18;
+  color: var(--ll-text);
+  letter-spacing: -0.02em;
+}
+.ll-preview__hero-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3em;
+}
+.ll-preview__hero-word { display: inline; }
+.ll-preview__hero-em {
+  font-style: italic;
+  font-weight: 300;
+  display: inline;
+}
+
+/* Pill images inline in headline */
+.ll-preview__pill {
+  display: inline-flex;
+  border-radius: 999px;
+  overflow: hidden;
+  flex-shrink: 0;
+  vertical-align: middle;
+  width: clamp(72px, 8.5vw, 155px);
+  height: clamp(46px, 5.2vw, 97px);
+}
+.ll-preview__pill img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── CAROUSEL WRAPPER ─────────────────────────────────────────────────────── */
+.ll-preview__carousel-wrap {
+  flex: 1 1 0;
+  min-height: 0;
+  position: relative;
+}
+
+/* ── CAROUSEL ─────────────────────────────────────────────────────────────── */
+.ll-preview__carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: var(--ll-text);
+}
+.ll-preview__carousel-frame {
+  position: absolute;
+  inset: 0;
+}
+.ll-preview__carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Slide counter — overlaid bottom-right of carousel */
+.ll-preview__counter {
+  position: absolute;
+  bottom: 1.375rem;
+  right: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.15rem;
+  pointer-events: none;
+  mix-blend-mode: normal;
+}
+.ll-preview__counter-num {
+  font-family: var(--ll-font-display);
+  font-size: clamp(2rem, 4.5vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.90);
+  letter-spacing: -0.02em;
+}
+.ll-preview__counter-total { opacity: 0.45; }
+.ll-preview__counter-sep {
+  font-family: var(--ll-font-display);
+  font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+  color: rgba(255, 255, 255, 0.35);
+  padding: 0 0.2rem;
+}
+
+/* Arrow buttons — circular, centered on carousel edges */
+.ll-preview__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+.ll-preview__arrow:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+.ll-preview__arrow--prev { left: 1.25rem; }
+.ll-preview__arrow--next { right: 1.25rem; }
+
+/* ── STANDARD SECTION ─────────────────────────────────────────────────────── */
+.ll-preview__section--std {
+  background: var(--ll-bg);
+  padding-top: calc(var(--ll-nav-h) + clamp(1.75rem, 4vh, 3.5rem));
+  padding-bottom: 0;
+}
+.ll-preview__std-head {
+  flex: 0 0 auto;
+  padding-bottom: 1rem;
+}
+.ll-preview__std-h2 {
+  font-family: var(--ll-font-display);
+  font-size: clamp(3.25rem, 8vw, 8.5rem);
+  font-weight: 300;
+  line-height: 0.92;
+  color: var(--ll-text);
+  letter-spacing: -0.03em;
+  margin-bottom: 0.875rem;
+}
+.ll-preview__std-em {
+  font-style: italic;
+  font-weight: 300;
+}
+.ll-preview__std-sub {
+  font-family: var(--ll-font-body);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ll-muted);
+  text-align: center;
+  max-width: 44ch;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+/* ── META BAR ─────────────────────────────────────────────────────────────── */
+.ll-preview__meta-bar {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-end;
+  gap: 2.5rem;
+  padding: 0.75rem 0 0.875rem;
+  border-top: 1px solid var(--ll-border);
+}
+.ll-preview__meta-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.ll-preview__meta-label {
+  font-family: var(--ll-font-body);
+  font-size: 0.625rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ll-muted);
+}
+.ll-preview__meta-value {
+  font-family: var(--ll-font-body);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--ll-text);
+  white-space: pre-line;
+  line-height: 1.45;
+}
+.ll-preview__meta-link {
+  margin-left: auto;
+  font-family: var(--ll-font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ll-text);
+  transition: opacity 0.2s;
+  white-space: nowrap;
+  align-self: center;
+}
+.ll-preview__meta-link:hover { opacity: 0.5; }
+
+/* ── CONTACT SECTION ──────────────────────────────────────────────────────── */
+.ll-preview__section--contact {
+  background: var(--ll-dark-bg);
+  color: var(--ll-bg);
+  padding-top: var(--ll-nav-h);
+  justify-content: center;
+}
+.ll-preview__contact-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem, 5vh, 5rem) 0;
+}
+.ll-preview__contact-kicker {
+  display: block;
+  font-family: var(--ll-font-body);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(248, 245, 240, 0.40);
+  margin-bottom: 1.5rem;
+}
+.ll-preview__contact-h2 {
+  font-family: var(--ll-font-display);
+  font-size: clamp(4rem, 10vw, 10rem);
+  font-weight: 300;
+  line-height: 0.92;
+  color: var(--ll-bg);
+  letter-spacing: -0.03em;
+  margin-bottom: 2rem;
+}
+.ll-preview__contact-em {
+  font-style: italic;
+  font-weight: 300;
+}
+.ll-preview__contact-sub {
+  font-family: var(--ll-font-body);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(248, 245, 240, 0.55);
+  max-width: 42ch;
+  margin-bottom: 3rem;
+}
+.ll-preview__contact-ctas {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: auto;
+  padding-bottom: 3rem;
+}
+.ll-preview__contact-btn {
+  font-family: var(--ll-font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ll-bg);
+  border-bottom: 1px solid rgba(248, 245, 240, 0.35);
+  padding-bottom: 0.3rem;
+  transition: border-color 0.2s;
+}
+.ll-preview__contact-btn:hover { border-color: var(--ll-bg); }
+.ll-preview__contact-ig {
+  font-family: var(--ll-font-body);
+  font-size: 0.875rem;
+  color: rgba(248, 245, 240, 0.45);
+  transition: color 0.2s;
+}
+.ll-preview__contact-ig:hover { color: var(--ll-bg); }
+.ll-preview__contact-foot {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  font-family: var(--ll-font-body);
+  font-size: 0.6875rem;
+  color: rgba(248, 245, 240, 0.25);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(248, 245, 240, 0.08);
+  margin-top: auto;
+}
+
+/* ── MOBILE RAIL ──────────────────────────────────────────────────────────── */
+.ll-preview__mobile-rail {
+  display: none;
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  z-index: 200;
+  height: 3.75rem;
+}
+.ll-preview__rail-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--ll-font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  min-height: 44px;
+  letter-spacing: 0.04em;
+  transition: opacity 0.2s;
+}
+.ll-preview__rail-btn:active { opacity: 0.8; }
+.ll-preview__rail-btn--book {
+  background: var(--ll-text);
+  color: var(--ll-bg);
+}
+.ll-preview__rail-btn--ig {
+  background: rgba(15, 14, 11, 0.88);
+  color: rgba(248, 245, 240, 0.65);
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .ll-preview__mobile-rail { display: flex; }
+  .ll-preview__nav-links   { display: none; }
+
+  .ll-preview__hero-h1 {
+    font-size: clamp(1.875rem, 6.5vw, 3.5rem);
+  }
+  .ll-preview__pill {
+    width: clamp(58px, 12vw, 100px);
+    height: clamp(36px, 7.5vw, 63px);
+  }
+  .ll-preview__std-h2 {
+    font-size: clamp(2.75rem, 9vw, 6rem);
+  }
+  .ll-preview__meta-bar {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .ll-preview__meta-link {
+    margin-left: 0;
+    margin-top: 0.25rem;
+  }
+  .ll-preview__counter-num {
+    font-size: clamp(1.75rem, 6vw, 3rem);
+  }
+}
+
+@media (max-width: 560px) {
+  .ll-preview__std-h2 {
+    font-size: clamp(2.25rem, 11vw, 4.5rem);
+  }
+  .ll-preview__contact-h2 {
+    font-size: clamp(3.25rem, 14vw, 7rem);
+  }
+  .ll-preview__contact-foot {
+    flex-direction: column;
+    gap: 0.625rem;
+    text-align: center;
+  }
+  .ll-preview__contact-ctas {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+}
