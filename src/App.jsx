@@ -7,6 +7,7 @@ import AustinSkylineDentalPreview from './pages/AustinSkylineDentalPreview'
 import BlueSkyDentalPreview from './pages/BlueSkyDentalPreview'
 import DaybreakDentalPreview from './pages/DaybreakDentalPreview'
 import HighPointSmilesPreview from './pages/HighPointSmilesPreview'
+import IndependenceDentalPlanoPreview from './pages/IndependenceDentalPlanoPreview'
 import CoolCreekFamilyDentalPreview from './pages/CoolCreekFamilyDentalPreview'
 import ENTSAustinPreview from './pages/ENTSAustinPreview'
 import WowDentalPreview from './pages/WowDentalPreview'
@@ -32,6 +33,7 @@ function App() {
       <Route path="/wow-dental" element={<WowDentalPreview />} />
       <Route path="/daybreak-dental" element={<DaybreakDentalPreview />} />
       <Route path="/high-point-smiles" element={<HighPointSmilesPreview />} />
+      <Route path="/independence-dental-plano" element={<IndependenceDentalPlanoPreview />} />
       <Route path="/you-first-dental" element={<YouFirstDentalPreview />} />
       <Route path="/bear-creek-family-dentistry" element={<BearCreekFamilyDentistryPreview />} />
       <Route path="/midtown-family-dentistry-dallas" element={<MidtownFamilyDentistryPreview />} />

@@ -80,6 +80,24 @@ Then update `src/App.jsx` to add the route from `spec.route`.
 - Include the client's real booking system — preview is visual-only
 - Use arbitrary CSS files outside the scoped `{Name}Preview.css`
 
+## Content Rules — CRITICAL
+
+Every string in `previewData` must be patient-facing copy, not developer or design commentary.
+
+**Never write**:
+- Sentences that reference the preview, the live site, or design decisions (e.g. "This preview reframes...", "The live site already signals...", "This concept sharpens...", "A More Premium First Impression")
+- Kickers or labels that describe design intent (e.g. "Cosmetic-first hierarchy", "Trust without corporate stiffness", "Comfort as proof, not filler")
+- Service descriptions that explain layout rationale (e.g. "gives veneers clearer visual prominence") instead of patient benefit
+
+**Always write**:
+- Copy sourced from `scraperOutput.rawPageText` first — lift and lightly polish real phrases from the actual site
+- If real copy is unavailable for a field, write warm, plain-language patient copy: short sentences, local tone, no jargon
+- Kickers: simple descriptors a patient would expect ("Our Services", "Meet Dr. [Name]", "Patient Reviews", "Easy Access")
+- Service descriptions: one or two sentences describing what the patient experiences or gains
+- Body paragraphs: sound like a friendly local practice talking to a neighbor, not a UX designer presenting a concept
+
+**Test before finalizing**: Read every string in `previewData` aloud. If it sounds like something a developer wrote about the page rather than something a patient would read on the page, rewrite it.
+
 ---
 
 ## System Prompt

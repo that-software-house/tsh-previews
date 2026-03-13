@@ -24,6 +24,15 @@ Input: ScraperAgent output
 4. Write modernized copy: hero headline, subheadline, CTA text, section headlines
 5. Determine overall design personality: `clinical-modern | warm-boutique | bold-contemporary | minimal-clean`
 
+**Copy Rules — CRITICAL**:
+- All copy must be written for the patient reading the page, never for a developer reviewing the preview
+- Never write sentences that reference the preview itself, the live site, or the design concept (e.g. "This preview reframes...", "The live site already...", "This concept gives...", "Cosmetic-first hierarchy")
+- Use scraped text from `rawPageText` as the primary source — adapt real phrases, slogans, and service descriptions found on the actual site
+- If scraped content is thin or absent for a given field, write short, warm, patient-friendly generic copy (e.g. "Gentle care for your whole family, right here in Plano." not "This section highlights family services.")
+- Kicker labels (the small uppercase labels above section headings) must be plain patient-facing descriptors — "Our Services", "Meet the Doctor", "What Patients Say" — never design/process labels like "Cosmetic-first hierarchy" or "A More Premium First Impression"
+- Service descriptions must explain what the patient gets, not why it was placed on the page
+- Body paragraphs must read as natural practice marketing copy, not as UX rationale or design notes
+
 **Output schema**:
 ```json
 {
