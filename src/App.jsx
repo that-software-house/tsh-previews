@@ -14,6 +14,7 @@ import YouFirstDentalPreview from './pages/YouFirstDentalPreview'
 import BearCreekFamilyDentistryPreview from './pages/BearCreekFamilyDentistryPreview'
 import MidtownFamilyDentistryPreview from './pages/MidtownFamilyDentistryPreview'
 import AustinArtisticDentalPreview from './pages/AustinArtisticDentalPreview'
+import WellnessBayHealthPreview from './pages/WellnessBayHealthPreview'
 import HomePage from './pages/HomePage'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <Route path="/bear-creek-family-dentistry" element={<BearCreekFamilyDentistryPreview />} />
       <Route path="/midtown-family-dentistry-dallas" element={<MidtownFamilyDentistryPreview />} />
       <Route path="/austin-artistic-dental" element={<AustinArtisticDentalPreview />} />
+      <Route path="/wellness-bay-health" element={<WellnessBayHealthPreview />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )
