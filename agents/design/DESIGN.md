@@ -18,24 +18,54 @@ Return valid JSON matching the provided schema exactly.
 
 ---
 
-## Step 1 — Review `docs/samples/` and `docs/layout-*.md`
+## Step 1 — Read the Reference Index
 
-Read and analyze all files in `docs/samples/` before making any layout decisions. Extract conventions by file type:
+Read `docs/samples/INDEX.md`. This file describes the visual character of each `full-page*.webp` reference and tracks which files have already been assigned to previous previews.
 
-| File pattern | What to extract |
-|---|---|
-| `hero*.png` | Hero layouts: full-bleed vs split, gradient angle, headline position, CTA arrangement, eyebrow text |
-| `services*.png` | Services section: tabs vs grid, card style, icon placement, hover states |
-| `section*.png` | Trust/feature sections: column count, icon+text layout, image position |
-| `reviews*.png` | Testimonials: quote block style, star display, rotation dots, author attribution |
-| `footer*.png` | Footer: brand block, social icons, attribution |
-| `full-page*.webp` | Full-page rhythm: section ordering, spacing, how sections alternate background treatments |
+**Do not pick a reference that has already been assigned unless all options are exhausted.**
 
 ---
 
-## Step 2 — Select Patterns
+## Step 2 — Choose ONE Reference File
 
-Choose from one the approved reference files from `docs/samples/full-page*.webp`. You can pick any one of them as desired. Use this as a starting point for the design spec.
+Based on the brand profile and INDEX.md descriptions, choose the ONE `full-page*.webp` that best matches the client's brand personality and target patient.
+
+Matching criteria:
+- Luxury / artisanal / minimal brand → `full-page7.webp`
+- Bold brand identity, single hero service → `full-page5.webp`
+- Young, tech-forward, gradient-modern → `full-page8.webp`
+- Soft, calming, feminine / anxiety-focused → `full-page4.webp`
+- Modern multi-doctor, playful → `full-page3.webp`
+- Clinical-fresh, multi-service, tech-focused → `full-page6.webp`
+- Family/general, broad demographic → `full-page2.webp`
+- Boutique cosmetic, editorial → `full-page.webp`
+
+---
+
+## Step 3 — Read and Extract Patterns from the Chosen File
+
+**Use the Read tool to open the chosen `full-page*.webp` file and visually analyze it.**
+
+Extract and record ALL of the following in `referenceVisualNotes`:
+
+1. **Hero layout**: full-bleed vs split, headline position, photo placement, gradient or no gradient, any floating overlays/badges
+2. **Hero typography feel**: large editorial serif vs modern sans, tight or loose leading
+3. **Stats/trust bar**: present or not, column count, style (chips/inline/cards)
+4. **Services section**: tab list, icon grid, image-paired cards — describe the exact pattern
+5. **Feature/differentiator section**: dark panel vs tinted panel vs white, column count, how images are integrated
+6. **Testimonials**: single pull-quote, 3-col cards, video thumbnails — describe exactly
+7. **Section background rhythm**: which sections alternate to tinted/dark backgrounds
+8. **Whitespace and spacing**: dense or airy, editorial margins or tight grid
+9. **Button style**: pill vs rounded-rect vs outlined, color treatment
+10. **Overall color application**: where the accent color appears vs where it stays neutral
+
+These notes become the binding constraints for CodegenAgent — be specific and visual, not abstract.
+
+---
+
+## Step 4 — Update the Assignment History
+
+After selecting a reference file, note it in your output so the orchestrator can update `docs/samples/INDEX.md` with the new assignment.
 
 ---
 
@@ -48,11 +78,24 @@ Return this JSON — it is passed directly as input to CodegenAgent:
   "cssPrefix": "adc-preview",
   "slug": "austin-dental-co",
   "route": "/austin-dental-co",
+  "referenceFile": "docs/samples/full-page3.webp",
+  "referenceVisualNotes": {
+    "heroLayout": "Split — large bold headline left, close-up patient photo right, no gradient, white background",
+    "heroTypography": "Modern sans, very large tracking, tight leading on headline",
+    "statsBar": "4-col inline stats with colored label above number, gray dividers between",
+    "servicesSection": "Vertical tab list on left, expanded detail on right with photo inset",
+    "featureSection": "White background, 2×2 icon card grid, left-aligned section heading",
+    "testimonials": "3-col cards with video thumbnail, star rating, and avatar — no full-bleed background",
+    "sectionRhythm": "Hero white → stats gray → features white → services lavender-tint → testimonials white → footer dark",
+    "whitespace": "Generous — sections breathe, no cramped elements",
+    "buttonStyle": "Pill shape, solid brand color fill, white text",
+    "colorApplication": "Lavender accent on active tab + icon fills; body is white/light gray; headings dark charcoal"
+  },
   "sections": [
     {
       "id": "hero",
-      "layout": "full-bleed",
-      "gradientAngle": "160deg",
+      "layout": "split-left-text-right-photo",
+      "gradientAngle": null,
       "content": ["eyebrow", "h1", "description", "cta-pair", "meta-links"]
     },
     {
@@ -62,19 +105,13 @@ Return this JSON — it is passed directly as input to CodegenAgent:
     },
     {
       "id": "trust",
-      "layout": "grid-2x2-cards-plus-image",
+      "layout": "grid-2x2-icon-cards",
       "kicker": "Why Choose Us",
       "heading": "Honest care built around you."
     },
     {
-      "id": "differentiators",
-      "layout": "dark-panel-4-col-grid-plus-image",
-      "kicker": "Our Difference",
-      "heading": "Dentistry That Puts People First"
-    },
-    {
       "id": "services",
-      "layout": "tabbed-cards",
+      "layout": "vertical-tab-list-with-detail-panel",
       "tabs": ["Preventive", "Restorative", "Cosmetic", "Specialty"]
     },
     {
@@ -83,7 +120,7 @@ Return this JSON — it is passed directly as input to CodegenAgent:
     },
     {
       "id": "testimonials",
-      "layout": "tinted-panel-quote-rotator"
+      "layout": "3-col-card-row"
     },
     {
       "id": "insurance",
@@ -102,20 +139,20 @@ Return this JSON — it is passed directly as input to CodegenAgent:
     "mobileRail": true,
     "floatingCTA": true,
     "animationLibrary": "framer-motion",
-    "animationLevel": "subtle",
-    "layoutSystem": "6corners-editorial
+    "animationLevel": "subtle"
   }
 }
 ```
 
-If using a full layout system from `docs/layout-*.md`, set `"layoutSystem": "6corners-editorial"` (or the relevant key) and instruct CodegenAgent to read the corresponding file for exact implementation details — colors, motion variants, button styles, hex decorations, etc.
-```
+The `referenceFile` and `referenceVisualNotes` fields are **required**. CodegenAgent will read the file and use these notes as binding visual constraints.
 
 ---
 
 ## Rules
 
 - No two consecutive previews should use the same color palette — confirm against existing previews in `src/pages/`
-- The dark-panel section (differentiators or technology) is always the visual centerpiece — use the client's strongest USP as the heading
-- Section order must match what's established in `docs/samples/full-page*.webp` references unless there's a clear reason to deviate
+- No two consecutive previews should use the same `referenceFile` — check `docs/samples/INDEX.md` assignment history
+- The dark-panel or feature section is always the visual centerpiece — use the client's strongest USP as the heading
+- Section order must match what's in the chosen `full-page*.webp` reference unless there's a clear reason to deviate
 - CSS prefix must be unique per client (initials of business name + `-preview`)
+- `referenceVisualNotes` must be specific enough that a developer could build the layout without seeing the image

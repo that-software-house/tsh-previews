@@ -18,11 +18,10 @@ DesignAgent output (design spec JSON) must be passed as input to CodegenAgent be
 ### Agent definitions
 | Agent | File |
 |---|---|
-| ScraperAgent | [agents/scraper.md](./agents/scraper.md) |
-| BrandAgent | [agents/brand-builder.md](./agents/brand-builder.md) |
-| DesignAgent | [agents/design.md](./agents/design.md) |
-| CodegenAgent | [agents/coder.md](./agents/coder.md) |
-| Orchestrator + DeployAgent | [agents/agents.md](./agents/agents.md) |
+| ScraperAgent | [agents/scraper/SCRAPER.md](./agents/scraper/SCRAPER.md) |
+| BrandAgent | [agents/brand/BRAND.md](./agents/brand/BRAND.md) |
+| DesignAgent | [agents/design/DESIGN.md](./agents/design/DESIGN.md) |
+| CodegenAgent | [agents/coder/CODER.md](./agents/coder/CODER.md) |
 
 Read the relevant agent file before executing that step.
 
@@ -41,6 +40,7 @@ src/
 
 agents/             ← Agent definitions
 docs/samples/       ← Visual reference files — DesignAgent reads these
+docs/samples/INDEX.md ← Reference index + assignment history — update after every deploy
 ```
 
 ---
@@ -56,3 +56,4 @@ docs/samples/       ← Visual reference files — DesignAgent reads these
 - **FloatingCTA**: always import and render at the bottom of every preview.
 - **Route**: add to `src/App.jsx` using the slug from DesignAgent output.
 - **SEO**: call `useSEO()` with canonical URL `https://preview.thatsoftwarehouse.com/{slug}`.
+- **Reference tracking**: after every new preview, update the Assignment History table in `docs/samples/INDEX.md` with the client name and `referenceFile` used.

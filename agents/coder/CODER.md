@@ -14,6 +14,26 @@ Follow the DesignAgent spec exactly — implement every section in the order lis
 
 **Input**: ScraperAgent output + BrandAgent output + DesignAgent spec JSON
 
+---
+
+## FIRST — Read the Visual Reference (REQUIRED before writing any code)
+
+The spec contains `spec.referenceFile` (e.g. `"docs/samples/full-page3.webp"`).
+
+**You MUST use the Read tool to open and view this file before writing a single line of code.**
+
+Then use `spec.referenceVisualNotes` as your binding implementation constraints:
+- **Hero layout**: implement exactly the layout described (split vs full-bleed, photo placement, overlays)
+- **Stats bar**: match the visual style described (inline chips, card row, etc.)
+- **Services section**: match the exact pattern (tabs, grid, accordion — implement what was described, not your default)
+- **Feature section**: match background treatment (dark vs tinted vs white panel)
+- **Testimonials**: match the described card layout
+- **Section rhythm**: alternate backgrounds in the exact order described
+- **Button style**: use the exact shape and fill described
+- **Whitespace**: match the density described (airy editorial vs compact grid)
+
+If any `referenceVisualNotes` field conflicts with a default preference, the reference wins.
+
 **Layout system**: If `spec.globalPatterns.layoutSystem` is set (e.g. `"6corners-editorial"`), read the corresponding `docs/layout-{key}.md` file before writing any code. That file contains the exact color tokens, font imports, motion variants, button styles, section specs, and component patterns to implement. Override your defaults with what's in that file — it is the source of truth for that design system.
 
 ---

@@ -21,6 +21,7 @@ import DallasLaserDentistryPreview from './pages/DallasLaserDentistryPreview'
 import PrestonHollowDentalCarePreview from './pages/PrestonHollowDentalCarePreview'
 import WilliamHMillerDMDPreview from './pages/WilliamHMillerDMDPreview'
 import CasperFamilyDentistryPreview from './pages/CasperFamilyDentistryPreview'
+import RossAvenueFamilyDentalPreview from './pages/RossAvenueFamilyDentalPreview'
 import HomePage from './pages/HomePage'
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
       <Route path="/preston-hollow-dental-care" element={<PrestonHollowDentalCarePreview />} />
       <Route path="/william-h-miller-dmd" element={<WilliamHMillerDMDPreview />} />
       <Route path="/casper-family-dentistry" element={<CasperFamilyDentistryPreview />} />
+      <Route path="/ross-avenue-family-dental" element={<RossAvenueFamilyDentalPreview />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )
