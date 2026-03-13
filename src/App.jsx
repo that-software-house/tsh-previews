@@ -17,6 +17,8 @@ import MidtownFamilyDentistryPreview from './pages/MidtownFamilyDentistryPreview
 import AustinArtisticDentalPreview from './pages/AustinArtisticDentalPreview'
 import WellnessBayHealthPreview from './pages/WellnessBayHealthPreview'
 import LadybirdLibationsPreview from './pages/LadybirdLibationsPreview'
+import DallasLaserDentistryPreview from './pages/DallasLaserDentistryPreview'
+import PrestonHollowDentalCarePreview from './pages/PrestonHollowDentalCarePreview'
 import HomePage from './pages/HomePage'
 
 function App() {
@@ -40,6 +42,8 @@ function App() {
       <Route path="/austin-artistic-dental" element={<AustinArtisticDentalPreview />} />
       <Route path="/wellness-bay-health" element={<WellnessBayHealthPreview />} />
       <Route path="/ladybird-libations" element={<LadybirdLibationsPreview />} />
+      <Route path="/dallas-laser-dentistry" element={<DallasLaserDentistryPreview />} />
+      <Route path="/preston-hollow-dental-care" element={<PrestonHollowDentalCarePreview />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )
