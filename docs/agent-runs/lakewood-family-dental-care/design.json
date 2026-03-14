@@ -1,0 +1,72 @@
+{
+  "cssPrefix": "lfdc-preview",
+  "slug": "lakewood-family-dental-care",
+  "route": "/lakewood-family-dental-care",
+  "referenceFile": "docs/samples/full-page2.webp",
+  "referenceVisualNotes": {
+    "heroLayout": "Full-width split hero with left-aligned headline and CTA cluster, doctor/patient photo on the right, soft blue gradient treatment.",
+    "heroTypography": "Friendly sans-serif with large headline and compact supporting copy.",
+    "statsBar": "Trust row directly below hero in three to four columns with icon + short value text.",
+    "servicesSection": "Centered six-card service grid (3x2 desktop) with icon, title, and concise description.",
+    "featureSection": "Doctor-focused two-column panel with bio text left and portrait image right on a tinted background.",
+    "testimonials": "Three compact testimonial cards with stars and author names in a single row.",
+    "sectionRhythm": "Hero light gradient -> trust strip white cards -> services on white -> doctor section tinted blue -> testimonials white -> contact CTA light blue -> dark footer.",
+    "whitespace": "Comfortable and airy spacing with clear section separations.",
+    "buttonStyle": "Rounded pill CTAs using solid primary blue and outlined secondary variants.",
+    "colorApplication": "Primary blue used for headlines, CTAs, and icons; accent aqua used for highlights; backgrounds remain white to light blue."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "layout": "split-left-text-right-photo",
+      "gradientAngle": "118deg",
+      "content": [
+        "eyebrow",
+        "h1",
+        "description",
+        "cta-pair",
+        "meta-links"
+      ]
+    },
+    {
+      "id": "stats-bar",
+      "layout": "horizontal-4-col"
+    },
+    {
+      "id": "trust",
+      "layout": "grid-3-icon-columns",
+      "kicker": "Why Families Choose Us",
+      "heading": "Neighborhood roots with modern dental care."
+    },
+    {
+      "id": "services",
+      "layout": "grid-3x2-icon-cards"
+    },
+    {
+      "id": "doctors",
+      "layout": "two-col-bio-plus-image"
+    },
+    {
+      "id": "testimonials",
+      "layout": "3-col-card-row"
+    },
+    {
+      "id": "contact",
+      "layout": "two-col-info-plus-card"
+    },
+    {
+      "id": "footer",
+      "layout": "dark-multi-col"
+    }
+  ],
+  "globalPatterns": {
+    "navStyle": "minimal-transparent-to-frosted",
+    "sectionSpacing": "5rem 0",
+    "cardRadius": "1.1rem",
+    "shellWidth": "min(1180px, calc(100% - 2rem))",
+    "mobileRail": true,
+    "floatingCTA": true,
+    "animationLibrary": "framer-motion",
+    "animationLevel": "subtle"
+  }
+}

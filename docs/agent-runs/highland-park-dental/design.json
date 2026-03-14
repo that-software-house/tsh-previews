@@ -1,0 +1,63 @@
+{
+  "cssPrefix": "hpd-preview",
+  "slug": "highland-park-dental",
+  "route": "/highland-park-dental",
+  "referenceFile": "docs/samples/full-page7.webp",
+  "fontDisplay": "Cormorant Garamond",
+  "fontBody": "DM Sans",
+  "referenceVisualNotes": {
+    "heroLayout": "Split hero with left editorial copy and right organic/blob-masked portrait image on a mostly white surface.",
+    "heroTypography": "Large serif headline with generous line-height and substantial white space around the hero copy.",
+    "statsBar": "No heavy stats strip; trust is communicated through lightweight chips near the hero CTA.",
+    "servicesSection": "Centered, airy 2x2 service grid with icon + short label/description and minimal card treatment.",
+    "featureSection": "Doctor profile in a two-column composition: text block and circular portrait image with subtle navigation affordance styling.",
+    "testimonials": "Minimal quote cards with soft borders and lots of breathing room rather than dense card stacks.",
+    "sectionRhythm": "Off-white hero -> white services -> pale-mint doctor band -> warm CTA panel -> white contact/footer.",
+    "whitespace": "Very airy spacing with broad margins and low visual noise.",
+    "buttonStyle": "Soft rectangular buttons with subtle rounded corners, low-contrast ghost variant, and restrained shadows.",
+    "colorApplication": "Mostly neutral cream/white background with selective mint accent in shapes, chips, and icons."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "layout": "split-left-text-right-photo",
+      "content": [
+        "eyebrow",
+        "h1",
+        "description",
+        "cta-pair",
+        "trust-chips"
+      ]
+    },
+    {
+      "id": "services",
+      "layout": "grid-2x2-minimal"
+    },
+    {
+      "id": "doctors",
+      "layout": "two-col-bio-with-circle-photo"
+    },
+    {
+      "id": "testimonials",
+      "layout": "minimal-quote-cards"
+    },
+    {
+      "id": "cta",
+      "layout": "warm-full-width-panel-two-col"
+    },
+    {
+      "id": "contact",
+      "layout": "three-col-minimal-footer"
+    }
+  ],
+  "globalPatterns": {
+    "navStyle": "minimal-transparent",
+    "sectionSpacing": "5.75rem 0",
+    "cardRadius": "1.4rem",
+    "shellWidth": "min(1140px, calc(100% - 2rem))",
+    "mobileRail": true,
+    "floatingCTA": true,
+    "animationLibrary": "framer-motion",
+    "animationLevel": "subtle"
+  }
+}

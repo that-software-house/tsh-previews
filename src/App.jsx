@@ -7,6 +7,7 @@ import AustinSkylineDentalPreview from './pages/AustinSkylineDentalPreview'
 import BlueSkyDentalPreview from './pages/BlueSkyDentalPreview'
 import DaybreakDentalPreview from './pages/DaybreakDentalPreview'
 import HighPointSmilesPreview from './pages/HighPointSmilesPreview'
+import HighlandParkDentalPreview from './pages/HighlandParkDentalPreview'
 import IndependenceDentalPlanoPreview from './pages/IndependenceDentalPlanoPreview'
 import CoolCreekFamilyDentalPreview from './pages/CoolCreekFamilyDentalPreview'
 import ENTSAustinPreview from './pages/ENTSAustinPreview'
@@ -21,7 +22,9 @@ import DallasLaserDentistryPreview from './pages/DallasLaserDentistryPreview'
 import PrestonHollowDentalCarePreview from './pages/PrestonHollowDentalCarePreview'
 import WilliamHMillerDMDPreview from './pages/WilliamHMillerDMDPreview'
 import CasperFamilyDentistryPreview from './pages/CasperFamilyDentistryPreview'
+import OakCliffDentalCenterPreview from './pages/OakCliffDentalCenterPreview'
 import RossAvenueFamilyDentalPreview from './pages/RossAvenueFamilyDentalPreview'
+import LakewoodFamilyDentalCarePreview from './pages/LakewoodFamilyDentalCarePreview'
 import HomePage from './pages/HomePage'
 
 function App() {
@@ -38,6 +41,7 @@ function App() {
       <Route path="/wow-dental" element={<WowDentalPreview />} />
       <Route path="/daybreak-dental" element={<DaybreakDentalPreview />} />
       <Route path="/high-point-smiles" element={<HighPointSmilesPreview />} />
+      <Route path="/highland-park-dental" element={<HighlandParkDentalPreview />} />
       <Route path="/independence-dental-plano" element={<IndependenceDentalPlanoPreview />} />
       <Route path="/you-first-dental" element={<YouFirstDentalPreview />} />
       <Route path="/bear-creek-family-dentistry" element={<BearCreekFamilyDentistryPreview />} />
@@ -49,7 +53,9 @@ function App() {
       <Route path="/preston-hollow-dental-care" element={<PrestonHollowDentalCarePreview />} />
       <Route path="/william-h-miller-dmd" element={<WilliamHMillerDMDPreview />} />
       <Route path="/casper-family-dentistry" element={<CasperFamilyDentistryPreview />} />
+      <Route path="/oak-cliff-dental-center" element={<OakCliffDentalCenterPreview />} />
       <Route path="/ross-avenue-family-dental" element={<RossAvenueFamilyDentalPreview />} />
+      <Route path="/lakewood-family-dental-care" element={<LakewoodFamilyDentalCarePreview />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )

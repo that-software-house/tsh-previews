@@ -1,0 +1,23 @@
+{
+  "brandPersonality": "minimal-clean",
+  "palette": {
+    "primary": "#1F2A30",
+    "primaryLight": "#EFF4F6",
+    "accent": "#8CB7C5",
+    "background": "#F8F6F2",
+    "surface": "#FFFFFF",
+    "text": "#1C252B",
+    "textMuted": "#66727A"
+  },
+  "fonts": {
+    "heading": "Cormorant Garamond",
+    "body": "DM Sans"
+  },
+  "copy": {
+    "heroHeadline": "Refined dental care for Highland Park and Dallas families.",
+    "heroSubheadline": "From preventive visits to cosmetic and restorative treatment, our team delivers thoughtful care in a calm, welcoming setting.",
+    "heroCta": "Book Online",
+    "secondaryCta": "Call (972) 362-2021",
+    "aboutSnippet": "Highland Park Dental combines concierge-level hospitality, modern treatment options, and long-standing relationships to help every patient feel informed, comfortable, and confident."
+  }
+}

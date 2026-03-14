@@ -1,0 +1,73 @@
+{
+  "businessName": "Lakewood Family Dental Care",
+  "tagline": "Trusted Dentist in Lakewood, Dallas, TX",
+  "phone": "(214) 823-1638",
+  "email": "appointment@lakewoodfamilydental.com",
+  "address": "6329 Oram St, Dallas, TX 75214",
+  "googleMapsUrl": "https://www.google.com/maps/place/Lakewood+Family+Dental+Care/@32.814086,-96.754019,15z/data=!4m5!3m4!1s0x0:0xa22c08094716c4c1!8m2!3d32.814086!4d-96.754019?coh=164777&entry=tt&shorturl=1",
+  "services": [
+    "General Dentistry",
+    "Cosmetic Dentistry",
+    "Restorative Dentistry",
+    "Invisalign",
+    "Emergency Dentistry",
+    "Dental Exams and Cleanings",
+    "Teeth Whitening",
+    "Porcelain Veneers",
+    "Dental Implants",
+    "Sedation Dentistry"
+  ],
+  "teamMembers": [
+    {
+      "name": "Dr. Reid Slaughter",
+      "title": "DDS",
+      "bio": "Dr. Reid Slaughter has practiced comprehensive family dentistry for over 20 years in a friendly, trust-based environment and emphasizes continuing education each year."
+    },
+    {
+      "name": "Dr. Austin Farmer",
+      "title": "DDS",
+      "bio": "Dr. Austin Farmer previously worked as an engineer before dentistry and is known for clear explanations and a calm, patient-first style of care."
+    },
+    {
+      "name": "Dr. Pope",
+      "title": "DDS, MS",
+      "bio": "Board-certified periodontist Jeffrey Pope, DDS, MS, provides periodontics, implant dentistry, and minimally invasive surgery across the Dallas metroplex."
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "Google Review",
+      "text": "Iv been seeing Dr. Farmer for a few years now. He takes the time to explain everything so I understand the treatment plans.",
+      "rating": 5
+    },
+    {
+      "author": "Google Review",
+      "text": "They really care about my comfort and never make me feel like a big baby. I have dental anxiety, but Lakewood Family Dental makes it so much easier.",
+      "rating": 5
+    },
+    {
+      "author": "Google Review",
+      "text": "Lakewood Family Dental has been my dentist since I was a kid. The level of care and attention they give is unparalleled.",
+      "rating": 5
+    }
+  ],
+  "logoUrl": "https://www.lakewoodfamilydental.com/wp-content/uploads/2023/08/lakewoodfamilydental-01-big.jpg",
+  "primaryColor": "#4A79A1",
+  "accentColor": "#89CFF0",
+  "existingFonts": [
+    "Nexa"
+  ],
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/eastdallasdentist/",
+    "instagram": "https://www.instagram.com/lakewoodfamilydentalcare/",
+    "yelp": "https://www.yelp.com/biz/lakewood-family-dental-care-dallas"
+  },
+  "existingSiteScore": {
+    "mobile": 41,
+    "desktop": 67,
+    "hasBookingWidget": true,
+    "hasSSL": true,
+    "mobileResponsive": true
+  },
+  "rawPageText": "Lakewood Family Dental Care was established in 1947 in the heart of Lakewood. In 2009, Dr. Reid Slaughter took over for Dr. Don Ridgway Jr. In 2018, Dr. Slaughter purchased Dr. Richard Beadle's practice and hired Dr. Austin Farmer as his associate. The office is located at 6329 Oram Street in Dallas, TX, near White Rock Lake with free parking. Services include cosmetic, general, restorative, and family dentistry, plus Invisalign, teeth whitening, veneers, dental implants, tooth extraction, dental exams and cleanings, sedation dentistry, and emergency dentistry. The team serves Lakewood and nearby neighborhoods such as Lower Greenville, Swiss Avenue, Lakewood Hills, Junius Heights, and Old East Dallas. Competitive advantages highlighted on the site include great location, in-office periodontist and oral surgery, multilingual communication, and caring staff.\n\nReviews from the site include: 'Iv been seeing Dr. Farmer for a few years now... He takes the time to explain everything to me so I understand the treatment plans.' 'They really care about my comfort... I have dental anxiety, but Lakewood Family Dental makes it so much easier.' 'Lakewood Family Dental has been my dentist since I was a kid... exceptional service.'\n\nBusiness hours listed on the contact page: Monday through Thursday 08 AM - 05 PM; Friday, Saturday, and Sunday closed."
+}

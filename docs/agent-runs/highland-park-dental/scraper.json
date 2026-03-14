@@ -1,0 +1,79 @@
+{
+  "businessName": "Highland Park Dental",
+  "tagline": "Over 20 Years of Excellence, Right Here in Dallas!",
+  "phone": "(972) 362-2021",
+  "email": "HPD@HPDentist.com",
+  "address": "6725 Hillcrest Ave Ste. B&C, Dallas, TX 75205",
+  "googleMapsUrl": "https://maps.google.com/?q=6725+Hillcrest+Ave+Ste.+B%26C+Dallas+TX+75205",
+  "services": [
+    "General Dentistry",
+    "Dental Exams",
+    "Dental Cleanings",
+    "Metal-Free Fillings",
+    "Wisdom Teeth Removal",
+    "Root Canal Therapy",
+    "Family Dentistry",
+    "Dental Sealants",
+    "Restorative Dentistry",
+    "Dental Implants",
+    "Dental Crowns",
+    "Pediatric Dentistry",
+    "Specialty Dental",
+    "Laser Dentistry",
+    "Cosmetic Dentistry",
+    "Dental Veneers",
+    "Zoom Whitening",
+    "Kor Whitening",
+    "Teeth Contouring",
+    "Invisalign"
+  ],
+  "teamMembers": [
+    {
+      "name": "Aaron Jones, DDS",
+      "title": "Cosmetic, Family & General Dentist",
+      "bio": "Born and raised in Irving, Texas, Dr. Aaron Jones earned his DDS from Baylor College of Dentistry and has cared for Park Cities and Dallas families for over two decades."
+    },
+    {
+      "name": "Elizabeth Warsop, DMD",
+      "title": "General & Cosmetic Dentist",
+      "bio": "Dr. Warsop blends artistry and advanced training to help patients leave each visit smiling with more confidence and comfort."
+    },
+    {
+      "name": "Justin Cortina, DDS, MS",
+      "title": "Prosthodontics & Restorative Dentist",
+      "bio": "Dr. Cortina combines restorative and implant-focused expertise with a conservative, patient-centered treatment approach."
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "Verified Patient",
+      "text": "Highland Park Dental is truly a gem amongst dusty stones. The team is thoughtful, friendly, professional, and delivers the most incredible patient experience.",
+      "rating": 5
+    },
+    {
+      "author": "Longtime Family Patient",
+      "text": "My family has been going to Highland Park Dental for almost 20 years. They are always friendly and professional while making you feel comfortable and well cared for.",
+      "rating": 5
+    }
+  ],
+  "logoUrl": "https://www.hpdentist.com/wp-content/uploads/2022/12/highlandpark-2.png",
+  "primaryColor": "#333333",
+  "accentColor": "#9B968C",
+  "existingFonts": [
+    "Poppins",
+    "Avenir"
+  ],
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/HpdentalDallas/timeline/",
+    "instagram": "https://www.instagram.com/hpdental/",
+    "twitter": "https://twitter.com/HPDental"
+  },
+  "existingSiteScore": {
+    "mobile": null,
+    "desktop": null,
+    "hasBookingWidget": true,
+    "hasSSL": true,
+    "mobileResponsive": true
+  },
+  "rawPageText": "Highland Park Dental in Snyder Plaza serves Dallas and Highland Park families with cosmetic, restorative, family, pediatric, and preventive dentistry. The practice highlights over 20 years of excellence, concierge-style service, and a membership plan for patients without insurance. Core services include Invisalign, Zoom whitening, implants, crowns, exams, cleanings, and emergency care. Copy from the site emphasizes high-quality, personalized care and making patients feel comfortable and confident. Contact details repeated across key pages: 6725 Hillcrest Ave Ste. B&C, Dallas, TX 75205, phone 972-362-2021, email HPD@HPDentist.com, office hours Monday 8am-7pm, Tuesday-Thursday 8am-5pm, Friday 8am-2pm. Team pages feature Aaron Jones DDS, Elizabeth Warsop DMD, and Justin Cortina DDS MS. Patient quotes stress trust, friendliness, professionalism, and long-term loyalty."
+}

@@ -1,0 +1,23 @@
+{
+  "brandPersonality": "warm-boutique",
+  "palette": {
+    "primary": "#3E6F99",
+    "primaryLight": "#EAF3FB",
+    "accent": "#6FC8D9",
+    "background": "#F4F8FC",
+    "surface": "#FFFFFF",
+    "text": "#10233A",
+    "textMuted": "#5A6F84"
+  },
+  "fonts": {
+    "heading": "Sora",
+    "body": "Source Sans 3"
+  },
+  "copy": {
+    "heroHeadline": "Trusted family dentistry in Lakewood, with modern care for every age.",
+    "heroSubheadline": "From cleanings to Invisalign and urgent visits, Lakewood Family Dental Care helps Dallas families feel comfortable, informed, and cared for.",
+    "heroCta": "Book an Appointment",
+    "secondaryCta": "Call (214) 823-1638",
+    "aboutSnippet": "Established in 1947, our team continues a neighborhood legacy with a caring staff, multilingual support, and in-house specialty care."
+  }
+}

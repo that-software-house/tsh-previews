@@ -116,3 +116,6 @@ Track which files have been assigned to avoid reuse:
 | Midtown Family Dentistry Dallas | unknown |
 | Austin Artistic Dental | unknown |
 | Ross Avenue Family Dental | unknown |
+| Oak Cliff Dental Center | docs/samples/full-page6.webp |
+| Lakewood Family Dental Care | docs/samples/full-page2.webp |
+| Highland Park Dental | docs/samples/full-page7.webp |
