@@ -1,0 +1,77 @@
+{
+  "businessName": "Bishop Arts Dental PLLC",
+  "tagline": "Smile! You're in GREAT hands.",
+  "phone": "(214) 942-9205",
+  "email": null,
+  "address": "1218 N. Bishop Ave., Dallas, TX 75208",
+  "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=1218+N+Bishop+Ave+Dallas+TX+75208",
+  "services": [
+    "General Dentistry",
+    "Dental Checkups and Cleanings",
+    "Dental Implants",
+    "Crowns and Bridgework",
+    "Fillings",
+    "Periodontal (Gum) Disease Therapy",
+    "Porcelain Veneers",
+    "Teeth Whitening",
+    "Root Canal Treatment",
+    "TMJ/TMD Treatment",
+    "Tooth Extractions",
+    "Emergency Dental Treatment"
+  ],
+  "teamMembers": [
+    {
+      "name": "Michael Robinson, D.D.S.",
+      "title": "Lead Dentist",
+      "bio": "Dr. Robinson is a Dallas native with a DDS earned in 1984, over 35 years in private practice, and ongoing continuing education with a focus on clear patient education and comprehensive care."
+    },
+    {
+      "name": "Alicia B.",
+      "title": "Front Office / Practice Administrator",
+      "bio": "Alicia joined the practice in 1989 and transitioned to practice administration in 2004, helping patients with operations and dental insurance guidance."
+    },
+    {
+      "name": "Aida Q., R.D.H.",
+      "title": "Registered Dental Hygienist",
+      "bio": "Aida joined in 2020 and focuses on preventive care and patient education after completing dental hygiene training at Texas A&M College of Dentistry."
+    },
+    {
+      "name": "Prezli B., R.D.A.",
+      "title": "Dental Assistant",
+      "bio": "Prezli joined in 2022 as a registered dental assistant and focuses on creating a comfortable and welcoming patient experience."
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "Bishop Arts Dental",
+      "text": "Smile! You're in GREAT hands.",
+      "rating": 5
+    },
+    {
+      "author": "Bishop Arts Dental",
+      "text": "Our practice is devoted to comprehensive and preventive patient care.",
+      "rating": 5
+    },
+    {
+      "author": "Bishop Arts Dental",
+      "text": "Our patients are our most important asset, and we strive to develop long-lasting, trusting relationships.",
+      "rating": 5
+    }
+  ],
+  "logoUrl": "https://www.bishopartsdental.com/storage/app/media/_SHARED/logo_1.png",
+  "primaryColor": "#518FC2",
+  "accentColor": "#36B7A8",
+  "existingFonts": [
+    "Arial",
+    "Helvetica"
+  ],
+  "socialLinks": {},
+  "existingSiteScore": {
+    "mobile": null,
+    "desktop": null,
+    "hasBookingWidget": true,
+    "hasSSL": true,
+    "mobileResponsive": true
+  },
+  "rawPageText": "Bishop Arts Dental PLLC presents itself as a Dallas dental office focused on comprehensive and preventive care. Homepage copy includes: 'Smile! You're in GREAT hands.' and emphasizes helping patients maintain optimal oral health through informed decisions and long-term relationships. The practice describes itself as a local, trusted office offering general and cosmetic dentistry with implants, veneers, and whitening. Services page copy highlights routine visits, cleanings, exams, oral cancer screenings, restorative treatments, root canal treatment, TMJ/TMD treatment, and emergency dental treatment for chipped, moved, or knocked-out teeth. Dr. Michael Robinson, D.D.S. is described as a Dallas native with a chemistry degree from the University of Dallas, a DDS earned in 1984, continuing education, and over 35 years in Dallas private practice. Team page content names Alicia (front office/practice administration), Aida (registered dental hygienist), and Prezli (registered dental assistant). Contact details shown across pages: 1218 N. Bishop Ave., Dallas, TX 75208, phone 214-942-9205. Hours shown: Monday through Wednesday 7:00 am to 6:00 pm; Thursday through Sunday closed. Insurance and financial pages state PPO claim support and mention CareCredit for extended payment plans."
+}

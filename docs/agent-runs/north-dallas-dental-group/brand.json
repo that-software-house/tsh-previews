@@ -1,0 +1,23 @@
+{
+  "brandPersonality": "minimal-clean",
+  "palette": {
+    "primary": "#1E3F67",
+    "primaryLight": "#E8F0F8",
+    "accent": "#6CB7C9",
+    "background": "#F4F1EC",
+    "surface": "#FFFFFF",
+    "text": "#1F2630",
+    "textMuted": "#5E6A79"
+  },
+  "fonts": {
+    "heading": "Cormorant Garamond",
+    "body": "Manrope"
+  },
+  "copy": {
+    "heroHeadline": "Dallas dental care with a true hospitality experience.",
+    "heroSubheadline": "From cleanings to smile restorations, North Dallas Dental Group combines advanced treatment with a calm, personalized visit from start to finish.",
+    "heroCta": "Schedule an Appointment",
+    "secondaryCta": "Call (972) 407-1333",
+    "aboutSnippet": "Patients choose North Dallas Dental Group for thoughtful communication, comfortable visits, and handcrafted treatment plans that support long-term oral health."
+  }
+}

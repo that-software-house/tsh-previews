@@ -1,0 +1,23 @@
+{
+  "brandPersonality": "clinical-modern",
+  "palette": {
+    "primary": "#2F78A7",
+    "primaryLight": "#EAF4FB",
+    "accent": "#5BAA8A",
+    "background": "#F6FAFD",
+    "surface": "#FFFFFF",
+    "text": "#1C2D3A",
+    "textMuted": "#5F7282"
+  },
+  "fonts": {
+    "heading": "Manrope",
+    "body": "Source Sans 3"
+  },
+  "copy": {
+    "heroHeadline": "Comprehensive dentistry with the personal attention your family deserves.",
+    "heroSubheadline": "From preventive checkups to advanced implants, sedation, and emergency care, Dental Center of Lakewood helps Dallas patients feel comfortable, informed, and confident in every visit.",
+    "heroCta": "Call (214) 823-5253",
+    "secondaryCta": "Explore Services",
+    "aboutSnippet": "Dr. Travis Spillman, Dr. Jacquelyn Green, and a long-tenured local team deliver relationship-first care with modern technology right here in Lakewood."
+  }
+}

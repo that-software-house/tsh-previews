@@ -1,0 +1,57 @@
+{
+  "cssPrefix": "dea-preview",
+  "slug": "deep-ellum-advanced-dentistry",
+  "route": "/deep-ellum-advanced-dentistry",
+  "referenceFile": "docs/samples/full-page5.webp",
+  "fontDisplay": "Space Grotesk",
+  "fontBody": "Public Sans",
+  "referenceVisualNotes": {
+    "heroLayout": "Compact split hero on white background with large heading and CTA cluster on the left and a rounded media card with floating stat chips on the right.",
+    "heroTypography": "Bold modern sans headline with tight leading and short line lengths; subcopy is concise and airy.",
+    "statsBar": "Four inline muted chips directly below hero, each showing one large metric with minimal supporting text.",
+    "servicesSection": "Four-card service grid with small media thumbnail and short service label-first hierarchy.",
+    "featureSection": "Single spotlight row with image on one side and concise copy on the other emphasizing one signature capability.",
+    "testimonials": "One featured testimonial module with patient image, star score, and a compact quote rather than a large card grid.",
+    "sectionRhythm": "White hero -> light-tinted stats strip -> white services -> light feature panel -> white testimonial/contact transition -> oversized typographic footer accent.",
+    "whitespace": "Moderately airy with distinct vertical breaks, but tighter than editorial styles.",
+    "buttonStyle": "Rounded pill buttons with solid accent primary and lightly outlined secondary actions.",
+    "colorApplication": "Neutrals dominate section backgrounds; accent orange appears on CTA, key numbers, and small emphasis details."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "layout": "compact-split-left-copy-right-photo-card",
+      "content": ["eyebrow", "h1", "description", "cta-pair", "meta-links"]
+    },
+    {
+      "id": "stats-bar",
+      "layout": "horizontal-4-chip-row"
+    },
+    {
+      "id": "services",
+      "layout": "4-col-thumbnail-cards"
+    },
+    {
+      "id": "signature",
+      "layout": "feature-row-image-plus-copy"
+    },
+    {
+      "id": "testimonial",
+      "layout": "single-featured-quote-module"
+    },
+    {
+      "id": "contact",
+      "layout": "two-col-info-plus-hours"
+    }
+  ],
+  "globalPatterns": {
+    "navStyle": "minimal-white-frosted-on-scroll",
+    "sectionSpacing": "5rem 0",
+    "cardRadius": "1.1rem",
+    "shellWidth": "min(1140px, calc(100% - 2rem))",
+    "mobileRail": true,
+    "floatingCTA": true,
+    "animationLibrary": "framer-motion",
+    "animationLevel": "subtle"
+  }
+}

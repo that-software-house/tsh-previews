@@ -1,0 +1,91 @@
+{
+  "businessName": "North Dallas Dental Group",
+  "tagline": "An Extraordinary Experience",
+  "phone": "(972) 407-1333",
+  "email": null,
+  "address": "17120 Dallas Parkway Suite 150, Dallas, TX 75248",
+  "googleMapsUrl": "https://maps.app.goo.gl/7iQ4XT9HT6J5nG3Y6",
+  "services": [
+    "Dental Exams & Cleanings",
+    "Dental Emergencies",
+    "Fluoride Treatment",
+    "Dental Sealants",
+    "Oral Cancer Screening",
+    "Periodontal Treatment (Scaling and Root Planing)",
+    "Root Canal Therapy",
+    "TMJ/TMD Treatment",
+    "Sleep Apnea Treatment",
+    "Wisdom Teeth Extractions",
+    "Sedation Dentistry",
+    "In-office Crown Milling",
+    "In-office 3D Printing",
+    "Teeth Whitening",
+    "Dental Implants",
+    "Invisalign Orthodontic Solutions",
+    "Porcelain Veneers",
+    "Composite Bonding",
+    "Composite Fillings",
+    "Same Day Crowns",
+    "Fixed Bridge",
+    "Dentures (Full and Partial)"
+  ],
+  "teamMembers": [
+    {
+      "name": "Hunter Owen, DDS",
+      "title": "Dentist",
+      "bio": "Dr. Owen is a Texas-trained dentist known for hospitality-first care, advanced cosmetic training through Kois Center coursework, and long-term patient relationships built on comfort and trust."
+    },
+    {
+      "name": "Darren Crosbie, DDS",
+      "title": "Dentist",
+      "bio": "Dr. Crosbie is a Texas native with advanced training in Invisalign, implant placement and restoration, and single-visit all-ceramic crowns using in-house milling technology."
+    },
+    {
+      "name": "North Dallas Dental Group Team",
+      "title": "Clinical and Guest Experience Team",
+      "bio": "The team emphasizes warm, efficient visits, clear communication around treatment and costs, and a fear-free experience for families and long-time patients."
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "Elizabeth M.",
+      "text": "Always a consistent, great experience at this office. The professionalism here is unmatched and I feel confident in the treatment I am getting.",
+      "rating": 5
+    },
+    {
+      "author": "Lindsie R.",
+      "text": "The staff has been extremely efficient, professional, and charismatic. I loved being able to share my fears and wishes before treatment.",
+      "rating": 5
+    },
+    {
+      "author": "Julie S.",
+      "text": "I've been seeing Dr. Crosbie for 10+ years and always have a great experience. The team honors my time and makes me feel at ease.",
+      "rating": 5
+    },
+    {
+      "author": "Raphael V.",
+      "text": "The office is super clean, the staff is always friendly, and Dr. Owen puts out top-notch work while keeping every visit comfortable.",
+      "rating": 5
+    }
+  ],
+  "logoUrl": "https://cdn.prod.website-files.com/65e8b81094632ffc7f8f31ac/65e8bf26326fd91becd7adf8_North-Dallas-Dental-Group-logo-igon.svg",
+  "primaryColor": "#355789",
+  "accentColor": "#5BB5CC",
+  "existingFonts": [
+    "Proxima Nova",
+    "PT Sans",
+    "Lato"
+  ],
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/pages/Dr-Darren-Crosbie-DDS/135780943186903",
+    "instagram": "https://www.instagram.com/northdallasdentalgroup"
+  },
+  "existingSiteScore": {
+    "mobile": null,
+    "desktop": null,
+    "hasBookingWidget": true,
+    "hasSSL": true,
+    "mobileResponsive": true
+  },
+  "rawPageText": "North Dallas Dental Group positions itself as a Dallas practice delivering an extraordinary, hospitality-first experience with general, cosmetic, and restorative dentistry. Repeated messaging emphasizes that patients should feel at home, listened to, and treated like family, with fear-free comprehensive exams, gentle cleanings, and modern diagnostics. Service pages list preventive care, emergency treatment, periodontal therapy, root canal therapy, Invisalign, dental implants, veneers, same-day crowns, and dentures. Doctor bios highlight Hunter Owen, DDS and Darren Crosbie, DDS, with advanced training in cosmetic and comprehensive dentistry, implant care, and in-house technology including digital impressions, 3D printing, and single-visit crowns. Testimonial themes repeatedly mention professionalism, transparent treatment costs, friendly staff, and long-term patient loyalty. Core contact details include 17120 Dallas Parkway Suite 150, Dallas TX 75248 and phone (972) 407-1333, with weekday office hours and online appointment booking via Flexbook." 
+}

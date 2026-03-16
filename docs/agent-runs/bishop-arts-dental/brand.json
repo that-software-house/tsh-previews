@@ -1,0 +1,23 @@
+{
+  "brandPersonality": "clinical-modern",
+  "palette": {
+    "primary": "#2F7DAD",
+    "primaryLight": "#EAF5FB",
+    "accent": "#36B7A8",
+    "background": "#F1F7FC",
+    "surface": "#FFFFFF",
+    "text": "#163246",
+    "textMuted": "#527086"
+  },
+  "fonts": {
+    "heading": "Outfit",
+    "body": "Manrope"
+  },
+  "copy": {
+    "heroHeadline": "Calm, thorough dental care built around long-term patient trust.",
+    "heroSubheadline": "From cleanings and preventive care to implants, veneers, and emergency treatment, Bishop Arts Dental helps Dallas patients protect healthy smiles with clear guidance.",
+    "heroCta": "Request an Appointment",
+    "secondaryCta": "Call (214) 942-9205",
+    "aboutSnippet": "Bishop Arts Dental is devoted to comprehensive and preventive patient care, with an emphasis on patient education, practical treatment options, and long-standing relationships."
+  }
+}

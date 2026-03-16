@@ -1,0 +1,23 @@
+{
+  "brandPersonality": "clinical-modern",
+  "palette": {
+    "primary": "#186D82",
+    "primaryLight": "#E7F6FA",
+    "accent": "#19B66E",
+    "background": "#F3FAFC",
+    "surface": "#FFFFFF",
+    "text": "#132730",
+    "textMuted": "#5F7580"
+  },
+  "fonts": {
+    "heading": "Plus Jakarta Sans",
+    "body": "Manrope"
+  },
+  "copy": {
+    "heroHeadline": "Restorative dentistry with a calm, patient-first experience in Lakewood.",
+    "heroSubheadline": "From preventive visits and cosmetic care to TMJ support and emergency treatment, our team helps East Dallas patients feel informed, comfortable, and cared for.",
+    "heroCta": "Call (214) 821-8639",
+    "secondaryCta": "Explore Services",
+    "aboutSnippet": "Dr. Ben Alexander and the Lakewood Restorative Dentistry team combine advanced clinical training with personal, relationship-based care for every visit."
+  }
+}

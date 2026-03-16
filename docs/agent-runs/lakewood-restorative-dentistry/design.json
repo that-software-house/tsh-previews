@@ -1,0 +1,80 @@
+{
+  "cssPrefix": "lrd-preview",
+  "slug": "lakewood-restorative-dentistry",
+  "route": "/lakewood-restorative-dentistry",
+  "referenceFile": "docs/samples/full-page3.webp",
+  "fontDisplay": "Plus Jakarta Sans",
+  "fontBody": "Manrope",
+  "referenceVisualNotes": {
+    "heroLayout": "Split hero with content block on the left and a full-height smiling patient/team image on the right; light tinted hero background and compact CTA cluster.",
+    "heroTypography": "Large modern sans headline with medium-weight supporting paragraph and generous top/bottom whitespace.",
+    "statsBar": "Four evenly spaced trust metrics in a horizontal white strip directly under hero.",
+    "servicesSection": "Vertical service list on the left with one active item shown in a larger detail panel on the right including image and summary.",
+    "featureSection": "Centered support section with 2x2 icon cards on a mostly white background and restrained tint accents.",
+    "testimonials": "Image-led testimonial row with supporting quote cards and visible star rating treatment.",
+    "sectionRhythm": "Tinted hero -> white stats strip -> white trust cards -> subtle lavender/teal services panel -> white testimonial section -> dark footer.",
+    "whitespace": "Airy spacing with clear separation between section groups and minimal visual clutter.",
+    "buttonStyle": "Rounded pill buttons with one solid primary action and one outlined secondary action.",
+    "colorApplication": "Primary teal anchors headings and CTAs, accent green appears in highlights/icons, and the rest of the page stays white with very soft tinted backgrounds."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "layout": "split-left-text-right-photo",
+      "gradientAngle": "124deg",
+      "content": [
+        "eyebrow",
+        "h1",
+        "description",
+        "cta-pair",
+        "meta-links"
+      ]
+    },
+    {
+      "id": "stats-bar",
+      "layout": "horizontal-4-col"
+    },
+    {
+      "id": "trust",
+      "layout": "grid-2x2-icon-cards",
+      "kicker": "Why Patients Choose Us",
+      "heading": "Modern restorative care with personal attention at every visit."
+    },
+    {
+      "id": "services",
+      "layout": "vertical-tab-list-with-detail-panel",
+      "tabs": [
+        "Restorative",
+        "Cosmetic",
+        "Preventive",
+        "TMJ & Comfort Care"
+      ]
+    },
+    {
+      "id": "doctors",
+      "layout": "two-col-bio-plus-team-highlights"
+    },
+    {
+      "id": "testimonials",
+      "layout": "image-plus-supporting-cards"
+    },
+    {
+      "id": "contact",
+      "layout": "two-col-info-plus-card"
+    },
+    {
+      "id": "footer",
+      "layout": "dark-multi-col"
+    }
+  ],
+  "globalPatterns": {
+    "navStyle": "minimal-transparent-to-frosted",
+    "sectionSpacing": "5.25rem 0",
+    "cardRadius": "1.15rem",
+    "shellWidth": "min(1160px, calc(100% - 2rem))",
+    "mobileRail": true,
+    "floatingCTA": true,
+    "animationLibrary": "framer-motion",
+    "animationLevel": "subtle"
+  }
+}

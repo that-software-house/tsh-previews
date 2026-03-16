@@ -1,0 +1,53 @@
+{
+  "cssPrefix": "hsd-preview",
+  "slug": "highland-smiles-dental",
+  "route": "/highland-smiles-dental",
+  "referenceFile": "docs/samples/full-page4.webp",
+  "fontDisplay": "Fraunces",
+  "fontBody": "Manrope",
+  "referenceVisualNotes": {
+    "heroLayout": "Centered editorial hero with soft pastel atmosphere, large portrait image, and floating reassurance badges.",
+    "heroTypography": "High-contrast serif headline with generous line height and relaxed supporting copy.",
+    "statsBar": "No rigid stats strip; trust points are presented as floating chips near the hero image.",
+    "servicesSection": "Magazine-like blend of image and service cards that feels spacious rather than grid-heavy.",
+    "featureSection": "Full-width blush/peach panel with two columns: doctor story on one side and supportive detail list on the other.",
+    "testimonials": "Primary oversized quote with secondary supporting quotes on soft cards.",
+    "sectionRhythm": "Warm off-white hero -> white service mosaic -> peach callout -> soft-blue testimonials -> white contact/footer.",
+    "whitespace": "Airy spacing and breathing room around headings, cards, and transitions.",
+    "buttonStyle": "Rounded-rectangle buttons with soft shadow and clear filled vs outline hierarchy.",
+    "colorApplication": "Primary blue anchors navigation and CTAs while blush/peach supports emotional warmth in callouts and accents."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "layout": "split-left-copy-right-portrait-with-badges",
+      "content": ["eyebrow", "h1", "description", "cta-pair", "trust-chips"]
+    },
+    {
+      "id": "services",
+      "layout": "editorial-mosaic-cards-with-image"
+    },
+    {
+      "id": "doctor-callout",
+      "layout": "full-width-tinted-two-col"
+    },
+    {
+      "id": "testimonials",
+      "layout": "single-large-quote-plus-two-support-cards"
+    },
+    {
+      "id": "contact",
+      "layout": "two-col-info-plus-hours-and-links"
+    }
+  ],
+  "globalPatterns": {
+    "navStyle": "minimal-transparent-frosted-on-scroll",
+    "sectionSpacing": "5.5rem 0",
+    "cardRadius": "1.3rem",
+    "shellWidth": "min(1140px, calc(100% - 2rem))",
+    "mobileRail": true,
+    "floatingCTA": true,
+    "animationLibrary": "framer-motion",
+    "animationLevel": "subtle"
+  }
+}

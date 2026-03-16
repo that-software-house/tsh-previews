@@ -1,0 +1,57 @@
+{
+  "cssPrefix": "nddg-preview",
+  "slug": "north-dallas-dental-group",
+  "route": "/north-dallas-dental-group",
+  "referenceFile": "docs/samples/full-page7.webp",
+  "fontDisplay": "Cormorant Garamond",
+  "fontBody": "Manrope",
+  "referenceVisualNotes": {
+    "heroLayout": "Airy split hero with copy on the left and a large rounded blob-masked portrait image on the right; neutral off-white background and minimal chrome.",
+    "heroTypography": "Elegant editorial serif headline with generous line-height and compact supporting paragraph beneath.",
+    "statsBar": "No formal stats strip; trust appears as small lightweight chips under hero CTAs.",
+    "servicesSection": "Centered 2x2 icon-led service grid with minimal or no heavy card borders and lots of surrounding whitespace.",
+    "featureSection": "Two-column doctor spotlight area with text content and simple previous/next controls paired with a circular or rounded doctor image.",
+    "testimonials": "Single visual lane of concise quote cards that preserve a calm, premium rhythm instead of dense review blocks.",
+    "sectionRhythm": "Off-white hero -> white services -> light neutral doctor section -> warm CTA panel -> white contact/footer.",
+    "whitespace": "Very airy spacing and restrained element density; sections should feel spacious and quiet.",
+    "buttonStyle": "Rounded rectangle controls with soft neutral fill for secondary and solid primary for actions.",
+    "colorApplication": "Deep navy reserved for headings and key CTAs, while aqua accent appears sparingly in chips, icon halos, and highlights."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "layout": "split-left-copy-right-blob-photo",
+      "content": ["eyebrow", "h1", "description", "cta-pair", "trust-chips"]
+    },
+    {
+      "id": "services",
+      "layout": "centered-2x2-icon-grid"
+    },
+    {
+      "id": "doctors",
+      "layout": "two-col-doctor-carousel"
+    },
+    {
+      "id": "cta-band",
+      "layout": "full-width-warm-two-col"
+    },
+    {
+      "id": "testimonials",
+      "layout": "three-col-quote-cards"
+    },
+    {
+      "id": "contact",
+      "layout": "three-col-footer-contact-hours-links"
+    }
+  ],
+  "globalPatterns": {
+    "navStyle": "minimal-transparent-frosted-on-scroll",
+    "sectionSpacing": "5.5rem 0",
+    "cardRadius": "1.2rem",
+    "shellWidth": "min(1140px, calc(100% - 2rem))",
+    "mobileRail": true,
+    "floatingCTA": true,
+    "animationLibrary": "framer-motion",
+    "animationLevel": "subtle"
+  }
+}

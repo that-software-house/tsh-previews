@@ -1,0 +1,23 @@
+{
+  "brandPersonality": "warm-boutique",
+  "palette": {
+    "primary": "#1D5F7E",
+    "primaryLight": "#E8F4FA",
+    "accent": "#E98E6E",
+    "background": "#FDF9F6",
+    "surface": "#FFFFFF",
+    "text": "#1D2A31",
+    "textMuted": "#5E6B72"
+  },
+  "fonts": {
+    "heading": "Fraunces",
+    "body": "Manrope"
+  },
+  "copy": {
+    "heroHeadline": "Warm, complete dentistry for Dallas families.",
+    "heroSubheadline": "From preventive checkups to cosmetic and restorative care, Highland Smiles Dental helps you feel calm, heard, and cared for at every visit.",
+    "heroCta": "Request an Appointment",
+    "secondaryCta": "Call (214) 528-9990",
+    "aboutSnippet": "Highland Smiles Dental combines modern treatment options with a genuinely welcoming office experience, so patients of all ages can protect and improve their smiles with confidence."
+  }
+}

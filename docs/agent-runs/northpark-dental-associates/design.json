@@ -1,0 +1,65 @@
+{
+  "cssPrefix": "npda-preview",
+  "slug": "northpark-dental-associates",
+  "route": "/northpark-dental-associates",
+  "referenceFile": "docs/samples/full-page2.webp",
+  "fontDisplay": "Sora",
+  "fontBody": "Source Sans 3",
+  "referenceVisualNotes": {
+    "heroLayout": "Full-width split hero with copy weighted left and doctor/patient image right, with soft blue-tinted overlays and lightweight top navigation.",
+    "heroTypography": "Large modern sans headline with compact line-height and straightforward supporting paragraph beneath the primary CTA pair.",
+    "statsBar": "Four compact trust/stat cards immediately below hero, each in rounded white tiles with subtle elevation.",
+    "servicesSection": "Centered 3x2 icon card grid with brief service descriptions and restrained card chrome.",
+    "featureSection": "Two-column doctor feature section in a tinted background lane with profile image paired to bio-led content.",
+    "testimonials": "Three equal-width testimonial cards with star row, quote text, and author attribution.",
+    "sectionRhythm": "Soft-blue hero -> white stats -> white trust/services -> tinted doctor panel -> white testimonials -> light CTA band -> white contact -> dark footer.",
+    "whitespace": "Balanced and readable spacing: generous enough to feel calm, but denser than editorial luxury layouts.",
+    "buttonStyle": "Rounded pill actions with solid primary gradient fill and outlined/soft ghost secondary treatment.",
+    "colorApplication": "Navy-blue drives headings and actions while aqua accent appears in icon halos and highlights; body stays mostly white and pale blue."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "layout": "split-left-copy-right-photo",
+      "content": ["eyebrow", "h1", "description", "cta-pair", "meta-links"]
+    },
+    {
+      "id": "stats-bar",
+      "layout": "horizontal-4-col"
+    },
+    {
+      "id": "trust",
+      "layout": "three-col-icon-cards"
+    },
+    {
+      "id": "services",
+      "layout": "centered-3x2-icon-grid"
+    },
+    {
+      "id": "doctors",
+      "layout": "two-col-copy-image"
+    },
+    {
+      "id": "testimonials",
+      "layout": "three-col-quote-cards"
+    },
+    {
+      "id": "cta-band",
+      "layout": "full-width-two-col-actions"
+    },
+    {
+      "id": "contact",
+      "layout": "two-col-info-hours-card"
+    }
+  ],
+  "globalPatterns": {
+    "navStyle": "minimal-transparent-frosted-on-scroll",
+    "sectionSpacing": "5rem 0",
+    "cardRadius": "1.1rem",
+    "shellWidth": "min(1180px, calc(100% - 2rem))",
+    "mobileRail": true,
+    "floatingCTA": true,
+    "animationLibrary": "framer-motion",
+    "animationLevel": "subtle"
+  }
+}

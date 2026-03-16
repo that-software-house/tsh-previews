@@ -1,0 +1,23 @@
+{
+  "brandPersonality": "bold-contemporary",
+  "palette": {
+    "primary": "#2D2A27",
+    "primaryLight": "#F5EFE8",
+    "accent": "#C4772E",
+    "background": "#F9F6F2",
+    "surface": "#FFFFFF",
+    "text": "#1E1A17",
+    "textMuted": "#6C6258"
+  },
+  "fonts": {
+    "heading": "Space Grotesk",
+    "body": "Public Sans"
+  },
+  "copy": {
+    "heroHeadline": "Personalized dental care to protect and elevate your smile.",
+    "heroSubheadline": "Deep Ellum Advanced Dentistry combines modern treatment options with one-on-one attention, so your visits feel clear, calm, and genuinely comfortable.",
+    "heroCta": "Call (214) 466-6610",
+    "secondaryCta": "Request an Appointment",
+    "aboutSnippet": "Led by Michael Wing, DDS, our Dallas office focuses on prevention, cosmetic upgrades, and long-term oral health plans tailored to your priorities."
+  }
+}

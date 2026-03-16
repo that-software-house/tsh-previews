@@ -1,0 +1,79 @@
+{
+  "businessName": "Lakewood Restorative Dentistry",
+  "tagline": "Dentist - Lakewood, White Rock & Lake Highlands",
+  "phone": "(214) 821-8639",
+  "email": "reception@dentistinlakewood.com",
+  "address": "6342 La Vista Dr, Ste C, Dallas, TX 75214",
+  "googleMapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJyUDIn1afToYRcTGmdDURjlc",
+  "services": [
+    "TMJ Treatments",
+    "Cosmetic Dentistry",
+    "Restorative Dentistry",
+    "Emergency Treatment",
+    "Tooth Whitening",
+    "Preventative Treatments",
+    "Invisalign",
+    "Implants",
+    "Veneers",
+    "Laser Dentistry",
+    "Sedation Dentistry",
+    "Treatment of Tooth Wear"
+  ],
+  "teamMembers": [
+    {
+      "name": "Dr. Ben Alexander",
+      "title": "DDS",
+      "bio": "Dr. Ben Alexander earned his Doctor of Dental Surgery at UT Health Science Center San Antonio and has advanced training at the Kois Center, with certifications in nitrous oxide sedation, oral conscious sedation, and Invisalign therapy."
+    },
+    {
+      "name": "Lorraine",
+      "title": "Receptionist",
+      "bio": "Lorraine brings 24 years of dental office experience and helps patients feel supported from check-in through follow-up."
+    },
+    {
+      "name": "Martha",
+      "title": "Registered Dental Assistant",
+      "bio": "Martha supports clinical care chairside and focuses on helping each patient feel comfortable and cared for during treatment."
+    },
+    {
+      "name": "Sonia",
+      "title": "Registered Dental Hygienist",
+      "bio": "Sonia provides preventive hygiene care in a calm environment and helps patients maintain long-term oral health."
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "Patient Review",
+      "text": "I always have a good experience with Dr Alexander. He's an excellent dentist and I love his attention to detail. I'm never nervous there.",
+      "rating": 5
+    },
+    {
+      "author": "Patient Review",
+      "text": "I have extreme dental phobia, but Dr. Alexander and his team were kind, welcoming, and informative. I am so happy to say I have found my new dentist.",
+      "rating": 5
+    },
+    {
+      "author": "Patient Review",
+      "text": "Excellent experience from beginning to end. Check-in was seamless. Cleaning and exam was thorough and quick. Everyone is friendly.",
+      "rating": 5
+    }
+  ],
+  "logoUrl": "https://www.dentistinlakewood.com/wp-content/uploads/2024/07/lakewood-restorative-dentistry.png",
+  "primaryColor": "#186D82",
+  "accentColor": "#23C44D",
+  "existingFonts": [
+    "System Sans"
+  ],
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/lakewoodrestorativedentistry",
+    "instagram": null
+  },
+  "existingSiteScore": {
+    "mobile": null,
+    "desktop": null,
+    "hasBookingWidget": false,
+    "hasSSL": true,
+    "mobileResponsive": true
+  },
+  "rawPageText": "Lakewood Restorative Dentistry describes itself as a patient-centered East Dallas practice focused on dental excellence. The homepage says patients from Lakewood, White Rock, Lake Highlands, and surrounding Dallas neighborhoods are served with restorative and preventive care. The practice emphasizes whole-body health, ethical values, cutting-edge technology, and patient-driven care. Dr. Ben Alexander's treatment philosophy is based on the golden rule and individualized care plans. He is trained at the Kois Center and certified in nitrous oxide sedation, oral conscious sedation, and Invisalign therapy. Services include TMJ treatment, cosmetic dentistry, restorative dentistry, treatment of tooth wear, emergency care, tooth whitening, preventative treatments, Invisalign, implants, veneers, laser dentistry, and sedation dentistry. Service copy highlights tooth-colored fillings, all-ceramic crowns, bridges, implant restorations, dentures, and full-mouth rehabilitation when needed. The office also promotes Airstream Biofilm Clearance, digital x-rays, and 3D intra-oral scanning for modern diagnostics and cleaning support. The team page introduces Lorraine (Receptionist), Martha (Registered Dental Assistant), and Sonia (Registered Dental Hygienist). Review page quotes include: 'I'm never nervous there' and multiple comments about kindness, clear explanations, and comfort for anxious patients. Contact details from schema and footer: 6342 La Vista Dr, Ste C, Dallas, TX 75214, phone (214) 821-8639, email reception@dentistinlakewood.com. Listed hours: Monday-Tuesday 8:00-1:00 and 2:00-5:00, Wednesday-Thursday 7:00-12:00 and 1:00-4:00, Friday-Sunday closed."
+}

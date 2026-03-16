@@ -1,0 +1,77 @@
+{
+  "cssPrefix": "dcol-preview",
+  "slug": "dental-center-of-lakewood",
+  "route": "/dental-center-of-lakewood",
+  "referenceFile": "docs/samples/full-page6.webp",
+  "fontDisplay": "Manrope",
+  "fontBody": "Source Sans 3",
+  "referenceVisualNotes": {
+    "heroLayout": "Split hero with large headline and CTA block on the left, doctor image card on the right, plus small floating trust/metric overlays around the photo.",
+    "heroTypography": "Modern sans display with strong weight, compact line-height on headline, and lighter supporting paragraph copy.",
+    "statsBar": "Compact horizontal trust metric row under the hero, presented as three to four simple cards/chips.",
+    "servicesSection": "Three-column service cards, each with a small icon, short title, and concise supportive text.",
+    "featureSection": "Alternating two-column feature rows: text block paired with photo/media panel, with one tinted panel to break rhythm.",
+    "testimonials": "Three testimonial cards with visible star treatment and patient attribution, laid out in a clean horizontal row.",
+    "sectionRhythm": "Hero on white/tinted gradient, then white trust row, then soft-tint services block, then alternating white/tinted feature panels, then white testimonials, then darker footer.",
+    "whitespace": "Airy spacing with generous vertical padding and clear separation between section groups.",
+    "buttonStyle": "Rounded pill buttons with solid primary fill and outlined secondary style.",
+    "colorApplication": "Primary blue drives headings and CTA emphasis, mint accent appears in icons/highlights, and neutrals keep most backgrounds calm and bright."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "layout": "split-left-text-right-photo-with-floating-cards",
+      "gradientAngle": "120deg",
+      "content": [
+        "eyebrow",
+        "h1",
+        "description",
+        "cta-pair",
+        "meta-links"
+      ]
+    },
+    {
+      "id": "stats-bar",
+      "layout": "horizontal-4-col"
+    },
+    {
+      "id": "trust",
+      "layout": "grid-3-icon-cards",
+      "kicker": "Why Lakewood Families Choose Us",
+      "heading": "Decades of experience, modern technology, and care that never feels rushed."
+    },
+    {
+      "id": "services",
+      "layout": "3-col-icon-cards",
+      "kicker": "Comprehensive Services",
+      "heading": "Everything from preventive visits to advanced restorative and cosmetic care."
+    },
+    {
+      "id": "feature",
+      "layout": "alternating-two-col-text-image",
+      "kicker": "Comfort + Technology"
+    },
+    {
+      "id": "testimonials",
+      "layout": "3-col-card-row"
+    },
+    {
+      "id": "contact",
+      "layout": "two-col-info-plus-card"
+    },
+    {
+      "id": "footer",
+      "layout": "dark-multi-col"
+    }
+  ],
+  "globalPatterns": {
+    "navStyle": "minimal-transparent-to-frosted",
+    "sectionSpacing": "5rem 0",
+    "cardRadius": "1.1rem",
+    "shellWidth": "min(1160px, calc(100% - 2rem))",
+    "mobileRail": true,
+    "floatingCTA": true,
+    "animationLibrary": "framer-motion",
+    "animationLevel": "subtle"
+  }
+}

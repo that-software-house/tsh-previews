@@ -1,0 +1,23 @@
+{
+  "brandPersonality": "warm-boutique",
+  "palette": {
+    "primary": "#2E5D86",
+    "primaryLight": "#EAF3FB",
+    "accent": "#6FC8D9",
+    "background": "#F4F8FC",
+    "surface": "#FFFFFF",
+    "text": "#10233A",
+    "textMuted": "#5A6F84"
+  },
+  "fonts": {
+    "heading": "Sora",
+    "body": "Source Sans 3"
+  },
+  "copy": {
+    "heroHeadline": "Top-rated general and cosmetic dentistry in Dallas.",
+    "heroSubheadline": "Our friendly team creates a casual, comfortable atmosphere where every patient feels at home.",
+    "heroCta": "Schedule Your Appointment",
+    "secondaryCta": "Call (214) 696-8096",
+    "aboutSnippet": "Northpark Dental Associates helps Dallas families with preventive, restorative, and cosmetic treatment built around comfort, trust, and clear communication."
+  }
+}

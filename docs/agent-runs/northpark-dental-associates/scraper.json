@@ -1,0 +1,81 @@
+{
+  "businessName": "Northpark Dental Associates",
+  "tagline": "Top Rated General & Cosmetic Dentistry in Dallas, TX",
+  "phone": "(214) 696-8096",
+  "email": null,
+  "address": "6500 Greenville Ave. Suite 303, Dallas, TX 75206",
+  "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=6500+Greenville+Ave+Suite+303+Dallas+TX+75206",
+  "services": [
+    "Cosmetic Dentistry",
+    "Guided Biofilm Therapy",
+    "ClearCorrect Invisible Aligners",
+    "Dental Implants",
+    "Emergency Care",
+    "Sleep Apnea Appliances",
+    "Root Canal Therapy",
+    "Metal-Free Crowns",
+    "Tooth-Colored Fillings",
+    "Dentures & Partials",
+    "TMJ Treatment",
+    "Family Dentistry",
+    "General Dentistry",
+    "Preventive Care"
+  ],
+  "teamMembers": [
+    {
+      "name": "Dr. Thomas J. Gibbons",
+      "title": "DDS",
+      "bio": "Dr. Gibbons is a Baylor College of Dentistry graduate focused on reconstructive and implant dentistry with decades of continuing education and patient-first treatment planning."
+    },
+    {
+      "name": "Shellie",
+      "title": "Practice Administrator",
+      "bio": "Shellie has more than 25 years of dental-office experience and supports patients through treatment planning, finances, and insurance coordination."
+    },
+    {
+      "name": "Beatriz",
+      "title": "Registered Dental Hygienist",
+      "bio": "Beatriz joined the team in 2008 and is known for preventive education, gentle hygiene care, and bilingual support in Spanish and English."
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "Paulette W.",
+      "text": "Dr Gibbons found the reason for a problem I have had for over a year that a previous dentist never discovered. I am very grateful to him.",
+      "rating": 5
+    },
+    {
+      "author": "Masako W.",
+      "text": "Dr. Gibbons and his team are a very friendly and professional group. I was referred by a friend and I am so glad that I found them.",
+      "rating": 5
+    },
+    {
+      "author": "Judy D.",
+      "text": "Tom, Bea, and the whole staff are always kind and compassionate while providing professional and excellent dental care!",
+      "rating": 5
+    }
+  ],
+  "logoUrl": "https://www.northparkdental.com/z-images/website-logo.webp",
+  "primaryColor": "#3E6F99",
+  "accentColor": "#6FC8D9",
+  "existingFonts": [
+    "Dosis",
+    "Roboto",
+    "Allura"
+  ],
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/NorthparkDentalAssociates/",
+    "instagram": "https://www.instagram.com/northparkdentalassociates",
+    "yelp": "https://www.yelp.com/biz/thomas-jay-gibbons-dallas",
+    "youtube": "https://www.youtube.com/user/northparkdds",
+    "twitter": "https://twitter.com/NorthparkD2012"
+  },
+  "existingSiteScore": {
+    "mobile": null,
+    "desktop": null,
+    "hasBookingWidget": true,
+    "hasSSL": true,
+    "mobileResponsive": true
+  },
+  "rawPageText": "Northpark Dental Associates presents itself as a Dallas practice focused on general and cosmetic dentistry in a casual, comfortable environment where patients feel at home. Core homepage copy emphasizes a friendly and caring team, high-quality restorative and cosmetic options, and education-focused visits for children, teens, and adults. Service navigation and featured blocks include cosmetic dentistry, guided biofilm therapy, ClearCorrect invisible aligners, dental implants, emergency care, sleep apnea appliances, preventive care, family dentistry, and restorative treatments such as root canals, crowns, and dentures. The site highlights Dr. Thomas J. Gibbons (Baylor College of Dentistry graduate), long-tenured hygiene and administrative team members, and recurring patient themes of kindness, professionalism, and compassionate care. Contact details repeatedly shown across pages are 6500 Greenville Ave. Suite 303, Dallas TX 75206 with office line (214) 696-8096 and after-hours line (469) 437-8371."
+}

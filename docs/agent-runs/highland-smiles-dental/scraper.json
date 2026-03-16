@@ -1,0 +1,74 @@
+{
+  "businessName": "Highland Smiles Dental",
+  "tagline": "Complete Dentistry in a Warm & Welcoming Atmosphere",
+  "phone": "(214) 528-9990",
+  "email": "highlandsmiles@outlook.com",
+  "address": "4925 McKinney Ave, Dallas, TX 75205",
+  "googleMapsUrl": "https://goo.gl/maps/CxTD11B8G8R2",
+  "services": [
+    "Preventive Dentistry",
+    "Dental Checkups & Cleanings",
+    "Periodontal Therapy",
+    "Emergency Dentistry",
+    "Root Canal Therapy",
+    "Tooth Extractions",
+    "Restorative Dentistry",
+    "Dental Crowns & Bridges",
+    "Dentures & Partials",
+    "Dental Implants",
+    "All-On-4 Dental Implants",
+    "Cosmetic Dentistry",
+    "Veneers",
+    "Zoom Teeth Whitening",
+    "SureSmile",
+    "Children's Dentistry"
+  ],
+  "teamMembers": [
+    {
+      "name": "Girish Sandadi, DDS",
+      "title": "Lead Dentist",
+      "bio": "Dr. Sandadi is presented as Dallas' trusted dentist, known for personalized care, comfortable visits, and helping patients achieve long-lasting smile improvements."
+    },
+    {
+      "name": "Highland Smiles Dental Team",
+      "title": "Clinical & Front Office Team",
+      "bio": "The team emphasizes that patients always come first, with support for questions, financial guidance, and a friendly visit from check-in to treatment."
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "Michelle T.",
+      "text": "This dentistry is far beyond the friendliest I have ever encountered. Their warm inviting office and staff are there to welcome me every visit.",
+      "rating": 5
+    },
+    {
+      "author": "Lindsay D.",
+      "text": "The office is very warm and welcoming, and the staff is professional and kind. I would definitely recommend this dentist to anyone.",
+      "rating": 5
+    },
+    {
+      "author": "Rose S.",
+      "text": "Professional care with a human touch. I'd recommend to anyone and everyone.",
+      "rating": 5
+    }
+  ],
+  "logoUrl": "https://www.highlandsmilesdental.com/assets/images/logo.png",
+  "primaryColor": "#2A85B3",
+  "accentColor": "#F6C7B5",
+  "existingFonts": [
+    "Noto Serif",
+    "Poppins"
+  ],
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/HighlandSmilesDental/",
+    "google": "https://www.google.com/maps/place/Highland+Smiles+Dental/@32.827691,-96.7848904"
+  },
+  "existingSiteScore": {
+    "mobile": null,
+    "desktop": null,
+    "hasBookingWidget": true,
+    "hasSSL": true,
+    "mobileResponsive": true
+  },
+  "rawPageText": "Highland Smiles Dental serves Dallas and Highland Park with complete preventive, restorative, cosmetic, and emergency dentistry. Hero messaging highlights complete dentistry in a warm and welcoming atmosphere. Core promises include patients always come first, personalized treatment planning, and care that feels like family. Services called out across the site include checkups and cleanings, periodontal therapy, dental implants, crowns and bridges, dentures, veneers, Zoom whitening, SureSmile, and children's dentistry. The site emphasizes same-day help for emergencies, affordable options through major insurance and financing, and patient education with FAQs. Contact details repeated on-page include phone (214) 528-9990 and address 4925 McKinney Ave, Dallas, TX 75205. Office hours shown are Monday through Thursday 7:00 AM to 4:00 PM and Friday 7:00 AM to 1:00 PM. Testimonial themes repeatedly mention a warm office, professional and kind staff, and anxiety-friendly care."
+}

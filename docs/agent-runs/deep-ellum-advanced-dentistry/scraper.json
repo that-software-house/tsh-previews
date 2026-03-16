@@ -1,0 +1,65 @@
+{
+  "businessName": "Deep Ellum Advanced Dentistry",
+  "tagline": "Crafting confident smiles in Dallas.",
+  "phone": "(214) 466-6610",
+  "email": "mikewing@deepellumdentist.com",
+  "address": "3112 Main Street, Dallas, TX 75226",
+  "googleMapsUrl": "https://maps.google.com/maps?cid=14284275390855889916",
+  "services": [
+    "General Dentistry",
+    "Preventative Dentistry",
+    "Cleanings and Exams",
+    "Teeth Whitening",
+    "Emergency Care",
+    "Dental Implants",
+    "Invisalign",
+    "Veneers",
+    "Smile Makeover",
+    "TMJ Treatment",
+    "Wisdom Teeth Extractions",
+    "Dentures"
+  ],
+  "teamMembers": [
+    {
+      "name": "Michael Wing, DDS",
+      "title": "Dentist",
+      "bio": "Dr. Wing is a general dentist with 15 years of DFW experience, trained at Creighton University, fluent in English and Spanish, and focused on Invisalign, implants, and cosmetic dentistry."
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "Phoenix T.",
+      "text": "Insane that I didn't know this was here. Mike was able to immediately find my issues, isolate them, and get me a plan going to not fix a cavity but to fix my smile.",
+      "rating": 5
+    },
+    {
+      "author": "Itania B.",
+      "text": "A super experience. Dr. Wing explains each process, takes his time, and makes a clear priority plan.",
+      "rating": 5
+    },
+    {
+      "author": "Site aggregate",
+      "text": "Patients describe personalized one-at-a-time appointments, clear explanations, and a welcoming environment.",
+      "rating": 5
+    }
+  ],
+  "logoUrl": "https://deepellumdentist.com/wp-content/uploads/2025/04/deep-ellum-advanced-dentistry_1_migrated.png",
+  "primaryColor": "#B87C2C",
+  "accentColor": "#111111",
+  "existingFonts": [
+    "Montserrat"
+  ],
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/deepellumdentist",
+    "facebook": "https://facebook.com/Deep%20Ellum%20Advanced%20Dentistry-107008978006569",
+    "google": "https://maps.google.com/maps?cid=14284275390855889916"
+  },
+  "existingSiteScore": {
+    "mobile": null,
+    "desktop": null,
+    "hasBookingWidget": true,
+    "hasSSL": true,
+    "mobileResponsive": true
+  },
+  "rawPageText": "Deep Ellum Advanced Dentistry in Dallas says 'a smile tells a thousand words' and offers full-service care for families under one roof. Core service categories include preventive, restorative, cosmetic, and emergency dentistry, with notable focus on Invisalign, implants, and smile makeovers. The office repeatedly emphasizes a welcoming and compassionate environment and asks patients to expect a memorable, enjoyable experience. New-patient copy states the first visit is the beginning of a long-term relationship and describes quality care, excellent customer service, and a relaxing environment. Dr. Michael Wing, DDS is highlighted as founder and lead dentist, fluent in English and Spanish, with 15 years practicing in DFW and ongoing implant-surgery teaching. Reviews mention personalized one-patient-at-a-time scheduling, clear explanation of treatment steps, and confidence-building smile plans. Contact details shown across pages: (214) 466-6610, mikewing@deepellumdentist.com, 3112 Main Street, Dallas, TX 75226. Hours shown: Tue/Fri/Sat 10:00 AM-5:00 PM, Mon/Wed/Thu/Sun closed."
+}

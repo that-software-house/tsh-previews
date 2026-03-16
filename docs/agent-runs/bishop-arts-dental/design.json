@@ -1,0 +1,79 @@
+{
+  "cssPrefix": "bad-preview",
+  "slug": "bishop-arts-dental",
+  "route": "/bishop-arts-dental",
+  "referenceFile": "docs/samples/full-page6.webp",
+  "fontDisplay": "Outfit",
+  "fontBody": "Manrope",
+  "referenceVisualNotes": {
+    "heroLayout": "Large split hero with left text stack and right doctor image block, plus floating UI badges over the media area.",
+    "heroTypography": "Bold modern sans heading with short lines and compact supporting copy.",
+    "statsBar": "Horizontal four-item stat row in simple cards directly after the hero.",
+    "servicesSection": "Card-based service grid with category tabs controlling visible card set.",
+    "featureSection": "Dark centerpiece panel with a two-column layout: feature cards on one side and supporting image on the other.",
+    "testimonials": "Single featured quote card with star row and dot navigation instead of a dense three-column wall.",
+    "sectionRhythm": "Hero overlay -> white stats card row -> light trust section -> dark feature section -> light service grid -> light team carousel -> tinted quote section -> contact/footer.",
+    "whitespace": "Moderately airy spacing with clear section separation and consistent shell gutters.",
+    "buttonStyle": "Pill buttons with one filled primary action and one outlined/ghost secondary action.",
+    "colorApplication": "Blue-teal hues lead CTAs and icons, with deep blue in the dark feature section and light cool tints on supporting backgrounds."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "layout": "split-with-overlay",
+      "content": [
+        "eyebrow",
+        "h1",
+        "description",
+        "cta-pair",
+        "meta-links"
+      ]
+    },
+    {
+      "id": "stats-bar",
+      "layout": "horizontal-4-col"
+    },
+    {
+      "id": "trust",
+      "layout": "two-col-text-and-image-with-2x2-cards"
+    },
+    {
+      "id": "differentiators",
+      "layout": "dark-two-col-feature-grid"
+    },
+    {
+      "id": "services",
+      "layout": "tabbed-grid-4-col"
+    },
+    {
+      "id": "doctors",
+      "layout": "carousel-with-dots"
+    },
+    {
+      "id": "testimonials",
+      "layout": "single-featured-quote"
+    },
+    {
+      "id": "insurance",
+      "layout": "pill-tags-centered"
+    },
+    {
+      "id": "contact",
+      "layout": "two-col-info-plus-card"
+    },
+    {
+      "id": "footer",
+      "layout": "dark-multi-col"
+    }
+  ],
+  "globalPatterns": {
+    "navStyle": "minimal-transparent-frosted-on-scroll",
+    "sectionSpacing": "5rem 0",
+    "cardRadius": "1.1rem",
+    "shellWidth": "min(1160px, calc(100% - 2rem))",
+    "mobileRail": true,
+    "floatingCTA": true,
+    "animationLibrary": "framer-motion",
+    "animationLevel": "subtle"
+  }
+}

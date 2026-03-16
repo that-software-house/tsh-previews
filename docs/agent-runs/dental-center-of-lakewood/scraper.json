@@ -1,0 +1,100 @@
+{
+  "businessName": "Dental Center of Lakewood",
+  "tagline": "Trusted Lakewood, Dallas, TX dentists",
+  "phone": "(214) 823-5253",
+  "email": "frontdesk@dentalcenteroflakewood.com",
+  "address": "6316 Gaston Ave, Dallas, TX 75214",
+  "googleMapsUrl": "https://www.google.com/maps/place/Dental+Center+of+Lakewood/@32.8128393,-96.7537324,15z/data=!4m5!3m4!1s0x0:0x47430abea408c1cc!8m2!3d32.8128393!4d-96.7537324",
+  "services": [
+    "Dental Checkups and Cleanings",
+    "TMJ Treatment",
+    "Nightguards for Bruxism",
+    "Fluoride Treatment",
+    "Restorative Dentistry",
+    "Full Mouth Reconstruction",
+    "Dental Crowns",
+    "Tooth-Colored Fillings",
+    "Dental Implants",
+    "Implant Dentures",
+    "All-on-4 Dental Implants",
+    "Dental Bridges",
+    "Dentures",
+    "Cosmetic Dentistry",
+    "Veneers",
+    "Dental Bonding",
+    "Teeth Whitening",
+    "Smile Makeover",
+    "Nitrous Oxide Sedation",
+    "Oral Conscious Sedation",
+    "Invisalign",
+    "Traditional Braces",
+    "Gum Disease Treatment",
+    "Emergency Dentistry",
+    "Root Canal Therapy",
+    "Tooth Extractions",
+    "Sleep Apnea Treatment"
+  ],
+  "teamMembers": [
+    {
+      "name": "Dr. Travis Spillman",
+      "title": "DDS",
+      "bio": "Dr. Spillman brings over two decades of dental experience, studied at Baylor University and the University of Texas Dental Branch at Houston, and continues advanced training through the Seattle Study Club, Spear Study Group, and CARD."
+    },
+    {
+      "name": "Dr. Jacquelyn Green",
+      "title": "DDS",
+      "bio": "Dr. Green has over two decades in dentistry, completed her doctorate at the University of Texas Health Science Center in San Antonio, and is certified in CPR and sedation dentistry with ongoing Seattle Study Club education."
+    },
+    {
+      "name": "Kelli",
+      "title": "Office Manager",
+      "bio": "Kelli has over 24 years in healthcare and has supported Dental Center of Lakewood patients for more than a decade as a trusted resource throughout their smile journey."
+    },
+    {
+      "name": "Rosy",
+      "title": "Dental Hygienist",
+      "bio": "Rosalinda studied dental hygiene at Baylor College of Dentistry and has nearly 15 years of experience helping patients build lifelong oral health habits."
+    },
+    {
+      "name": "Leslie",
+      "title": "Lead Dental Assistant",
+      "bio": "Leslie has worked with Dr. Spillman for 20+ years, regularly completes technology-focused continuing education, and volunteers with Texas Mission of Mercy."
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "Max B., Dallas, TX",
+      "text": "Another great appointment with professionals. I have been a patient of Dr. Spillman's for over ten years and never considered changing dentists even after moving farther away.",
+      "rating": 5
+    },
+    {
+      "author": "Tim V., Lakewood, TX",
+      "text": "Unlike most dentists, they do not try to squeeze money out of you with unnecessary procedures. Highly recommend.",
+      "rating": 5
+    },
+    {
+      "author": "Rebecca M., Dallas, TX",
+      "text": "They always see me on time and get me in and out. Pleasant and friendly staff, and I cannot recommend them enough.",
+      "rating": 5
+    }
+  ],
+  "logoUrl": "https://www.dentalcenteroflakewood.com/assets/images/header-logo.png",
+  "primaryColor": "#4B84B0",
+  "accentColor": "#93B48B",
+  "existingFonts": [
+    "Hind",
+    "system-ui"
+  ],
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/pg/DentalCenterOfLakewood",
+    "instagram": "https://www.instagram.com/dentalcenteroflakewood/"
+  },
+  "existingSiteScore": {
+    "mobile": null,
+    "desktop": null,
+    "hasBookingWidget": false,
+    "hasSSL": true,
+    "mobileResponsive": true
+  },
+  "rawPageText": "Dental Center of Lakewood positions itself as a comprehensive, relationship-first dental office in Lakewood and Dallas. The homepage and about pages emphasize that patients are not rushed, and that Dr. Travis Spillman and Dr. Jacquelyn Green provide one-on-one, personalized care for families and adults. The practice repeatedly highlights broad in-house services so patients can get routine and specialty care in one location, including preventive dentistry, restorative care, cosmetic smile upgrades, sedation options, orthodontics, emergency treatment, and sleep apnea therapy. Service pages specifically call out checkups and cleanings, TMJ treatment, nightguards, fluoride treatment, full-mouth reconstruction, crowns, tooth-colored fillings, implants, implant dentures, all-on-4, bridges, dentures, veneers, bonding, whitening, smile makeovers, nitrous oxide sedation, oral conscious sedation, Invisalign, braces, gum disease treatment, root canal therapy, and extractions. About copy stresses decades of experience, modern technology, and peace of mind for patients who may feel anxious about dental visits. Team copy references local roots, patient education, and long-tenured staff. Doctor bios describe Dr. Spillman's training through Baylor University, UT Dental Branch at Houston, Spear Study Group, Seattle Study Club, and CARD, plus Dr. Green's UT and UT Health Science Center San Antonio background with sedation certification. The site also mentions community outreach through Texas Mission of Mercy to expand care access. Verbatim review examples include: Another great appointment with professionals, Unlike most dentists they do not try to squeeze money out of you with unnecessary procedures, and I never thought I would say a teeth cleaning was the highlight of my day. Contact details shown across pages: 6316 Gaston Ave, Dallas, TX 75214, phone (214) 823-5253, email frontdesk@dentalcenteroflakewood.com, with office hours Monday through Thursday 8:00am to 3:00pm and Friday 8:00am to 2:00pm."
+}
