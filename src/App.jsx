@@ -26,12 +26,14 @@ import DallasLaserDentistryPreview from './pages/DallasLaserDentistryPreview'
 import PrestonHollowDentalCarePreview from './pages/PrestonHollowDentalCarePreview'
 import WilliamHMillerDMDPreview from './pages/WilliamHMillerDMDPreview'
 import CasperFamilyDentistryPreview from './pages/CasperFamilyDentistryPreview'
+import OakCliffDentalCarePreview from './pages/OakCliffDentalCarePreview'
 import OakCliffDentalCenterPreview from './pages/OakCliffDentalCenterPreview'
 import RossAvenueFamilyDentalPreview from './pages/RossAvenueFamilyDentalPreview'
 import LakewoodFamilyDentalCarePreview from './pages/LakewoodFamilyDentalCarePreview'
 import LakewoodRestorativeDentistryPreview from './pages/LakewoodRestorativeDentistryPreview'
 import DeepEllumAdvancedDentistryPreview from './pages/DeepEllumAdvancedDentistryPreview'
 import DentalCenterOfLakewoodPreview from './pages/DentalCenterOfLakewoodPreview'
+import FamilyTreeDentalCarePreview from './pages/FamilyTreeDentalCarePreview'
 import HomePage from './pages/HomePage'
 
 function App() {
@@ -64,6 +66,7 @@ function App() {
       <Route path="/preston-hollow-dental-care" element={<PrestonHollowDentalCarePreview />} />
       <Route path="/william-h-miller-dmd" element={<WilliamHMillerDMDPreview />} />
       <Route path="/casper-family-dentistry" element={<CasperFamilyDentistryPreview />} />
+      <Route path="/oak-cliff-dental-care" element={<OakCliffDentalCarePreview />} />
       <Route path="/oak-cliff-dental-center" element={<OakCliffDentalCenterPreview />} />
       <Route path="/ross-avenue-family-dental" element={<RossAvenueFamilyDentalPreview />} />
       <Route path="/lakewood-family-dental-care" element={<LakewoodFamilyDentalCarePreview />} />
@@ -73,6 +76,7 @@ function App() {
       />
       <Route path="/deep-ellum-advanced-dentistry" element={<DeepEllumAdvancedDentistryPreview />} />
       <Route path="/dental-center-of-lakewood" element={<DentalCenterOfLakewoodPreview />} />
+      <Route path="/family-tree-dental-care" element={<FamilyTreeDentalCarePreview />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )
