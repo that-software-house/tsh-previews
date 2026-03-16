@@ -119,3 +119,10 @@ Track which files have been assigned to avoid reuse:
 | Oak Cliff Dental Center | docs/samples/full-page6.webp |
 | Lakewood Family Dental Care | docs/samples/full-page2.webp |
 | Highland Park Dental | docs/samples/full-page7.webp |
+| Highland Smiles Dental | docs/samples/full-page4.webp |
+| Deep Ellum Advanced Dentistry | docs/samples/full-page5.webp |
+| Bishop Arts Dental | docs/samples/full-page6.webp |
+| North Dallas Dental Group | docs/samples/full-page7.webp |
+| Northpark Dental Associates | docs/samples/full-page2.webp |
+| Lakewood Restorative Dentistry | docs/samples/full-page3.webp |
+| Dental Center of Lakewood | docs/samples/full-page6.webp |
