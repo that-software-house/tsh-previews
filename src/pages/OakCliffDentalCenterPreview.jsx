@@ -98,7 +98,7 @@ const previewData = {
     body:
       'Our practice combines decades of local history with updated equipment and a calm experience. We explain your options clearly, keep visits efficient, and support your long-term oral health.',
     image:
-      'https://images.unsplash.com/photo-1588776814546-ec7e31c8b4b3?auto=format&fit=crop&w=900&q=80',
+      'https://assets.lummi.ai/assets/QmWVnpfXsgAXPC4K5V9JRiqacY9QLwkxsBfRmBtPH3QmLu?auto=format&w=1500',
     imageAlt: 'Dentist consulting with patient in a bright treatment room',
     cards: [
       {
@@ -295,7 +295,7 @@ const previewData = {
         title: 'Primary Dentist, DDS, FAGD',
         bio: 'Dr. Moniza Munawar earned her DDS from NYU College of Dentistry and brings more than 20 years of experience. She is among the small percentage of dentists nationwide with Fellow of the Academy of General Dentistry distinction.',
         image:
-          'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=900&q=80',
+          'assets/doctors/female2.png',
         imageAlt: 'Female dentist smiling in a modern dental clinic',
       },
       {
