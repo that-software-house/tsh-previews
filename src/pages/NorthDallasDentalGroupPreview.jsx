@@ -70,7 +70,7 @@ const previewData = {
     primaryCta: 'Schedule an Appointment',
     secondaryCta: 'Call (972) 407-1333',
     image:
-      'https://images.unsplash.com/photo-1629909615767-458d6f4d17f4?auto=format&fit=crop&w=1400&q=80',
+      'https://assets.lummi.ai/assets/QmaLrspPF4EuwRwp5M8DN8td8vVj4p6MHv2icmEeufhnH8?auto=format&w=1500',
     overlayStart: 'rgba(244, 241, 236, 0.96)',
     overlayEnd: 'rgba(232, 240, 248, 0.9)',
     trustChips: [
@@ -115,7 +115,7 @@ const previewData = {
         name: 'Hunter Owen, DDS',
         role: 'Comprehensive and Cosmetic Dentistry',
         image:
-          'https://images.unsplash.com/photo-1612276529731-4b21494e6d71?auto=format&fit=crop&w=900&q=80',
+          'assets/doctors/male1.png',
         bio:
           'Dr. Owen is known for detail-driven treatment and long-term patient relationships built on trust, comfort, and consistent clinical excellence.',
       },
@@ -123,7 +123,7 @@ const previewData = {
         name: 'Darren Crosbie, DDS',
         role: 'Implant and Invisalign-Focused Care',
         image:
-          'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&q=80',
+          'assets/doctors/male1.png',
         bio:
           'Dr. Crosbie provides personalized restorative and cosmetic treatment with advanced training in implants, Invisalign, and same-day crown solutions.',
       },
