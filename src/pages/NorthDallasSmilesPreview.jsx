@@ -187,7 +187,7 @@ const previewData = {
     primaryCta: 'Call (972) 233-9399',
     secondaryCta: 'Get Directions',
     image:
-      'https://images.unsplash.com/photo-1629909615957-be2a5004948c?auto=format&fit=crop&w=900&q=80',
+      'https://assets.lummi.ai/assets/QmaLrspPF4EuwRwp5M8DN8td8vVj4p6MHv2icmEeufhnH8?auto=format&w=1500',
     imageAlt: 'Smiling patient speaking with a dentist after a successful visit',
   },
   testimonials: {
