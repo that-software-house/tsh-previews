@@ -294,7 +294,7 @@ const previewData = {
         title: 'Founder & Cosmetic Dentist',
         bio: 'Founder of Dallas Laser Dentistry, Dr. Swift is known for personalized cosmetic dentistry and an educational, caring approach that helps patients feel confident in every decision.',
         image:
-          'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=80',
+          'assets/doctors/female1.png',
         imageAlt: 'Portrait of caring female dentist in clinic',
       },
       {
@@ -302,7 +302,7 @@ const previewData = {
         title: 'General & Cosmetic Dentist',
         bio: 'Dr. Kelli blends aesthetic and restorative expertise to deliver high-quality, personalized care with precision, warmth, and attention to each patient\'s goals.',
         image:
-          'https://images.unsplash.com/photo-1612277795421-9bc7706a4a41?auto=format&fit=crop&w=900&q=80',
+          'assets/doctors/female1.png',
         imageAlt: 'Dentist consulting with a patient about treatment options',
       },
     ],
