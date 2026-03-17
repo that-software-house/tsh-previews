@@ -99,7 +99,7 @@ const previewData = {
     body:
       'Our office is built around clear communication, modern tools, and compassionate care. We focus on helping every patient feel comfortable, informed, and confident from first visit to follow-up.',
     image:
-      'https://images.unsplash.com/photo-1588776814546-ec7e4f5f6d41?auto=format&fit=crop&w=900&q=80',
+      'https://assets.lummi.ai/assets/QmWVnpfXsgAXPC4K5V9JRiqacY9QLwkxsBfRmBtPH3QmLu?auto=format&w=1500',
     imageAlt: 'Comfortable and modern dental treatment room',
     cards: [
       {
