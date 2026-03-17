@@ -11,12 +11,14 @@ import HighPointSmilesPreview from './pages/HighPointSmilesPreview'
 import HighlandParkDentalPreview from './pages/HighlandParkDentalPreview'
 import HighlandSmilesDentalPreview from './pages/HighlandSmilesDentalPreview'
 import IndependenceDentalPlanoPreview from './pages/IndependenceDentalPlanoPreview'
+import KnoxDentalPreview from './pages/KnoxDentalPreview'
 import CoolCreekFamilyDentalPreview from './pages/CoolCreekFamilyDentalPreview'
 import ENTSAustinPreview from './pages/ENTSAustinPreview'
 import WowDentalPreview from './pages/WowDentalPreview'
 import YouFirstDentalPreview from './pages/YouFirstDentalPreview'
 import BearCreekFamilyDentistryPreview from './pages/BearCreekFamilyDentistryPreview'
 import MidtownFamilyDentistryPreview from './pages/MidtownFamilyDentistryPreview'
+import NorthDallasSmilesPreview from './pages/NorthDallasSmilesPreview'
 import NorthDallasDentalGroupPreview from './pages/NorthDallasDentalGroupPreview'
 import NorthparkDentalAssociatesPreview from './pages/NorthparkDentalAssociatesPreview'
 import AustinArtisticDentalPreview from './pages/AustinArtisticDentalPreview'
@@ -54,9 +56,11 @@ function App() {
       <Route path="/highland-park-dental" element={<HighlandParkDentalPreview />} />
       <Route path="/highland-smiles-dental" element={<HighlandSmilesDentalPreview />} />
       <Route path="/independence-dental-plano" element={<IndependenceDentalPlanoPreview />} />
+      <Route path="/knox-dental" element={<KnoxDentalPreview />} />
       <Route path="/you-first-dental" element={<YouFirstDentalPreview />} />
       <Route path="/bear-creek-family-dentistry" element={<BearCreekFamilyDentistryPreview />} />
       <Route path="/midtown-family-dentistry-dallas" element={<MidtownFamilyDentistryPreview />} />
+      <Route path="/north-dallas-smiles" element={<NorthDallasSmilesPreview />} />
       <Route path="/north-dallas-dental-group" element={<NorthDallasDentalGroupPreview />} />
       <Route path="/northpark-dental-associates" element={<NorthparkDentalAssociatesPreview />} />
       <Route path="/austin-artistic-dental" element={<AustinArtisticDentalPreview />} />

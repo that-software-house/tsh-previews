@@ -127,3 +127,5 @@ Track which files have been assigned to avoid reuse:
 | Lakewood Restorative Dentistry | docs/samples/full-page3.webp |
 | Dental Center of Lakewood | docs/samples/full-page6.webp |
 | Oak Cliff Dental Care | docs/samples/full-page2.webp |
+| North Dallas Smiles | docs/samples/full-page6.webp |
+| Knox Dental | docs/samples/full-page6.webp |
