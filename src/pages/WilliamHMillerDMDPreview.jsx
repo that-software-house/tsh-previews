@@ -103,7 +103,7 @@ const previewData = {
     body:
       'Every visit is designed to feel respectful and unhurried. From the moment you walk in, our team focuses on your questions, your comfort, and your care goals.',
     image:
-      'https://images.unsplash.com/photo-1643297654416-0576ae5fba15?auto=format&fit=crop&w=900&q=80',
+      'https://assets.lummi.ai/assets/QmaLrspPF4EuwRwp5M8DN8td8vVj4p6MHv2icmEeufhnH8?auto=format&w=1500',
     imageAlt: 'Dental office team helping a patient feel comfortable',
     cards: [
       {
@@ -300,7 +300,7 @@ const previewData = {
         title: 'General Dentist',
         bio: 'Dr. Miller has practiced in Texas since 1985, with decades of continuing education and a strong focus on one-on-one, quality-driven general dentistry.',
         image:
-          'https://images.unsplash.com/photo-1643297653762-9e6ec55ff9e0?auto=format&fit=crop&w=900&q=80',
+          'assets/doctors/male1.png',
         imageAlt: 'Dentist in a clinical office setting',
       },
       {
@@ -308,7 +308,7 @@ const previewData = {
         title: 'Patient Care Advocate',
         bio: 'Kathy welcomes patients, supports appointments chairside, and helps each visit feel warm, organized, and comfortable from start to finish.',
         image:
-          'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=80',
+          'assets/doctors/female1.png',
         imageAlt: 'Dental assistant helping a patient in a treatment room',
       },
     ],
