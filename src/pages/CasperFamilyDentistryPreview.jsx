@@ -295,7 +295,7 @@ const previewData = {
         title: 'General Dentist',
         bio: 'Dr. Nguyen is passionate about helping patients achieve healthy, beautiful smiles while creating a comfortable and educational visit experience.',
         image:
-          'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&q=80',
+          'assets/doctors/male1.png',
         imageAlt: 'Male dentist in clinical attire smiling in treatment room',
       },
       {
@@ -303,7 +303,7 @@ const previewData = {
         title: 'Pediatric Dentist',
         bio: 'Dr. Hwangpo helps children build confidence at the dentist through calm, hands-on care and a welcoming approach for Spanish-speaking families.',
         image:
-          'https://images.unsplash.com/photo-1643297653820-66f98f6b8f58?auto=format&fit=crop&w=900&q=80',
+          'assets/doctors/male1.png',
         imageAlt: 'Dentist speaking with a child patient in a dental office',
       },
       {
@@ -311,7 +311,7 @@ const previewData = {
         title: 'Lead Dentist',
         bio: 'Dr. Kingsberg supports full-scope family dentistry with a focus on same-day solutions and practical treatment plans that fit everyday life.',
         image:
-          'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=80',
+          'assets/doctors/male1.png',
         imageAlt: 'Dentist consulting with patient in modern clinic',
       },
     ],
