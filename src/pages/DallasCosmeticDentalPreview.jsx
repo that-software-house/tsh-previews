@@ -173,7 +173,7 @@ const previewData = {
         title: 'The 75-Minute First Visit',
         text: 'A comprehensive evaluation where we take the time to truly understand your systemic health and goals.',
         image:
-          'https://images.unsplash.com/photo-1629909615957-be2a5004948c?auto=format&fit=crop&w=900&q=80',
+          'https://images.unsplash.com/photo-1631051103633-24959376b92d?auto=format&fit=crop&w=900&q=80',
       },
       {
         title: 'Customized Wellness Path',
