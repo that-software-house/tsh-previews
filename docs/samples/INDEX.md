@@ -129,3 +129,4 @@ Track which files have been assigned to avoid reuse:
 | Oak Cliff Dental Care | docs/samples/full-page2.webp |
 | North Dallas Smiles | docs/samples/full-page6.webp |
 | Knox Dental | docs/samples/full-page6.webp |
+| Dallas Cosmetic Dental | docs/samples/full-page6.webp |
