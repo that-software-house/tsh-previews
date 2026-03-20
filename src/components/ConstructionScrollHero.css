@@ -5,7 +5,6 @@
   --construction-panel: rgba(249, 246, 239, 0.74);
   --construction-border: rgba(60, 49, 38, 0.14);
   --construction-accent: #c7672f;
-  min-height: 100vh;
   background:
     radial-gradient(circle at top left, rgba(255, 255, 255, 0.88), transparent 30%),
     linear-gradient(180deg, #efe8dc 0%, var(--construction-bg) 42%, #ddd2c0 100%);
@@ -14,7 +13,7 @@
 
 .construction-hero-demo__scroll-shell {
   position: relative;
-  min-height: 360vh;
+  height: 280vh;
 }
 
 .construction-hero-demo__sticky {
@@ -22,7 +21,7 @@
   top: 0;
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   padding: 2rem;
   overflow: hidden;
 }
@@ -153,9 +152,108 @@
   object-fit: cover;
 }
 
+.construction-hero-demo--cinema {
+  background: #110d09;
+  color: #f4eee7;
+}
+
+.construction-hero-demo__cinema-shell {
+  position: relative;
+  height: 220vh;
+}
+
+.construction-hero-demo__sticky--cinema {
+  justify-content: center;
+  padding: 0;
+  color: inherit;
+}
+
+.construction-hero-demo__cinema-media,
+.construction-hero-demo__cinema-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.construction-hero-demo__cinema-media {
+  overflow: hidden;
+}
+
+.construction-hero-demo__cinema-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.construction-hero-demo__cinema-overlay {
+  background:
+    linear-gradient(180deg, rgba(10, 8, 6, 0.22) 0%, rgba(10, 8, 6, 0.4) 28%, rgba(10, 8, 6, 0.68) 100%),
+    linear-gradient(90deg, rgba(10, 8, 6, 0.72) 0%, rgba(10, 8, 6, 0.34) 45%, rgba(10, 8, 6, 0.5) 100%);
+}
+
+.construction-hero-demo__cinema-copy {
+  position: relative;
+  z-index: 1;
+  width: min(100% - 3rem, 84rem);
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
+.construction-hero-demo__eyebrow--light {
+  color: rgba(244, 238, 231, 0.74);
+}
+
+.construction-hero-demo__cinema-copy h2 {
+  margin: 0;
+  max-width: 9ch;
+  font-family: var(--font-display);
+  font-size: clamp(3.4rem, 8vw, 7rem);
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+}
+
+.construction-hero-demo__cinema-copy p:not(.construction-hero-demo__eyebrow) {
+  max-width: 36rem;
+  margin: 1.35rem 0 0;
+  font-size: clamp(1.02rem, 1.8vw, 1.22rem);
+  line-height: 1.8;
+  color: rgba(244, 238, 231, 0.84);
+}
+
+.construction-hero-demo__cinema-footer {
+  width: min(100%, 34rem);
+  margin-top: 2.1rem;
+}
+
+.construction-hero-demo__cinema-progress {
+  height: 0.45rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.construction-hero-demo__cinema-progress span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-origin: left center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.65) 0%, #f3b16c 100%);
+}
+
+.construction-hero-demo__cinema-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.8rem;
+  color: rgba(244, 238, 231, 0.8);
+  font-size: 0.83rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 960px) {
   .construction-hero-demo__scroll-shell {
-    min-height: 320vh;
+    height: 240vh;
   }
 
   .construction-hero-demo__inner {
@@ -165,6 +263,14 @@
   .construction-hero-demo__copy {
     max-width: none;
   }
+
+  .construction-hero-demo__cinema-shell {
+    height: 190vh;
+  }
+
+  .construction-hero-demo__cinema-copy h2 {
+    max-width: 10ch;
+  }
 }
 
 @media (max-width: 720px) {
@@ -173,7 +279,7 @@
   }
 
   .construction-hero-demo__scroll-shell {
-    min-height: 260vh;
+    height: 210vh;
   }
 
   .construction-hero-demo__copy h1 {
@@ -191,5 +297,23 @@
 
   .construction-hero-demo__image-wrap {
     aspect-ratio: 4 / 3;
+  }
+
+  .construction-hero-demo__cinema-shell {
+    height: 175vh;
+  }
+
+  .construction-hero-demo__cinema-copy {
+    width: min(100% - 1.5rem, 40rem);
+    padding: 1.5rem 0;
+  }
+
+  .construction-hero-demo__cinema-copy h2 {
+    font-size: clamp(2.9rem, 14vw, 4.8rem);
+  }
+
+  .construction-hero-demo__cinema-stats {
+    flex-direction: column;
+    gap: 0.45rem;
   }
 }

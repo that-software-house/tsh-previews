@@ -20,7 +20,7 @@ const FRAMES = [
   '15-0-07.jpg',
 ].map((frame) => `/assets/construction-frames/${frame}`)
 
-function ConstructionScrollHero() {
+function useFrameSequence() {
   const containerRef = useRef(null)
   const [progress, setProgress] = useState(0)
   const [frameIndex, setFrameIndex] = useState(0)
@@ -44,8 +44,14 @@ function ConstructionScrollHero() {
     setFrameIndex(nextFrame)
   })
 
+  return { containerRef, frameIndex, progress }
+}
+
+function FramedSequenceSection() {
+  const { containerRef, frameIndex, progress } = useFrameSequence()
+
   return (
-    <section className="construction-hero-demo">
+    <section className="construction-hero-demo construction-hero-demo--panel">
       <div className="construction-hero-demo__scroll-shell" ref={containerRef}>
         <div className="construction-hero-demo__sticky">
           <div className="construction-hero-demo__backdrop" aria-hidden="true" />
@@ -99,6 +105,70 @@ function ConstructionScrollHero() {
         </div>
       </div>
     </section>
+  )
+}
+
+function FullBleedSequenceSection() {
+  const { containerRef, frameIndex, progress } = useFrameSequence()
+
+  return (
+    <section className="construction-hero-demo construction-hero-demo--cinema">
+      <div className="construction-hero-demo__cinema-shell" ref={containerRef}>
+        <div className="construction-hero-demo__sticky construction-hero-demo__sticky--cinema">
+          <div className="construction-hero-demo__cinema-media" aria-hidden="true">
+            <img
+              className="construction-hero-demo__cinema-image"
+              src={FRAMES[frameIndex]}
+              alt=""
+            />
+            <div className="construction-hero-demo__cinema-overlay" />
+          </div>
+
+          <Motion.div
+            className="construction-hero-demo__cinema-copy"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.35 }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <p className="construction-hero-demo__eyebrow construction-hero-demo__eyebrow--light">
+              Full-width cinematic hero
+            </p>
+            <h2>The entire viewport becomes the timeline.</h2>
+            <p>
+              This version turns the same construction sequence into a full-bleed brand moment,
+              with the frame progression living behind the headline instead of inside a panel.
+            </p>
+
+            <div className="construction-hero-demo__cinema-footer">
+              <div className="construction-hero-demo__cinema-progress" aria-hidden="true">
+                <span style={{ transform: `scaleX(${progress})` }} />
+              </div>
+              <div className="construction-hero-demo__cinema-stats">
+                <span>Frame {String(frameIndex + 1).padStart(2, '0')}</span>
+                <span>{Math.round(progress * 100)}% complete</span>
+              </div>
+            </div>
+          </Motion.div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function ConstructionScrollHero() {
+  useEffect(() => {
+    FRAMES.forEach((source) => {
+      const image = new Image()
+      image.src = source
+    })
+  }, [])
+
+  return (
+    <>
+      <FramedSequenceSection />
+      <FullBleedSequenceSection />
+    </>
   )
 }
 
