@@ -36,6 +36,7 @@ import LakewoodRestorativeDentistryPreview from './pages/LakewoodRestorativeDent
 import DeepEllumAdvancedDentistryPreview from './pages/DeepEllumAdvancedDentistryPreview'
 import DentalCenterOfLakewoodPreview from './pages/DentalCenterOfLakewoodPreview'
 import DallasCosmeticDentalPreview from './pages/DallasCosmeticDentalPreview'
+import ConstructionHeroDemo from './pages/ConstructionHeroDemo'
 import FamilyTreeDentalCarePreview from './pages/FamilyTreeDentalCarePreview'
 import HomePage from './pages/HomePage'
 
@@ -53,6 +54,7 @@ function App() {
       <Route path="/ents-austin" element={<ENTSAustinPreview />} />
       <Route path="/wow-dental" element={<WowDentalPreview />} />
       <Route path="/daybreak-dental" element={<DaybreakDentalPreview />} />
+      <Route path="/construction-hero-demo" element={<ConstructionHeroDemo />} />
       <Route path="/dallas-cosmetic-dental" element={<DallasCosmeticDentalPreview />} />
       <Route path="/high-point-smiles" element={<HighPointSmilesPreview />} />
       <Route path="/highland-park-dental" element={<HighlandParkDentalPreview />} />
