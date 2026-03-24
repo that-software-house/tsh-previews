@@ -21,6 +21,7 @@
   background: var(--rivers-bg);
   color: var(--rivers-ink);
   font-family: var(--font-body);
+  scroll-behavior: auto;
 }
 
 .rivers-preview,
@@ -365,7 +366,7 @@
 
 .rivers-preview__metrics {
   padding: 0 0 1.6rem;
-  margin-top: -1.4rem;
+  margin-top: 0;
   position: relative;
   z-index: 2;
 }
@@ -416,8 +417,7 @@
 }
 
 .rivers-preview__services-copy {
-  position: sticky;
-  top: 6.75rem;
+  position: static;
 }
 
 .rivers-preview__services-copy h2,

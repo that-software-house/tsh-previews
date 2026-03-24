@@ -197,13 +197,24 @@ function RiversLawnGardeningPreview() {
   })
 
   useEffect(() => {
+    const previousHtmlScrollBehavior = document.documentElement.style.scrollBehavior
+    const previousBodyScrollBehavior = document.body.style.scrollBehavior
+
+    document.documentElement.style.scrollBehavior = 'auto'
+    document.body.style.scrollBehavior = 'auto'
+
     const handleScroll = () => {
       setNavSolid(window.scrollY > 48)
     }
 
     handleScroll()
     window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      document.documentElement.style.scrollBehavior = previousHtmlScrollBehavior
+      document.body.style.scrollBehavior = previousBodyScrollBehavior
+    }
   }, [])
 
   return (
