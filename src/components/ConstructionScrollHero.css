@@ -186,8 +186,8 @@
 
 .construction-hero-demo__cinema-overlay {
   background:
-    linear-gradient(180deg, rgba(10, 8, 6, 0.22) 0%, rgba(10, 8, 6, 0.4) 80%, rgba(10, 8, 6, 0.68) 100%),
-    linear-gradient(90deg, rgba(10, 8, 6, 0.72) 0%, rgba(10, 8, 6, 0.34) 80%, rgba(10, 8, 6, 0.5) 100%);
+    linear-gradient(180deg, rgba(10, 8, 6, 0.22) 0%, rgba(10, 8, 6, 0.3) 80%, rgba(10, 8, 6, 0.48) 100%),
+    linear-gradient(90deg, rgba(10, 8, 6, 0.42) 0%, rgba(10, 8, 6, 0.24) 80%, rgba(10, 8, 6, 0.2) 100%);
 }
 
 .construction-hero-demo__cinema-copy {
