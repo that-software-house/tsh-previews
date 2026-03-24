@@ -27,7 +27,7 @@ const previewData = {
     { label: 'Austin', display: '(512) 738-3782', href: 'tel:+15127383782' },
     { label: '', display: '(713) 505-7213', href: 'tel:+17135057213' },
   ],
-  serviceAreas: ['Austin, TX', 'Fort Worth, TX', 'Surrounding communities'],
+  serviceAreas: ['Austin, TX', 'Cedar Park, TX', 'Surrounding communities'],
   supportHours: 'Live support daily, 7:00 AM - 7:00 PM',
   heroImage:
     'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=80',
