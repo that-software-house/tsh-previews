@@ -18,14 +18,14 @@ const previewData = {
   slug: 'rivers-lawn-gardening',
   businessName: "River's Lawn Gardening",
   brandMark: 'RLG',
-  eyebrow: 'Austin + Fort Worth lawn care',
+  eyebrow: 'Austin lawn care',
   tagline: 'Reliable mowing, clean edges, and greener curb appeal year-round.',
   description:
     "River's Lawn Gardening delivers full-service lawn care and landscape upkeep for homeowners who want their property to look sharp without chasing crews or inconsistent scheduling.",
   websiteUrl: 'https://www.riverslawngardening.com/',
   phones: [
     { label: 'Austin', display: '(512) 738-3782', href: 'tel:+15127383782' },
-    { label: 'Fort Worth', display: '(713) 505-7213', href: 'tel:+17135057213' },
+    { label: '', display: '(713) 505-7213', href: 'tel:+17135057213' },
   ],
   serviceAreas: ['Austin, TX', 'Fort Worth, TX', 'Surrounding communities'],
   supportHours: 'Live support daily, 7:00 AM - 7:00 PM',
@@ -121,7 +121,7 @@ const previewData = {
     body:
       "The current business already emphasizes reliability, professionalism, and satisfaction. This preview turns that into a clearer sales story: better first impressions, stronger service proof, and a more local, premium feel for homeowners comparing crews online.",
     points: [
-      'Coverage built around Austin, Fort Worth, and nearby neighborhoods.',
+      'Coverage built around Austin, Cedar Park, Leander, Liberty Hill, Georgetown, and nearby neighborhoods.',
       'A service mix that handles weekly upkeep and higher-value seasonal projects.',
       'Clear, direct phone-driven conversion for homeowners ready to book an estimate.',
     ],
@@ -185,7 +185,7 @@ function RiversLawnGardeningPreview() {
   useSEO({
     title: "River's Lawn Gardening Preview | That Software House",
     description:
-      "A modern website preview for River's Lawn Gardening featuring lawn care, landscape cleanup, and estimate-focused local service positioning for Austin and Fort Worth.",
+      "A modern website preview for River's Lawn Gardening featuring lawn care, landscape cleanup, and estimate-focused local service positioning for Austin.",
     canonicalUrl: `https://preview.thatsoftwarehouse.com/${previewData.slug}`,
     openGraph: {
       title: "River's Lawn Gardening Preview | That Software House",
