@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion as Motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
+import HeroBackgroundCanvas from '../components/HeroBackgroundCanvas'
 import { useSEO } from '../hooks/useSEO'
 import './HomePage.css'
 
@@ -21,38 +22,7 @@ function HomePage() {
   return (
     <main className="preview-home">
       <div className="preview-home__backdrop" aria-hidden="true">
-        <Motion.div
-          className="preview-home__mesh preview-home__mesh--one"
-          animate={{
-            x: [0, 30, -18, 0],
-            y: [0, -24, 12, 0],
-            scale: [1, 1.08, 0.96, 1],
-          }}
-          transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
-        />
-        <Motion.div
-          className="preview-home__mesh preview-home__mesh--two"
-          animate={{
-            x: [0, -28, 16, 0],
-            y: [0, 18, -14, 0],
-            scale: [1, 0.94, 1.06, 1],
-          }}
-          transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
-        />
-        <Motion.div
-          className="preview-home__mesh preview-home__mesh--three"
-          animate={{
-            x: [0, 18, -10, 0],
-            y: [0, 22, -18, 0],
-            scale: [1, 1.04, 0.98, 1],
-          }}
-          transition={{ duration: 16, repeat: Infinity, ease: 'easeInOut' }}
-        />
-        <div className="preview-home__orbits">
-          <span className="preview-home__orbit preview-home__orbit--one" />
-          <span className="preview-home__orbit preview-home__orbit--two" />
-          <span className="preview-home__orbit preview-home__orbit--three" />
-        </div>
+        <HeroBackgroundCanvas />
         <div className="preview-home__grain" />
       </div>
 
@@ -62,6 +32,7 @@ function HomePage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       >
+        <p className="preview-home__eyebrow">TSH Preview Hub</p>
         <h1>A client preview website created by That Software House</h1>
         <a
           href="https://thatsoftwarehouse.com"
